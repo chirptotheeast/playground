@@ -1,0 +1,9 @@
+  [1m[35m (455.5ms)[0m  [1m[35mCREATE DATABASE "Playground_development" ENCODING = 'unicode'[0m
+  [1m[35m (425.5ms)[0m  [1m[35mCREATE DATABASE "Playground_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-01-13 16:16:22 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alyssaeasterly/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alyssaeasterly/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 14.5ms | Allocations: 481)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.0ms | Allocations: 2635)
+
+
