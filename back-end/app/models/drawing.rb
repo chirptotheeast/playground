@@ -1,4 +1,4 @@
 class Drawing < ApplicationRecord
-    belongs_to :user
     has_many :favorite_drawings
+    has_many :users, through: :favorite_drawings
 end
