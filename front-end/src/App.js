@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import Welcome from "./components/Welcome.js"
 import './App.css';
+import "./assets/output.css";
+import { Route } from "react-router-dom";
+import wand from "./images/cursorwand.png"
+import Choose from "./components/Choose.js"
+import Playground from './components/Playground.js'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-        Rock and roll soothes the soul <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{cursor: `url(${wand})` }}>
+        <header className="App-header">
+          <Route exact path="/" component={Welcome} />
+          <Route exact path="/choose" component={Choose} />
+          <Route exact path="/playground" component={Playground}/>
+        </header>
+      </div>
     </div>
   );
 }
