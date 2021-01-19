@@ -13,11 +13,14 @@ export default class Welcome extends Component {
               </div>
               <div className="divider"></div>
               <Link to="/choose">
-                <button className="button">let's play!</button>
+                <button className="btn">let's play!</button>
               </Link>
               <Link to="/login">
-                <button className="button">login</button>
+                <button className="btn">login</button>
               </Link>
+                <Link to="/register">
+                  <p id="createaccount" className="p-play">create account</p>
+                </Link>
             </div>
           </div>
         );
