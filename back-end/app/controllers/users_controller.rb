@@ -1,8 +1,17 @@
 class UsersController < ApplicationController
   def index
-    users = User.all
-
-    render json: users
+    options = { 
+        :include => {
+          :favorite_activities => {
+            :except => [:created_at, :updated_at]
+          },
+          :favorite_drawings => {
+            :except => [:created_at, :updated_at]
+          }
+        },
+         :except => [:created_at, :updated_at]
+    }
+    render json: User.all.to_json(options)
   end
 
   def show

@@ -2,32 +2,55 @@ import Welcome from "./components/Welcome.js"
 import './App.css';
 import "./assets/output.css";
 import { Route } from "react-router-dom";
-import wand from "./images/cursorwand.png"
 import Choose from "./components/Choose.js"
 import Playground from './components/Playground.js'
+import Myplayground from './components/Myplayground.js'
 import Login from "./components/Login.js"
 import React, {Component} from "react"
 import Register from "./components/Registration.js"
-import NewPlay from "./components/NewPlay.js"
+import Music from "./components/Music.js"
+import Drawing from "./components/Drawing.js"
+import Games from "./components/Games.js"
+import Sidewalk from "./components/Sidewalk.js"
+
+const user ="http://localhost:3000/users/4"
+const activities = "http://localhost:3000/activities";
 
 class App extends Component {
-  render(){
+  state = {
+    user: [],
+    favorite_activities: [],
+    drawing: []
+  }
 
-    const appstyle = {
-      cursor: `url(${wand})`
-    }
+
+  async componentDidMount(){
+     const userResponse = await fetch(user);
+    const userData = await userResponse.json();
+    console.log(userData);
+    this.setState({ user: userData });
+
+       const response = await fetch(activities);
+       const activityData = await response.json();
+       console.log(activityData);
+       this.setState({ activities: activityData });
+  }
+
+  render(){
   return (
     <div className="App">
-      <div style={appstyle}>
         <header className="App-header">
           <Route exact path="/" component={Welcome} />
           <Route exact path="/choose" component={Choose} />
-          <Route exact path="/playground" component={Playground}/>
+          <Route exact path="/playground" component={Playground} />
+          <Route exact path="/myplayground" component={Myplayground} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
-          <Route exact path="/newplay" component={NewPlay} />
+          <Route exact path="/music" component={Music} />
+          <Route exact path="/drawing" component={Drawing} />
+          <Route exact path="/games" component={Games}/>
+          <Route exact path="/sidewalk" component={Sidewalk} />
         </header>
-      </div>
     </div>
   );
   }

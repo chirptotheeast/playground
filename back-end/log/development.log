@@ -404,3 +404,562 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 69ms (Views: 61.1ms | ActiveRecord: 0.0ms | Allocations: 735)
 
 
+Started GET "/" for ::1 at 2021-01-19 10:39:53 -0500
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alyssaeasterly/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alyssaeasterly/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 9.2ms | Allocations: 316)
+Completed 200 OK in 20ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 1597)
+
+
+Started GET "/" for ::1 at 2021-01-19 16:41:21 -0500
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alyssaeasterly/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alyssaeasterly/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 45.6ms | Allocations: 316)
+Completed 200 OK in 54ms (Views: 50.7ms | ActiveRecord: 0.0ms | Allocations: 1599)
+
+
+Started GET "/users" for ::1 at 2021-01-19 16:41:25 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (22.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 83ms (Views: 13.9ms | ActiveRecord: 50.6ms | Allocations: 8336)
+
+
+Started POST "/login" for ::1 at 2021-01-19 16:44:41 -0500
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"lovely_bones", "password"=>"[FILTERED]", "auth"=>{"username"=>"lovely_bones", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (29.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "lovely_bones"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Completed 200 OK in 44ms (Views: 0.2ms | ActiveRecord: 30.1ms | Allocations: 1117)
+
+
+Started GET "/users" for ::1 at 2021-01-19 16:46:35 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.5ms | Allocations: 1212)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-01-19 16:46:36 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2021-01-19 16:46:53 -0500
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"LovelyLeo", "password"=>"[FILTERED]", "auth"=>{"username"=>"LovelyLeo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "LovelyLeo"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 793)
+
+
+Started POST "/login" for ::1 at 2021-01-19 16:47:59 -0500
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"LovelyLeo", "password"=>"[FILTERED]", "auth"=>{"username"=>"LovelyLeo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "LovelyLeo"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Completed 200 OK in 6ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 777)
+
+
+Started POST "/login" for ::1 at 2021-01-19 16:48:40 -0500
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"LovelyLeo", "password"=>"[FILTERED]", "auth"=>{"username"=>"LovelyLeo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "LovelyLeo"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 761)
+
+
+Started GET "/login" for ::1 at 2021-01-19 16:59:10 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2021-01-19 17:03:35 -0500
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"LovelyLeo", "password"=>"[FILTERED]", "auth"=>{"username"=>"LovelyLeo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "LovelyLeo"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Completed 200 OK in 19ms (Views: 1.8ms | ActiveRecord: 0.9ms | Allocations: 846)
+
+
+Started POST "/login" for ::1 at 2021-01-19 17:04:41 -0500
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"LovelyLeo", "password"=>"[FILTERED]", "auth"=>{"username"=>"LovelyLeo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "LovelyLeo"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 761)
+
+
+Started POST "/login" for ::1 at 2021-01-19 17:12:28 -0500
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"LovelyLeo", "password"=>"[FILTERED]", "auth"=>{"username"=>"LovelyLeo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "LovelyLeo"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Completed 200 OK in 5ms (Views: 1.1ms | ActiveRecord: 0.6ms | Allocations: 855)
+
+
+Started POST "/login" for ::1 at 2021-01-20 09:47:30 -0500
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"LovelyLeo", "password"=>"[FILTERED]", "auth"=>{"username"=>"LovelyLeo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "LovelyLeo"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Completed 200 OK in 40ms (Views: 10.6ms | ActiveRecord: 5.2ms | Allocations: 847)
+
+
+Started POST "/login" for ::1 at 2021-01-20 16:07:46 -0500
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"LovelyLeo", "password"=>"[FILTERED]", "auth"=>{"username"=>"LovelyLeo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (29.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "LovelyLeo"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Completed 200 OK in 96ms (Views: 23.9ms | ActiveRecord: 29.6ms | Allocations: 847)
+
+
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1514166304748915370)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateFavoriteDrawings (20210113221925)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (96.2ms)[0m  [1m[35mDROP TABLE "favorite_drawings"[0m
+  [1m[36mprimary::SchemaMigration Destroy (29.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210113221925"]]
+  [1m[35m (37.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFavoriteActivities (20210113221830)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mDROP TABLE "favorite_activities"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210113221830"]]
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDrawings (20210113221747)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.7ms)[0m  [1m[35mDROP TABLE "drawings"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210113221747"]]
+  [1m[35m (16.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActivities (20210113221641)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.4ms)[0m  [1m[35mDROP TABLE "activities"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210113221641"]]
+  [1m[35m (18.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20210113221448)
+  [1m[35m (9.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (11.7ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mprimary::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210113221448"]]
+  [1m[35m (10.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1514166304748915370)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1514166304748915370)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210113221448)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (58.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password" character varying, "avatar" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210113221448"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActivities (20210113221641)
+  [1m[35m (5.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (22.1ms)[0m  [1m[35mCREATE TABLE "activities" ("id" bigserial primary key, "name" character varying, "video_link" character varying, "youtube_video" boolean, "avatar" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210113221641"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateDrawings (20210113221747)
+  [1m[35m (12.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (13.9ms)[0m  [1m[35mCREATE TABLE "drawings" ("id" bigserial primary key, "svgdrawing" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210113221747"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFavoriteActivities (20210113221830)
+  [1m[35m (12.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.6ms)[0m  [1m[35mCREATE TABLE "favorite_activities" ("id" bigserial primary key, "user_id" integer, "activity_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210113221830"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFavoriteDrawings (20210113221925)
+  [1m[35m (12.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "favorite_drawings" ("id" bigserial primary key, "user_id" integer, "drawing_id" integer, "creator" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210113221925"]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (15.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1514166304748915370)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (10.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mActivity Load (2.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  [1m[36mDrawing Load (2.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  [1m[36mFavoriteActivity Load (2.2ms)[0m  [1m[34mSELECT "favorite_activities".* FROM "favorite_activities"[0m
+  [1m[36mFavoriteDrawing Load (2.2ms)[0m  [1m[34mSELECT "favorite_drawings".* FROM "favorite_drawings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "LovelyLeo"], ["password", "123"], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.437849"], ["updated_at", "2021-01-20 22:44:01.437849"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "LilacBloomin"], ["password", "123"], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.445080"], ["updated_at", "2021-01-20 22:44:01.445080"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "RedTruckin"], ["password", "123"], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.450420"], ["updated_at", "2021-01-20 22:44:01.450420"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (2.2ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "SheepMusic"], ["video_link", "https://youtu.be/xT2zOAZAWoM"], ["youtube_video", true], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.468774"], ["updated_at", "2021-01-20 22:44:01.468774"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.2ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "LoveMusic"], ["video_link", "https://youtu.be/nYKNeMqww-I"], ["youtube_video", true], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.478504"], ["updated_at", "2021-01-20 22:44:01.478504"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.4ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "BeeMusic"], ["video_link", "https://youtu.be/Z6zWxullnuA"], ["youtube_video", true], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.481489"], ["updated_at", "2021-01-20 22:44:01.481489"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.4ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "HedgieMusic"], ["video_link", "https://youtu.be/1YNVnXEckHM"], ["youtube_video", true], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.485578"], ["updated_at", "2021-01-20 22:44:01.485578"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.7ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "SickMusic"], ["video_link", "https://youtu.be/wdKQIhtclZc"], ["youtube_video", true], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.489913"], ["updated_at", "2021-01-20 22:44:01.489913"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.3ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "bunnyMusic"], ["video_link", "https://youtu.be/IWWjTl39sFo"], ["youtube_video", true], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.496968"], ["updated_at", "2021-01-20 22:44:01.496968"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.2ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "games"], ["video_link", ""], ["youtube_video", false], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.500899"], ["updated_at", "2021-01-20 22:44:01.500899"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.3ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "puppets"], ["video_link", ""], ["youtube_video", false], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.503926"], ["updated_at", "2021-01-20 22:44:01.503926"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.2ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "nap time"], ["video_link", ""], ["youtube_video", false], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.506995"], ["updated_at", "2021-01-20 22:44:01.506995"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.2ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "sidewalk art"], ["video_link", ""], ["youtube_video", false], ["avatar", ""], ["created_at", "2021-01-20 22:44:01.510251"], ["updated_at", "2021-01-20 22:44:01.510251"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Create (0.8ms)[0m  [1m[32mINSERT INTO "drawings" ("svgdrawing", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["svgdrawing", "boop"], ["created_at", "2021-01-20 22:44:01.518374"], ["updated_at", "2021-01-20 22:44:01.518374"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Create (0.3ms)[0m  [1m[32mINSERT INTO "drawings" ("svgdrawing", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["svgdrawing", "boop"], ["created_at", "2021-01-20 22:44:01.522253"], ["updated_at", "2021-01-20 22:44:01.522253"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Create (0.3ms)[0m  [1m[32mINSERT INTO "drawings" ("svgdrawing", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["svgdrawing", "boop"], ["created_at", "2021-01-20 22:44:01.527197"], ["updated_at", "2021-01-20 22:44:01.527197"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[35m (10.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActivity Load (0.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.4ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 1]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.4ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.4ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mDrawing Load (0.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "drawings" WHERE "drawings"."id" = $1[0m  [["id", 1]]
+  [1m[35m (6.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "drawings" WHERE "drawings"."id" = $1[0m  [["id", 2]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Destroy (2.2ms)[0m  [1m[31mDELETE FROM "drawings" WHERE "drawings"."id" = $1[0m  [["id", 3]]
+  [1m[35m (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFavoriteActivity Load (0.6ms)[0m  [1m[34mSELECT "favorite_activities".* FROM "favorite_activities"[0m
+  [1m[36mFavoriteDrawing Load (0.4ms)[0m  [1m[34mSELECT "favorite_drawings".* FROM "favorite_drawings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "LovelyLeo"], ["password", "123"], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.117921"], ["updated_at", "2021-01-20 22:44:48.117921"]]
+  [1m[35m (11.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (5.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "LilacBloomin"], ["password", "123"], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.133417"], ["updated_at", "2021-01-20 22:44:48.133417"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "RedTruckin"], ["password", "123"], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.145532"], ["updated_at", "2021-01-20 22:44:48.145532"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.4ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "SheepMusic"], ["video_link", "https://youtu.be/xT2zOAZAWoM"], ["youtube_video", true], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.148967"], ["updated_at", "2021-01-20 22:44:48.148967"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.2ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "LoveMusic"], ["video_link", "https://youtu.be/nYKNeMqww-I"], ["youtube_video", true], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.164200"], ["updated_at", "2021-01-20 22:44:48.164200"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.3ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "BeeMusic"], ["video_link", "https://youtu.be/Z6zWxullnuA"], ["youtube_video", true], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.167620"], ["updated_at", "2021-01-20 22:44:48.167620"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.5ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "HedgieMusic"], ["video_link", "https://youtu.be/1YNVnXEckHM"], ["youtube_video", true], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.170925"], ["updated_at", "2021-01-20 22:44:48.170925"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.3ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "SickMusic"], ["video_link", "https://youtu.be/wdKQIhtclZc"], ["youtube_video", true], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.178190"], ["updated_at", "2021-01-20 22:44:48.178190"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.3ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "bunnyMusic"], ["video_link", "https://youtu.be/IWWjTl39sFo"], ["youtube_video", true], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.181986"], ["updated_at", "2021-01-20 22:44:48.181986"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.2ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "games"], ["video_link", ""], ["youtube_video", false], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.185343"], ["updated_at", "2021-01-20 22:44:48.185343"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.5ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "puppets"], ["video_link", ""], ["youtube_video", false], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.188975"], ["updated_at", "2021-01-20 22:44:48.188975"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.2ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "nap time"], ["video_link", ""], ["youtube_video", false], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.193715"], ["updated_at", "2021-01-20 22:44:48.193715"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.2ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "sidewalk art"], ["video_link", ""], ["youtube_video", false], ["avatar", ""], ["created_at", "2021-01-20 22:44:48.197424"], ["updated_at", "2021-01-20 22:44:48.197424"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Create (0.4ms)[0m  [1m[32mINSERT INTO "drawings" ("svgdrawing", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["svgdrawing", "boop"], ["created_at", "2021-01-20 22:44:48.200619"], ["updated_at", "2021-01-20 22:44:48.200619"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Create (0.2ms)[0m  [1m[32mINSERT INTO "drawings" ("svgdrawing", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["svgdrawing", "boop"], ["created_at", "2021-01-20 22:44:48.204311"], ["updated_at", "2021-01-20 22:44:48.204311"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Create (0.3ms)[0m  [1m[32mINSERT INTO "drawings" ("svgdrawing", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["svgdrawing", "boop"], ["created_at", "2021-01-20 22:44:48.207448"], ["updated_at", "2021-01-20 22:44:48.207448"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mFavoriteActivity Create (0.6ms)[0m  [1m[32mINSERT INTO "favorite_activities" ("user_id", "activity_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["activity_id", 11], ["created_at", "2021-01-20 22:44:48.224746"], ["updated_at", "2021-01-20 22:44:48.224746"]]
+  [1m[35m (16.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mFavoriteDrawing Create (1.9ms)[0m  [1m[32mINSERT INTO "favorite_drawings" ("user_id", "drawing_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 4], ["drawing_id", 4], ["created_at", "2021-01-20 22:44:48.252661"], ["updated_at", "2021-01-20 22:44:48.252661"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFavoriteActivity Load (0.4ms)[0m  [1m[34mSELECT "favorite_activities".* FROM "favorite_activities" WHERE "favorite_activities"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 11]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2021-01-20 18:07:33 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alyssaeasterly/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alyssaeasterly/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 44.4ms | Allocations: 316)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 0.0ms | Allocations: 1596)
+
+
+Started GET "/users" for ::1 at 2021-01-20 18:07:36 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  [1m[36mFavoriteActivity Load (0.6ms)[0m  [1m[34mSELECT "favorite_activities".* FROM "favorite_activities" WHERE "favorite_activities"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  [1m[36mFavoriteActivity Load (0.3ms)[0m  [1m[34mSELECT "favorite_activities".* FROM "favorite_activities" WHERE "favorite_activities"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:11:in `index'
+  [1m[36mFavoriteActivity Load (0.7ms)[0m  [1m[34mSELECT "favorite_activities".* FROM "favorite_activities" WHERE "favorite_activities"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/users_controller.rb:11:in `index'
+Completed 200 OK in 93ms (Views: 0.2ms | ActiveRecord: 17.8ms | Allocations: 17086)
+
+
+Started GET "/activities" for ::1 at 2021-01-20 18:11:16 -0500
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (0.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 36ms (Views: 22.5ms | ActiveRecord: 8.1ms | Allocations: 8298)
+
+
+Started GET "/asldkfj" for ::1 at 2021-01-20 18:11:46 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/asldkfj"):
+  
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2021-01-20 18:18:54 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:14:in `index'
+  [1m[36mFavoriteActivity Load (0.4ms)[0m  [1m[34mSELECT "favorite_activities".* FROM "favorite_activities" WHERE "favorite_activities"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/users_controller.rb:14:in `index'
+  [1m[36mFavoriteDrawing Load (0.3ms)[0m  [1m[34mSELECT "favorite_drawings".* FROM "favorite_drawings" WHERE "favorite_drawings"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ app/controllers/users_controller.rb:14:in `index'
+  [1m[36mFavoriteActivity Load (0.2ms)[0m  [1m[34mSELECT "favorite_activities".* FROM "favorite_activities" WHERE "favorite_activities"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:14:in `index'
+  [1m[36mFavoriteDrawing Load (0.4ms)[0m  [1m[34mSELECT "favorite_drawings".* FROM "favorite_drawings" WHERE "favorite_drawings"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ app/controllers/users_controller.rb:14:in `index'
+  [1m[36mFavoriteActivity Load (0.2ms)[0m  [1m[34mSELECT "favorite_activities".* FROM "favorite_activities" WHERE "favorite_activities"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/users_controller.rb:14:in `index'
+  [1m[36mFavoriteDrawing Load (0.3ms)[0m  [1m[34mSELECT "favorite_drawings".* FROM "favorite_drawings" WHERE "favorite_drawings"."user_id" = $1[0m  [["user_id", 6]]
+  ↳ app/controllers/users_controller.rb:14:in `index'
+Completed 200 OK in 53ms (Views: 0.5ms | ActiveRecord: 14.2ms | Allocations: 21175)
+
+
+Started GET "/users/4" for ::1 at 2021-01-20 18:20:09 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 7ms (Views: 0.8ms | ActiveRecord: 2.8ms | Allocations: 874)
+
+
+Started GET "/users/4" for ::1 at 2021-01-20 18:22:51 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (12.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 12.4ms | Allocations: 765)
+
+
+Started GET "/activities" for ::1 at 2021-01-20 18:23:25 -0500
+Processing by ActivitiesController#index as HTML
+  [1m[36mActivity Load (1.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 20.0ms | ActiveRecord: 1.8ms | Allocations: 7641)
+
+
+Started GET "/users/4" for ::1 at 2021-01-20 18:23:28 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 748)
+
+
+Started GET "/users/4" for ::1 at 2021-01-20 18:23:37 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 748)
+
+
+Started GET "/users/4" for ::1 at 2021-01-20 18:24:42 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 2.5ms | Allocations: 748)
+
+
+Started GET "/activities" for ::1 at 2021-01-20 18:24:42 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (2.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 2.5ms | Allocations: 2226)
+
+
+Started GET "/users/4" for ::1 at 2021-01-20 18:25:06 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 40ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 751)
+
+
+Started GET "/activities" for ::1 at 2021-01-20 18:25:06 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.7ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.7ms | Allocations: 2226)
+
+
+Started GET "/users/4" for ::1 at 2021-01-20 18:25:20 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 3.3ms | Allocations: 748)
+
+
+Started GET "/activities" for ::1 at 2021-01-20 18:25:20 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 2226)
+
+
+Started GET "/users/4" for ::1 at 2021-01-20 18:25:33 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 748)
+
+
+Started GET "/activities" for ::1 at 2021-01-20 18:25:33 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.3ms | Allocations: 2228)
+
+

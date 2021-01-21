@@ -1,112 +1,91 @@
 import React, { Component } from 'react'
-import playlogo from '../images/lgplaygroundlogo.png'
-import drawicon from '../icons/playdrawicon.PNG'
-import gameicon from '../icons/playgameicon.PNG'
-import musicicon from '../icons/playmusicicon.PNG'
-import sidewalkicon from '../icons/playsidewalkicon.PNG'
+import playlogo from "../images/lgplaygroundlogo.png";
+import drawicon from "../icons/playdrawicon.PNG";
+import gameicon from "../icons/playgameicon.PNG";
+import musicicon from "../icons/playmusicicon.PNG";
+import sidewalkicon from "../icons/playsidewalkicon.PNG";
+import { Link } from "react-router-dom";
+import sidewalk from "../images/sidewalk.png"
+import homelogo from "../images/home.png"
 
 
-export default class Playground extends Component {
 
-    
 
-  
+export default class NewPlay extends Component {
     render() {
-        const mystyle = {
-            fontSize: "48px"
-        };
         return (
           <div>
             <div
-              className="bannerFondo bg-gray-300 bg-left-top bg-auto bg-repeat-x"
+              className="bannerFondo bg-yellow-100 bg-left-top bg-auto bg-repeat-x"
               style={{ backgroundImage: `url(./img/bear-avatar.png)` }}
             ></div>
             <div className="-mt-64 ">
               <div className="w-full text-center">
                 <h1 className="font-bold text-5xl text-white">
                   <img className="playlogo" src={playlogo} alt="logo" />
+                  <Link to="/myplayground">
+                    <img className="playlogo" src={homelogo} alt="logo" />
+                  </Link>
                 </h1>
               </div>
             </div>
-            <div className="grid grid-cols-3 gap-4  ">
-              <div className="p-2 sm:p-10 text-center cursor-pointer">
-                <div className="py-16 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500  bg-white">
-                  <div className="space-y-10">
-                    <i class="fa fa-spa" style={mystyle}></i>
+            <div className="divider"></div>
 
-                    <div className="px-8 py-6">
-                      <div className="space-y-5">
-                        <div className="font-bold text-4xl mb-2">music</div>
-                        <h2 className="text-gray-700 text-base">
-                          <img
-                            className="playlogo"
-                            src={musicicon}
-                            alt="logo"
-                          />
-                        </h2>
-                      </div>
+            <div id="wrapper" className="max-w-xl px-4 py-4 mx-auto">
+              <div className="md:grid md:h-32 md:grid-flow-row md:gap-14 md:grid-cols-3">
+                <div
+                  id="jh-stats-positive"
+                  className="flex flex-col justify-center px-8 py-8 bg-white border border-gray-300 rounded shadow-lg"
+                >
+                  <Link to="/music">
+                    <div>
+                      <p className="p-play text-3xl font-sans text-center text-gray-800 cursor-pointer">
+                        music
+                      </p>
+
+                      <img
+                        className="playlogo imgnobr"
+                        src={musicicon}
+                        alt="logo"
+                      />
                     </div>
-                  </div>
+                  </Link>
+                </div>
+
+                <div
+                  id="jh-stats-negative"
+                  className="flex flex-col justify-center px-4 py-4 mt-4 bg-purple-300 border border-gray-300 rounded sm:mt-0 shadow-lg"
+                >
+                  <Link to="/drawing">
+                    <div>
+                      <p className="text-3xl font-semibold text-center text-gray-800 cursor-pointer">
+                        drawing
+                      </p>
+                      <img className="playlogo" src={drawicon} alt="logo" />
+                    </div>
+                  </Link>
+                </div>
+
+                <div
+                  id="jh-stats-neutral"
+                  className="flex flex-col justify-center px-4 py-4 mt-4 bg-white border border-gray-300 rounded sm:mt-0 shadow-lg"
+                >
+                  <Link to="/games">
+                    <div>
+                      <p className="text-3xl font-semibold text-center text-gray-800 cursor pointer">
+                        games
+                      </p>
+                      <img className="playlogo" src={gameicon} alt="logo" />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
-
-            <div class="p-2 sm:p-10 text-center cursor-pointer text-white">
-              <div class="py-16 max-w-sm rounded overflow-hidden shadow-lg bg-purple-500 hover:bg-orange-600 transition duration-500">
-                <div class="space-y-10">
-                  <i class="fa fa-head-side-mask" style={mystyle}></i>
-
-                  <div class="px-6 py-4">
-                    <div class="space-y-5">
-                      <div class="font-bold text-4xl mb-2">drawing</div>
-
-                      <h2 class="text-base">
-                        <img className="playlogo" src={drawicon} alt="logo" />
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="p-2 sm:p-10 text-center cursor-pointer translate-x-2">
-              <div class="py-16 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500 bg-white ">
-                <div class="space-y-10">
-                  <i class="fa fa-swimmer" style={mystyle}></i>
-
-                  <div class="px-6 py-4">
-                    <div class="space-y-5">
-                      <div class="font-bold text-4xl mb-2">games</div>
-
-                      <h2 class="text-gray-700 text-base">
-                        <img className="playlogo" src={gameicon} alt="logo" />
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="p-2 sm:p-10 text-center cursor-pointer translate-x-2">
-              <div class="py-16 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500 bg-white ">
-                <div class="space-y-10">
-                  <i class="fa fa-swimmer" style={mystyle}></i>
-
-                  <div class="px-6 py-4">
-                    <div class="space-y-5">
-                      <div class="font-bold text-4xl mb-2">sidewalk</div>
-
-                      <h2 class="text-gray-700 text-base">
-                        <img className="playlogo" src={sidewalkicon} alt="logo" />
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div className="divider"></div>
+            <Link to="/sidewalk">
+              <img className="playlogo" src={sidewalk} alt="logo" />
+            </Link>
           </div>
         );
     }
 }
-
-

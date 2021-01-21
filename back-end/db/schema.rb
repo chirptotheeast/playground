@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2021_01_13_221925) do
   create_table "activities", force: :cascade do |t|
     t.string "name"
     t.string "video_link"
+    t.boolean "youtube_video"
     t.string "avatar"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

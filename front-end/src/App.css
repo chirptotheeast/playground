@@ -65,7 +65,7 @@
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: rgb(40, 109, 57);
+  color: rgb(238, 245, 240);
   background-color: #a06de4;
   border: none;
   border-radius: 15px;
@@ -249,4 +249,25 @@ p:hover{
 
 .bannerFondo{
         height: 400px;
+}
+
+.music-player {
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+}
+
+.music-player-buttons{
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+  margin: 3px;
+}
+
+.mp-button-space {
+  padding: 3px;
+}
+
+hr.new4 {
+  border: 5px solid rgb(99, 115, 167);
 }

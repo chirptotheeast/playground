@@ -19,11 +19,17 @@ user3 = User.create(username: 'RedTruckin', password: '123', avatar: '')
 
 puts 'activities'
 
-music_activity = Activity.create(name: 'music', video_link: '', avatar: '')
-games_activity = Activity.create(name: 'games', video_link: '', avatar: '')
-puppet_activity = Activity.create(name: 'puppets', video_link: '', avatar: '')
-nap_time = Activity.create(name: 'nap time', video_link: '', avatar: '')
-sidewalk = Activity.create(name: 'sidewalk art', video_link: '', avatar: '')
+music_activity_sheep = Activity.create(name: 'SheepMusic', video_link: 'https://youtu.be/xT2zOAZAWoM', youtube_video: true, avatar: '')
+music_activity_love = Activity.create(name: 'LoveMusic', video_link: 'https://youtu.be/nYKNeMqww-I', youtube_video: true, avatar: '')
+music_activity_bee = Activity.create(name: 'BeeMusic', video_link: 'https://youtu.be/Z6zWxullnuA', youtube_video: true, avatar: '')
+music_activity_hedgie = Activity.create(name: 'HedgieMusic', video_link: 'https://youtu.be/1YNVnXEckHM', youtube_video: true, avatar: '')
+music_activity_sick = Activity.create(name: 'SickMusic', video_link: 'https://youtu.be/wdKQIhtclZc', youtube_video: true, avatar: '')
+music_activity_bunny = Activity.create(name: 'bunnyMusic', video_link: 'https://youtu.be/IWWjTl39sFo', youtube_video: true, avatar: '')
+games_activity = Activity.create(name: 'games', video_link: '', youtube_video: false , avatar: '')
+puppet_activity = Activity.create(name: 'puppets', video_link: '', youtube_video: false, avatar: '')
+nap_time = Activity.create(name: 'nap time', video_link: '', youtube_video: false, avatar: '')
+sidewalk = Activity.create(name: 'sidewalk art', video_link: '', youtube_video: false, avatar: '')
+
 
 
 puts 'drawings'
@@ -34,7 +40,7 @@ drawing3 = Drawing.create(svgdrawing: "boop")
 
 puts "favorite activities"
 
-favactivity1 = FavoriteActivity.create(user_id: user1.id , activity_id: music_activity.id)
+favactivity1 = FavoriteActivity.create(user_id: user1.id , activity_id: music_activity_sheep.id)
 
 
 puts "favorite drawings"
