@@ -8,8 +8,10 @@ import tissue from "../images/tissue-avatar.PNG"
 import bunny from "../images/bunny-avatar-purple.PNG"
 import Like from "../components/Like.js"
 
-export default function Musicplayer () {
+export default function Musicplayer (props) {
 
+    console.log(props)
+console.log(heart)
    
     const [url, setUrl] = useState("https://youtu.be/xT2zOAZAWoM");
 
@@ -20,7 +22,10 @@ export default function Musicplayer () {
                 className="mp-button-space"
                 onClick={() => setUrl("https://youtu.be/nYKNeMqww-I")}
               >
-                <img src={heart} alt="heartlogo" />
+                <img
+                  src={"/static/media/heart-avatar.6682dcf4.PNG"}
+                  alt="heartlogo"
+                />
               </button>
               <button
                 className="mp-button-space"

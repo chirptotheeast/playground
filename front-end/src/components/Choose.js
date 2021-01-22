@@ -18,21 +18,31 @@ export default class Choose extends Component {
 
     render() {
         return (
-          <div className="choosediv">
-            <img className="playlogo" src={logo} alt="logo" />
-            <div className="flex-container">
+          <div>
+            <div className="helpful-vert-align"></div>
+            <div className="choosediv ">
+              <img className="playlogo" src={logo} alt="logo" />
+              <div className="flex-container">
                 {avatarArr.map((avatar) => {
-                    return (
-                        <Link to="/playground">
-                <button>
-                <img className="playlogo avatarchoose" src={avatar} alt={avatar}/>
-              </button>
-              </Link>
-                    )
+                  return (
+                    <Link to="/playground">
+                      <button>
+                        <img
+                          className="playlogo avatarchoose"
+                          src={avatar}
+                          alt={avatar}
+                        />
+                      </button>
+                    </Link>
+                  );
                 })}
-            
+              </div>
+              <img
+                className="playlogo imgnobr choose"
+                src={choose}
+                alt="logo"
+              />
             </div>
-            <img className="playlogo imgnobr choose" src={choose} alt="logo" />
           </div>
         );
     }

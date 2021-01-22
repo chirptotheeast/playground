@@ -13,7 +13,7 @@ import Drawing from "./components/Drawing.js"
 import Games from "./components/Games.js"
 import Sidewalk from "./components/Sidewalk.js"
 
-const user ="http://localhost:3000/users/4"
+// const user ="http://localhost:3000/users/4"
 const activities = "http://localhost:3000/activities";
 
 class App extends Component {
@@ -25,32 +25,37 @@ class App extends Component {
 
 
   async componentDidMount(){
-     const userResponse = await fetch(user);
+    const url = 'http://localhost:3000/users/' + localStorage.getItem('userId')
+     const userResponse = await fetch(url);
     const userData = await userResponse.json();
-    console.log(userData);
+    //console.log(userData);
     this.setState({ user: userData });
 
        const response = await fetch(activities);
        const activityData = await response.json();
-       console.log(activityData);
+       //console.log(activityData);
        this.setState({ activities: activityData });
   }
 
   render(){
   return (
     <div className="App">
-        <header className="App-header">
-          <Route exact path="/" component={Welcome} />
-          <Route exact path="/choose" component={Choose} />
-          <Route exact path="/playground" component={Playground} />
-          <Route exact path="/myplayground" component={Myplayground} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/music" component={Music} />
-          <Route exact path="/drawing" component={Drawing} />
-          <Route exact path="/games" component={Games}/>
-          <Route exact path="/sidewalk" component={Sidewalk} />
-        </header>
+      <header className="App-header">
+        <Route exact path="/" component={Welcome} />
+        <Route exact path="/choose" component={Choose} />
+        <Route exact path="/playground" >
+          <Playground activities={this.state.activities}/>
+        </Route>
+        <Route exact path="/myplayground" component={Myplayground} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
+        <Route exact path="/music" component={Music} >
+          <Music activities={this.state.activities} />
+        </Route>
+        <Route exact path="/drawing" component={Drawing} />
+        <Route exact path="/games" component={Games} />
+        <Route exact path="/sidewalk" component={Sidewalk} />
+      </header>
     </div>
   );
   }

@@ -11,7 +11,8 @@ import homelogo from "../images/home.png"
 
 
 
-export default class NewPlay extends Component {
+export default class Playground extends Component {
+  
     render() {
         return (
           <div>

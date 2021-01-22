@@ -1,0 +1,60 @@
+:root {
+  --yellow: #ffc600;
+  --black: #272727;
+}
+
+html {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--black);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+body {
+  background-image: linear-gradient(110deg, #f93d66, #6d47d9);
+  margin: auto;
+  background-position: fixed;
+  
+}
+
+span {
+  background-color: darkgrey;
+  padding: 0.3rem;
+  font-size: 0.8em;
+  font-family: monospace;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+input[type=number] {
+  width: 50px;
+}
+
+.bttn:hover {background-color: #f099f8}
+
+.bttn {
+  padding: 20px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(238, 245, 240);
+  background-color: #a06de4;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4.5px #999;
+  font-family: DejaVu Sans Mono, monospace;
+  font-size: 20px;
+  margin: 8px;
+}
+
