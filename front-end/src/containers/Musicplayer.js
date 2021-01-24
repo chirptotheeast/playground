@@ -10,7 +10,7 @@ import Like from "../components/Like.js"
 
 export default function Musicplayer (props) {
 
-    console.log(props)
+   // console.log(props)
 console.log(heart)
    
     const [url, setUrl] = useState("https://youtu.be/xT2zOAZAWoM");

@@ -15,12 +15,13 @@ import Sidewalk from "./components/Sidewalk.js"
 
 // const user ="http://localhost:3000/users/4"
 const activities = "http://localhost:3000/activities";
+const drawings = "http://localhost:3000/drawings";
 
 class App extends Component {
   state = {
     user: [],
     favorite_activities: [],
-    drawing: []
+    drawings: []
   }
 
 
@@ -35,6 +36,11 @@ class App extends Component {
        const activityData = await response.json();
        //console.log(activityData);
        this.setState({ activities: activityData });
+
+           const drawResponse = await fetch(drawings);
+           const drawData = await drawResponse.json();
+           //console.log(userData);
+           this.setState({ drawings: drawData});
   }
 
   render(){
@@ -46,7 +52,9 @@ class App extends Component {
         <Route exact path="/playground" >
           <Playground activities={this.state.activities}/>
         </Route>
-        <Route exact path="/myplayground" component={Myplayground} />
+        <Route exact path="/myplayground" component={Myplayground} >
+          <Myplayground drawings={this.state.drawings} />
+        </Route >
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/music" component={Music} >
@@ -54,7 +62,9 @@ class App extends Component {
         </Route>
         <Route exact path="/drawing" component={Drawing} />
         <Route exact path="/games" component={Games} />
-        <Route exact path="/sidewalk" component={Sidewalk} />
+        <Route exact path="/sidewalk" component={Sidewalk}>
+          <Sidewalk drawings={this.state.drawings}/>
+        </Route>
       </header>
     </div>
   );

@@ -40,7 +40,7 @@ export default class Playground extends Component {
                 >
                   <Link to="/music">
                     <div>
-                      <p className="p-play text-3xl font-sans text-center text-gray-800 cursor-pointer">
+                      <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor-pointer">
                         music
                       </p>
 

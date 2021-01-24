@@ -297,3 +297,13 @@ hr.new4 {
 .wide-divider {
     width: 900px;
 }
+
+.sidewalk-art{
+  padding: 60px;
+  margin: 15px;
+}
+
+.container-images{
+  margin: 0 auto;
+  width: 100%;
+}

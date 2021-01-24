@@ -24,6 +24,29 @@ class Drawing extends Component {
     }, 2000);
   }
 
+submitHandler =(event) => {
+
+  const savedDraw = localStorage.getItem("savedDrawing");
+
+            let data = {
+             svgdrawing: savedDraw
+            };
+
+            const requestOptions = {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({data}),
+            };
+            fetch("http://localhost:3000/drawings", requestOptions)
+              .then((response) => response.json())
+              .then((data) => {
+                console.log(data)
+                this.saveableCanvas.clear();
+              }
+                );
+
+}
+
   render() {
       
     return (
@@ -59,13 +82,14 @@ class Drawing extends Component {
                     "savedDrawing",
                     this.saveableCanvas.getSaveData()
                   );
+                  this.submitHandler();
                 }}
               >
                 Save
               </button>
               <button className="bttn"
                 onClick={() => {
-                  this.saveableCanvas.clear();
+                
                 }}
               >
                 Clear
@@ -112,20 +136,15 @@ class Drawing extends Component {
               canvasWidth={this.state.width}
               canvasHeight={this.state.height}
             />
-            <p>
-              The following is a disabled canvas with a hidden grid that we use
-              to load /show your saved drawing.
-            </p>
-            <button
+          
+            <button className="bttn"
               onClick={() => { 
                 this.loadableCanvas.loadSaveData(
                 localStorage.getItem("savedDrawing")
                 );
               }}
             >
-              Load what you saved previously into the following canvas. Either
-              by calling `loadSaveData()` on the component's reference or
-              passing it the `saveData` prop:
+             replay my drawing
             </button>
             <CanvasDraw
               disabled

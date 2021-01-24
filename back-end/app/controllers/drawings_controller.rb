@@ -5,7 +5,14 @@ class DrawingsController < ApplicationController
   end
 
   def show
-    drawing = Drawing.find(parmas[:id])
+    drawing = Drawing.find(params[:id])
     render json: drawing
   end
+
+   def create
+    newdraw = Drawing.create(svgdrawing: params[:data][:svgdrawing])
+    render json: newdraw
+  end 
+
+
 end

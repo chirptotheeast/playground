@@ -34,9 +34,9 @@ sidewalk = Activity.create(name: 'sidewalk art', video_link: '', youtube_video: 
 
 puts 'drawings'
 
-drawing1 = Drawing.create(svgdrawing: "boop")
-drawing2 = Drawing.create(svgdrawing: "boop")
-drawing3 = Drawing.create(svgdrawing: "boop")
+# drawing1 = Drawing.create(svgdrawing: "boop")
+# drawing2 = Drawing.create(svgdrawing: "boop")
+# drawing3 = Drawing.create(svgdrawing: "boop")
 
 puts "favorite activities"
 
@@ -45,4 +45,4 @@ favactivity1 = FavoriteActivity.create(user_id: user1.id , activity_id: music_ac
 
 puts "favorite drawings"
 
-favdrawing1 = FavoriteDrawing.create(user_id: user1.id, drawing_id: drawing1.id)
+# favdrawing1 = FavoriteDrawing.create(user_id: user1.id, drawing_id: drawing1.id)
