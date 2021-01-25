@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import playlogo from "../images/lgplaygroundlogo.png";
+import playlogo from "../images/sunnyplay.png";
 import drawicon from "../icons/playdrawicon.PNG";
 import gameicon from "../icons/playgameicon.PNG";
 import musicicon from "../icons/playmusicicon.PNG";
-import sidewalkicon from "../icons/playsidewalkicon.PNG";
+import myplay from "../images/myplayground.png";
 import { Link } from "react-router-dom";
 import sidewalk from "../images/sidewalk.png"
-import homelogo from "../images/home.png"
+
 
 
 
@@ -24,14 +24,24 @@ export default class Playground extends Component {
               <div className="w-full text-center">
                 <h1 className="font-bold text-5xl text-white">
                   <img className="playlogo" src={playlogo} alt="logo" />
-                  <Link to="/myplayground">
+                  {/* <Link to="/myplayground">
                     <img className="playlogo" src={homelogo} alt="logo" />
-                  </Link>
+                  </Link> */}
                 </h1>
               </div>
             </div>
-            <div className="divider"></div>
-
+            <div className="smdivider"></div>
+            <nav className="border-b bg-white px-6 py-4 flex items-center min-w-0 h-17">
+              <h1 className="font-semibold text-lg"></h1>
+              <Link to="/myplayground">
+                <img className="playlogo" src={myplay} alt="logo" />
+              </Link>
+              <div className="wide-divider"></div>
+              <Link to="/sidewalk">
+                <img src={sidewalk} alt="logo" style={{ float: "right" }} />
+              </Link>
+            </nav>
+            <div className="smdivider"></div>
             <div id="wrapper" className="max-w-xl px-4 py-4 mx-auto">
               <div className="md:grid md:h-32 md:grid-flow-row md:gap-14 md:grid-cols-3">
                 <div
@@ -59,7 +69,7 @@ export default class Playground extends Component {
                 >
                   <Link to="/drawing">
                     <div>
-                      <p className="text-3xl font-semibold text-center text-gray-800 cursor-pointer">
+                      <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor-pointer">
                         drawing
                       </p>
                       <img className="playlogo" src={drawicon} alt="logo" />
@@ -73,7 +83,7 @@ export default class Playground extends Component {
                 >
                   <Link to="/games">
                     <div>
-                      <p className="text-3xl font-semibold text-center text-gray-800 cursor pointer">
+                      <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor pointer">
                         games
                       </p>
                       <img className="playlogo" src={gameicon} alt="logo" />
@@ -83,9 +93,6 @@ export default class Playground extends Component {
               </div>
             </div>
             <div className="divider"></div>
-            <Link to="/sidewalk">
-              <img className="playlogo" src={sidewalk} alt="logo" />
-            </Link>
           </div>
         );
     }

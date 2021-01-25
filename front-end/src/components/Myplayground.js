@@ -3,7 +3,7 @@ import myplaylogo from '../images/myplayground.png'
 import home from "../images/home.png"
 import sidewalk from "../images/sidewalk.png"
 import { Link } from "react-router-dom";
-import play from "../images/lgplaygroundlogo.png"
+import play from "../images/sunnyplay.png"
 import CanvasDraw from "react-canvas-draw";
 
 export default class Myplayground extends Component {

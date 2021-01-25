@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import playlogo from "../images/lgplaygroundlogo.png";
+import playlogo from "../images/sunnyplay.png";
 import { Link } from "react-router-dom";
+import ColorChanger from "../containers/ColorChanger.js"
 
 export default class Games extends Component {
     render() {
@@ -16,10 +17,13 @@ export default class Games extends Component {
                   <Link to="/playground">
                     <img className="playlogo" src={playlogo} alt="logo" />
                   </Link>
+                  games!
                 </h1>
               </div>
             </div>
-            games go here
+            <div className="bannerFondo">
+              <ColorChanger />
+            </div>
           </div>
         );
     }

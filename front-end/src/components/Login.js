@@ -38,7 +38,8 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div >
+      <div>
+        <div className="helpful-vert-align"></div>
         {!this.state.loggedin ? (
           <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
             <div className="bg-white px-6 py-8 rounded shadow-md text-black w-full">
@@ -63,7 +64,7 @@ export default class Login extends Component {
                   type="password"
                   className="block border border-grey-light w-full p-3 rounded mb-4"
                   name="password"
-                  placeholder="Password"
+                  placeholder="password"
                 />
 
                 <button type="submit" className="btn-center">
@@ -73,7 +74,7 @@ export default class Login extends Component {
             </div>
           </div>
         ) : (
-          <Redirect to="/choose" />
+          <Redirect to="/playground" />
         )}
       </div>
     );

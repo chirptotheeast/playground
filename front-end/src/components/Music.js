@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import playlogo from "../images/lgplaygroundlogo.png";
+import playlogo from "../images/sunnyplay.png";
 import Musicplayer from "../containers/Musicplayer.js";
 import { Link } from "react-router-dom";
 import Keyboard from "../containers/Keyboard.js";
@@ -20,7 +20,7 @@ export default class Music extends Component {
             </h1>
           </div>
         </div>
-        ƒ<div className="divider"></div>
+        <div className="divider"></div>
         <div>
           <Musicplayer
             youtubelink={this.props.activities

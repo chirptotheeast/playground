@@ -6822,3 +6822,2196 @@ Processing by DrawingsController#index as */*
 Completed 200 OK in 66ms (Views: 57.3ms | ActiveRecord: 1.3ms | Allocations: 477958)
 
 
+Started GET "/users/1" for ::1 at 2021-01-24 21:18:55 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 25ms (ActiveRecord: 4.4ms | Allocations: 255149)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:18:57 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 101ms (Views: 95.2ms | ActiveRecord: 1.0ms | Allocations: 1008188)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:18:57 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.8ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 52ms (Views: 43.6ms | ActiveRecord: 3.8ms | Allocations: 487033)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:19:08 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 46ms (ActiveRecord: 2.1ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:19:09 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 105ms (Views: 99.4ms | ActiveRecord: 0.9ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:19:09 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 62ms (Views: 53.7ms | ActiveRecord: 1.1ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:35:10 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 36ms (ActiveRecord: 3.1ms | Allocations: 255149)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:35:11 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 124ms (Views: 114.5ms | ActiveRecord: 1.0ms | Allocations: 1008188)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:35:12 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 59ms (Views: 52.6ms | ActiveRecord: 1.4ms | Allocations: 487033)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:35:18 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (6.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 49ms (ActiveRecord: 6.9ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:35:18 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 100ms (Views: 94.4ms | ActiveRecord: 0.9ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:35:19 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (4.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 50ms (Views: 44.3ms | ActiveRecord: 4.0ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:35:41 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 28ms (ActiveRecord: 0.9ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:35:42 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 101ms (Views: 98.2ms | ActiveRecord: 0.8ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:35:42 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (6.9ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 62ms (Views: 49.9ms | ActiveRecord: 6.9ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:36:08 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (49.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 85ms (ActiveRecord: 49.1ms | Allocations: 203219)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:36:09 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 105ms (Views: 102.1ms | ActiveRecord: 0.8ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:36:09 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.7ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 52ms (Views: 46.3ms | ActiveRecord: 3.7ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:37:44 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 28ms (ActiveRecord: 1.1ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:37:45 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (3.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 99ms (Views: 90.4ms | ActiveRecord: 3.4ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:37:45 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 58ms (Views: 52.1ms | ActiveRecord: 1.1ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:38:10 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 30ms (ActiveRecord: 4.0ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:38:11 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 114ms (Views: 108.4ms | ActiveRecord: 0.9ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:38:11 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 174ms (Views: 168.2ms | ActiveRecord: 1.2ms | Allocations: 477959)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:38:24 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (31.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 72ms (ActiveRecord: 31.1ms | Allocations: 202451)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:38:25 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 109ms (Views: 102.3ms | ActiveRecord: 0.9ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:38:25 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 57ms (Views: 50.7ms | ActiveRecord: 1.1ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:38:49 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 28ms (ActiveRecord: 0.8ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:38:50 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 115ms (Views: 105.6ms | ActiveRecord: 1.1ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:38:50 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 52ms (Views: 46.4ms | ActiveRecord: 3.5ms | Allocations: 478080)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:39:26 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 25ms (ActiveRecord: 1.0ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:39:27 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 104ms (Views: 101.3ms | ActiveRecord: 0.8ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:39:27 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 47ms (Views: 41.3ms | ActiveRecord: 1.0ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:39:41 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 23ms (ActiveRecord: 1.1ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:39:42 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 93ms (Views: 90.3ms | ActiveRecord: 0.9ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:39:42 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (4.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 54ms (Views: 48.3ms | ActiveRecord: 4.1ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:40:07 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 76ms (ActiveRecord: 2.6ms | Allocations: 203007)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:40:08 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 97ms (Views: 93.8ms | ActiveRecord: 1.0ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:40:08 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 66ms (Views: 56.8ms | ActiveRecord: 1.0ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:43:30 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 30ms (ActiveRecord: 1.2ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:43:31 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 121ms (Views: 115.9ms | ActiveRecord: 1.1ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:43:32 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (4.6ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 55ms (Views: 42.3ms | ActiveRecord: 4.6ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:43:37 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 33ms (ActiveRecord: 1.0ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:43:38 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 103ms (Views: 93.5ms | ActiveRecord: 1.1ms | Allocations: 999109)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:43:38 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 50ms (Views: 44.1ms | ActiveRecord: 1.1ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:44:13 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 35ms (ActiveRecord: 0.8ms | Allocations: 202451)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:44:14 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 104ms (Views: 97.1ms | ActiveRecord: 1.3ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:44:14 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 57ms (Views: 50.7ms | ActiveRecord: 1.2ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:44:41 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 25ms (ActiveRecord: 3.5ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:44:42 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 116ms (Views: 109.9ms | ActiveRecord: 1.4ms | Allocations: 999109)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:44:42 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.3ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 70ms (Views: 41.0ms | ActiveRecord: 1.3ms | Allocations: 477957)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:44:59 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 19ms (ActiveRecord: 0.8ms | Allocations: 202451)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:45:00 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 98ms (Views: 95.7ms | ActiveRecord: 0.8ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:45:00 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.8ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 51ms (Views: 42.7ms | ActiveRecord: 3.8ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:45:24 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 24ms (ActiveRecord: 1.2ms | Allocations: 202451)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:45:25 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 105ms (Views: 99.2ms | ActiveRecord: 0.8ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:45:25 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (2.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 61ms (Views: 54.2ms | ActiveRecord: 2.0ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:47:05 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 29ms (ActiveRecord: 5.6ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:47:06 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 108ms (Views: 99.4ms | ActiveRecord: 0.9ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:47:06 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 48ms (Views: 44.9ms | ActiveRecord: 1.2ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:47:39 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 29ms (ActiveRecord: 4.4ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:47:39 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 99ms (Views: 95.7ms | ActiveRecord: 1.1ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:47:40 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 55ms (Views: 48.4ms | ActiveRecord: 3.5ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:49:45 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (6.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 39ms (ActiveRecord: 6.1ms | Allocations: 203203)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:49:46 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 127ms (Views: 115.6ms | ActiveRecord: 1.5ms | Allocations: 999109)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:49:46 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.9ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 90ms (Views: 85.7ms | ActiveRecord: 1.9ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:50:05 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 39ms (ActiveRecord: 5.7ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:50:06 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 103ms (Views: 97.3ms | ActiveRecord: 0.9ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:50:06 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 49ms (Views: 45.7ms | ActiveRecord: 1.4ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:52:44 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 23ms (ActiveRecord: 0.9ms | Allocations: 202451)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:52:45 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 119ms (Views: 110.8ms | ActiveRecord: 0.9ms | Allocations: 999109)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:52:45 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 59ms (Views: 55.6ms | ActiveRecord: 1.2ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:54:34 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 29ms (ActiveRecord: 1.4ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:54:35 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (3.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 105ms (Views: 95.7ms | ActiveRecord: 3.8ms | Allocations: 1001354)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:54:36 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.7ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 55ms (Views: 50.4ms | ActiveRecord: 1.7ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:55:16 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 27ms (ActiveRecord: 0.8ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:55:17 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 97ms (Views: 94.3ms | ActiveRecord: 0.8ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:55:17 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 52ms (Views: 47.8ms | ActiveRecord: 1.2ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:55:27 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (9.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 66ms (ActiveRecord: 9.6ms | Allocations: 202451)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:55:28 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 125ms (Views: 120.7ms | ActiveRecord: 0.8ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:55:28 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (4.3ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 57ms (Views: 50.1ms | ActiveRecord: 4.3ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 21:57:08 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 104ms (ActiveRecord: 3.6ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 21:57:09 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (3.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 117ms (Views: 107.2ms | ActiveRecord: 3.3ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 21:57:10 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.6ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 52ms (Views: 45.2ms | ActiveRecord: 1.6ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 22:23:10 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 36ms (ActiveRecord: 5.6ms | Allocations: 255147)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 22:23:11 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (3.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 110ms (Views: 100.4ms | ActiveRecord: 3.6ms | Allocations: 1008188)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 22:23:11 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 56ms (Views: 47.5ms | ActiveRecord: 3.5ms | Allocations: 487033)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 22:23:32 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 36ms (ActiveRecord: 1.8ms | Allocations: 202451)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 22:23:34 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (5.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 140ms (Views: 132.4ms | ActiveRecord: 5.1ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 22:23:34 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (7.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 66ms (Views: 53.8ms | ActiveRecord: 7.2ms | Allocations: 478726)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 22:36:41 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 154ms (ActiveRecord: 5.3ms | Allocations: 255147)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/users/1" for ::1 at 2021-01-24 22:36:43 -0500
+Started GET "/activities" for ::1 at 2021-01-24 22:36:43 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 28ms (ActiveRecord: 5.5ms | Allocations: 237413)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 171ms (Views: 158.3ms | ActiveRecord: 1.3ms | Allocations: 1043904)
+
+
+Started GET "/activities" for ::1 at 2021-01-24 22:36:44 -0500
+Started GET "/drawings" for ::1 at 2021-01-24 22:36:44 -0500
+Processing by ActivitiesController#index as */*
+Processing by DrawingsController#index as */*
+  [1m[36mActivity Load (27.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 138ms (Views: 104.9ms | ActiveRecord: 27.8ms | Allocations: 1219205)
+
+
+  [1m[36mDrawing Load (105.6ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 173ms (Views: 65.3ms | ActiveRecord: 105.6ms | Allocations: 1533559)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 22:36:44 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 53ms (Views: 46.5ms | ActiveRecord: 1.2ms | Allocations: 480258)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 22:36:50 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 35ms (ActiveRecord: 1.4ms | Allocations: 202451)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 22:36:53 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 293ms (Views: 281.1ms | ActiveRecord: 1.4ms | Allocations: 1008186)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 22:36:53 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 133ms (Views: 125.9ms | ActiveRecord: 1.2ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 22:40:40 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 29ms (ActiveRecord: 1.2ms | Allocations: 202451)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 22:40:41 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 120ms (Views: 116.2ms | ActiveRecord: 1.1ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 22:40:41 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 68ms (Views: 58.1ms | ActiveRecord: 1.5ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 22:43:07 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 26ms (ActiveRecord: 5.0ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 22:43:09 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 108ms (Views: 99.6ms | ActiveRecord: 0.8ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 22:43:09 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 45ms (Views: 42.1ms | ActiveRecord: 1.0ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 22:43:51 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 24ms (ActiveRecord: 1.1ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 22:43:52 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 100ms (Views: 91.8ms | ActiveRecord: 0.9ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 22:43:52 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 55ms (Views: 51.3ms | ActiveRecord: 1.1ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 23:09:41 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (16.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 69ms (ActiveRecord: 17.5ms | Allocations: 255149)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 23:09:42 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 112ms (Views: 108.5ms | ActiveRecord: 1.0ms | Allocations: 1008188)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 23:09:43 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 56ms (Views: 49.8ms | ActiveRecord: 1.4ms | Allocations: 487033)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 23:10:27 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 42ms (ActiveRecord: 2.1ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 23:10:29 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 167ms (Views: 159.6ms | ActiveRecord: 1.2ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 23:10:29 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 64ms (Views: 54.0ms | ActiveRecord: 1.1ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 23:10:58 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 75ms (ActiveRecord: 1.7ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 23:11:00 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (2.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 277ms (Views: 265.7ms | ActiveRecord: 2.2ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 23:11:00 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (5.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 64ms (Views: 56.8ms | ActiveRecord: 5.0ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 23:11:35 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 62ms (ActiveRecord: 4.6ms | Allocations: 202449)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 23:11:36 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 115ms (Views: 105.5ms | ActiveRecord: 1.0ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 23:11:36 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 110ms (Views: 100.7ms | ActiveRecord: 1.5ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 23:11:55 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (221.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 438ms (ActiveRecord: 221.1ms | Allocations: 202450)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/users/1" for ::1 at 2021-01-24 23:11:57 -0500
+Started GET "/activities" for ::1 at 2021-01-24 23:11:57 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 33ms (ActiveRecord: 1.0ms | Allocations: 243579)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 119ms (Views: 111.3ms | ActiveRecord: 1.5ms | Allocations: 1036480)
+
+
+Started GET "/activities" for ::1 at 2021-01-24 23:11:58 -0500
+Started GET "/drawings" for ::1 at 2021-01-24 23:11:58 -0500
+Processing by ActivitiesController#index as */*
+Processing by DrawingsController#index as */*
+  [1m[36mActivity Load (11.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 117ms (Views: 101.1ms | ActiveRecord: 11.4ms | Allocations: 1089860)
+
+
+  [1m[36mDrawing Load (102.7ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 208ms (Views: 100.2ms | ActiveRecord: 102.7ms | Allocations: 1524921)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 23:11:58 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.9ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 60ms (Views: 52.1ms | ActiveRecord: 3.9ms | Allocations: 477958)
+
+
+Started GET "/" for ::1 at 2021-01-24 23:26:14 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/alyssaeasterly/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/alyssaeasterly/.rvm/gems/ruby-2.6.1/gems/railties-6.0.3.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 10.5ms | Allocations: 11046)
+Completed 200 OK in 39ms (Views: 26.7ms | ActiveRecord: 0.0ms | Allocations: 223686)
+
+
+Started GET "/favorite_activities" for ::1 at 2021-01-24 23:27:15 -0500
+Processing by FavoriteActivitiesController#index as HTML
+  [1m[36mFavoriteActivity Load (12.1ms)[0m  [1m[34mSELECT "favorite_activities".* FROM "favorite_activities"[0m
+  ↳ app/controllers/favorite_activities_controller.rb:4:in `index'
+Completed 200 OK in 242ms (Views: 117.9ms | ActiveRecord: 70.1ms | Allocations: 1195997)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 23:37:24 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 134ms (ActiveRecord: 4.6ms | Allocations: 1198877)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 23:37:28 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 243ms (Views: 197.2ms | ActiveRecord: 1.1ms | Allocations: 2193695)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 23:37:29 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 148ms (Views: 104.1ms | ActiveRecord: 1.5ms | Allocations: 1339421)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 23:43:02 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 48ms (ActiveRecord: 1.4ms | Allocations: 202451)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 23:43:03 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 171ms (Views: 161.2ms | ActiveRecord: 1.0ms | Allocations: 999111)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 23:43:03 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 62ms (Views: 57.6ms | ActiveRecord: 1.2ms | Allocations: 477958)
+
+
+Started GET "/users/1" for ::1 at 2021-01-24 23:53:56 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 33ms (ActiveRecord: 1.8ms | Allocations: 255147)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-24 23:53:58 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 122ms (Views: 115.3ms | ActiveRecord: 1.1ms | Allocations: 1008188)
+
+
+Started GET "/drawings" for ::1 at 2021-01-24 23:53:58 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (8.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 76ms (Views: 65.5ms | ActiveRecord: 8.2ms | Allocations: 487033)
+
+
+  [1m[35m (14.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (32.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  [1m[35m (19.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  [1m[35m (5.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActivity Load (0.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (5.9ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 21]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (1.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 22]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 23]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 24]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 25]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 26]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 27]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 28]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 29]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Destroy (0.2ms)[0m  [1m[31mDELETE FROM "activities" WHERE "activities"."id" = $1[0m  [["id", 30]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mDrawing Load (0.6ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "drawings" WHERE "drawings"."id" = $1[0m  [["id", 11]]
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Destroy (6.5ms)[0m  [1m[31mDELETE FROM "drawings" WHERE "drawings"."id" = $1[0m  [["id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Destroy (0.2ms)[0m  [1m[31mDELETE FROM "drawings" WHERE "drawings"."id" = $1[0m  [["id", 13]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDrawing Destroy (1.1ms)[0m  [1m[31mDELETE FROM "drawings" WHERE "drawings"."id" = $1[0m  [["id", 14]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFavoriteActivity Load (0.5ms)[0m  [1m[34mSELECT "favorite_activities".* FROM "favorite_activities"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mFavoriteActivity Destroy (0.3ms)[0m  [1m[31mDELETE FROM "favorite_activities" WHERE "favorite_activities"."id" = $1[0m  [["id", 3]]
+  [1m[35m (6.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mFavoriteDrawing Load (7.0ms)[0m  [1m[34mSELECT "favorite_drawings".* FROM "favorite_drawings"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (37.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "LovelyLeo"], ["password", "123"], ["avatar", ""], ["created_at", "2021-01-25 05:00:44.162814"], ["updated_at", "2021-01-25 05:00:44.162814"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "LilacBloomin"], ["password", "123"], ["avatar", ""], ["created_at", "2021-01-25 05:00:44.205223"], ["updated_at", "2021-01-25 05:00:44.205223"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "RedTruckin"], ["password", "123"], ["avatar", ""], ["created_at", "2021-01-25 05:00:44.210051"], ["updated_at", "2021-01-25 05:00:44.210051"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (1.0ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "SheepMusic"], ["video_link", "https://youtu.be/xT2zOAZAWoM"], ["youtube_video", true], ["avatar", "/static/media/sheep-avatar.e0855861.png"], ["created_at", "2021-01-25 05:00:44.213978"], ["updated_at", "2021-01-25 05:00:44.213978"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.2ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "LoveMusic"], ["video_link", "https://youtu.be/nYKNeMqww-I"], ["youtube_video", true], ["avatar", "/static/media/heart-avatar.6682dcf4.PNG"], ["created_at", "2021-01-25 05:00:44.229796"], ["updated_at", "2021-01-25 05:00:44.229796"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.3ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "BeeMusic"], ["video_link", "https://youtu.be/Z6zWxullnuA"], ["youtube_video", true], ["avatar", "/static/media/bee-avatar.b2bb6fe4.png"], ["created_at", "2021-01-25 05:00:44.233003"], ["updated_at", "2021-01-25 05:00:44.233003"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.3ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "HedgieMusic"], ["video_link", "https://youtu.be/1YNVnXEckHM"], ["youtube_video", true], ["avatar", "/static/media/hedgehog-avatar.49d9df0b.png"], ["created_at", "2021-01-25 05:00:44.238624"], ["updated_at", "2021-01-25 05:00:44.238624"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.4ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "SickMusic"], ["video_link", "https://youtu.be/wdKQIhtclZc"], ["youtube_video", true], ["avatar", "/static/media/tissue-avatar.98110c16.PNG"], ["created_at", "2021-01-25 05:00:44.242388"], ["updated_at", "2021-01-25 05:00:44.242388"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.3ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "bunnyMusic"], ["video_link", "https://youtu.be/IWWjTl39sFo"], ["youtube_video", true], ["avatar", "/static/media/bunny-avatar-purple.eef03baa.PNG"], ["created_at", "2021-01-25 05:00:44.246579"], ["updated_at", "2021-01-25 05:00:44.246579"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.2ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "games"], ["video_link", ""], ["youtube_video", false], ["avatar", ""], ["created_at", "2021-01-25 05:00:44.250212"], ["updated_at", "2021-01-25 05:00:44.250212"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.7ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "puppets"], ["video_link", ""], ["youtube_video", false], ["avatar", ""], ["created_at", "2021-01-25 05:00:44.253504"], ["updated_at", "2021-01-25 05:00:44.253504"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.3ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "nap time"], ["video_link", ""], ["youtube_video", false], ["avatar", ""], ["created_at", "2021-01-25 05:00:44.259215"], ["updated_at", "2021-01-25 05:00:44.259215"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActivity Create (0.2ms)[0m  [1m[32mINSERT INTO "activities" ("name", "video_link", "youtube_video", "avatar", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "sidewalk art"], ["video_link", ""], ["youtube_video", false], ["avatar", ""], ["created_at", "2021-01-25 05:00:44.262607"], ["updated_at", "2021-01-25 05:00:44.262607"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mFavoriteActivity Create (12.9ms)[0m  [1m[32mINSERT INTO "favorite_activities" ("user_id", "activity_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["user_id", 10], ["activity_id", 31], ["created_at", "2021-01-25 05:00:44.276203"], ["updated_at", "2021-01-25 05:00:44.276203"]]
+  [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users/1" for ::1 at 2021-01-25 00:00:56 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 404 Not Found in 32ms (ActiveRecord: 1.9ms | Allocations: 255149)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:18:in `show'
+Started GET "/activities" for ::1 at 2021-01-25 00:00:57 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 97ms (Views: 88.3ms | ActiveRecord: 1.1ms | Allocations: 1008200)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 00:00:57 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 32ms (Views: 26.8ms | ActiveRecord: 1.1ms | Allocations: 270112)
+
+
+Started POST "/login" for ::1 at 2021-01-25 00:01:24 -0500
+Processing by AuthController#login as */*
+  Parameters: {"username"=>"LovelyLeo", "password"=>"[FILTERED]", "auth"=>{"username"=>"LovelyLeo", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "LovelyLeo"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `login'
+Completed 200 OK in 108ms (Views: 8.4ms | ActiveRecord: 1.9ms | Allocations: 950006)
+
+
+Started POST "/drawings" for ::1 at 2021-01-25 00:01:55 -0500
+Processing by DrawingsController#create as */*
+  Parameters: {"data"=>{"svgdrawing"=>"{\"lines\":[{\"points\":[{\"x\":179.2990077791087,\"y\":50.50298430786354},{\"x\":179.2990077791087,\"y\":50.50298430786354},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":185.90505455663464,\"y\":49.39073450855459},{\"x\":190.91543863171083,\"y\":48.44617420547164},{\"x\":195.785165291709,\"y\":47.688714513002786},{\"x\":201.68281020560497,\"y\":46.956597757180646},{\"x\":206.6253286125487,\"y\":46.44950324376504},{\"x\":211.58589479075653,\"y\":46.02868727043722},{\"x\":215.56313174407384,\"y\":45.73963734681525},{\"x\":222.50084989027127,\"y\":45.79802472748511},{\"x\":226.5220842599666,\"y\":45.97065226290738},{\"x\":230.63946026184752,\"y\":46.41646687575969},{\"x\":234.967921409145,\"y\":47.283934140215685},{\"x\":238.45476386510694,\"y\":48.297978552181505},{\"x\":242.30098364501353,\"y\":49.87839526886616},{\"x\":245.40203511053144,\"y\":51.55990045835476},{\"x\":250.44008594756602,\"y\":55.41508737380202},{\"x\":255.1323959066659,\"y\":60.44717868136656},{\"x\":260.0029425459198,\"y\":66.87317786005484},{\"x\":264.0295042794931,\"y\":73.49422675233096},{\"x\":267.932175122714,\"y\":81.45188923912319},{\"x\":270.8769204640818,\"y\":90.24283281273644},{\"x\":272.6066362071099,\"y\":96.01127372778406},{\"x\":274.28864047131793,\"y\":103.5726285754715},{\"x\":274.8567256378869,\"y\":106.45345029100562},{\"x\":275.11156837842316,\"y\":108.24040128398843},{\"x\":275.028612843469,\"y\":112.00582219658861},{\"x\":272.9930660749811,\"y\":118.19969384424921},{\"x\":269.51157051836026,\"y\":124.22207484654787},{\"x\":261.894105023999,\"y\":131.4638241901553},{\"x\":252.8006223148721,\"y\":137.1982527118789},{\"x\":245.21187349402257,\"y\":140.77285233412755},{\"x\":236.34153056785425,\"y\":143.63355707836004},{\"x\":228.84338301177897,\"y\":145.42447584837183},{\"x\":221.24829207693142,\"y\":146.53321136658784},{\"x\":215.4179103507073,\"y\":147.01667842861312},{\"x\":208.48703489110557,\"y\":146.78876937876947},{\"x\":200.2354823323847,\"y\":145.55343192548472},{\"x\":193.9375426740963,\"y\":144.16542286748287},{\"x\":189.50296734016104,\"y\":142.84569160476028},{\"x\":185.9449465561387,\"y\":141.49849245996472},{\"x\":183.55226010126856,\"y\":140.47089353894333},{\"x\":180.80634358935882,\"y\":139.04715903987034},{\"x\":178.44182708574206,\"y\":137.72347552182714},{\"x\":175.6982260471946,\"y\":135.96270282566215},{\"x\":173.67216589409102,\"y\":134.43703760919993},{\"x\":170.59932827071927,\"y\":131.76116480938964},{\"x\":168.0445462702076,\"y\":129.37647386260377},{\"x\":165.65391172084142,\"y\":126.74967988768424},{\"x\":161.69483620445448,\"y\":121.35217365384851},{\"x\":159.9662093640601,\"y\":118.50837936287068},{\"x\":158.74381289009477,\"y\":116.20322314395948},{\"x\":157.9658651587891,\"y\":114.5978162432697},{\"x\":157.2301991438713,\"y\":112.93907984899563},{\"x\":156.87194603081076,\"y\":112.09449315090913},{\"x\":156.67934979069162,\"y\":111.56320537958898},{\"x\":156.6523602483063,\"y\":111.4404177409805},{\"x\":156.60542599122223,\"y\":110.90747124635907},{\"x\":156.63857404875276,\"y\":109.98453554544089},{\"x\":156.71686700620572,\"y\":108.93366743160024},{\"x\":156.75290435737926,\"y\":108.70568021055402},{\"x\":156.75290435737926,\"y\":108.70568021055402}],\"brushColor\":\"#ffc600\",\"brushRadius\":10},{\"points\":[{\"x\":136.095833460713,\"y\":84.8565259347356},{\"x\":136.095833460713,\"y\":84.8565259347356},{\"x\":136.095833460713,\"y\":84.8565259347356},{\"x\":135.41281700739364,\"y\":84.39700409905343},{\"x\":133.21840647254578,\"y\":83.11394375248511},{\"x\":130.05110417846802,\"y\":81.56171902148596},{\"x\":121.46842843627059,\"y\":78.96069645710229},{\"x\":117.1311682239523,\"y\":78.19140649081747},{\"x\":111.48062340656298,\"y\":77.96421005626547},{\"x\":105.48568950232787,\"y\":78.17132690527671},{\"x\":102.44508464748633,\"y\":78.37737212377128},{\"x\":101.36844651540692,\"y\":78.49056561329856},{\"x\":101.36844651540692,\"y\":78.49056561329856},{\"x\":101.36844651540692,\"y\":78.49056561329856},{\"x\":101.36844651540692,\"y\":78.49056561329856},{\"x\":101.36844651540692,\"y\":78.49056561329856},{\"x\":101.24470963944562,\"y\":78.5087589400876},{\"x\":101.24470963944562,\"y\":78.5087589400876},{\"x\":101.0818675127762,\"y\":78.5395600430148},{\"x\":101.0818675127762,\"y\":78.5395600430148},{\"x\":101.0818675127762,\"y\":78.5395600430148},{\"x\":99.68923652197726,\"y\":79.58565985889004},{\"x\":96.81249477797029,\"y\":84.39896914369443},{\"x\":94.48728653498829,\"y\":92.03964662994119},{\"x\":93.66630618421043,\"y\":101.0979683391505},{\"x\":93.8730235418746,\"y\":109.00819097022993},{\"x\":94.33420906672832,\"y\":114.09792164615475},{\"x\":94.79430183000052,\"y\":118.15300443634752},{\"x\":95.09393458746018,\"y\":120.24292277224532},{\"x\":95.22890555945696,\"y\":121.22396287938109},{\"x\":95.3586234525386,\"y\":122.20647665041894},{\"x\":95.3586234525386,\"y\":122.20647665041894},{\"x\":95.3586234525386,\"y\":122.20647665041894},{\"x\":95.36315047155753,\"y\":123.00039016553467},{\"x\":95.23081615946761,\"y\":124.15586774270889},{\"x\":95.10856115814744,\"y\":124.66453253660173},{\"x\":94.63786462234783,\"y\":125.80767181786364},{\"x\":93.72620287197064,\"y\":127.34764024782115},{\"x\":92.32734930905129,\"y\":129.1280707804587},{\"x\":90.45048297556129,\"y\":131.0093812091729},{\"x\":89.68717899318013,\"y\":131.58292115983036},{\"x\":88.03141460632492,\"y\":132.39819897137576},{\"x\":87.92160692763413,\"y\":132.44012016540714},{\"x\":87.09228034457233,\"y\":132.59496786128568},{\"x\":85.49699488793163,\"y\":132.62021539185596},{\"x\":85.0671691002009,\"y\":132.53745970808953},{\"x\":82.68829188987185,\"y\":131.27192471539757},{\"x\":80.96969564040977,\"y\":130.03320888712943},{\"x\":79.56311639035708,\"y\":128.80265250736133},{\"x\":79.07260128642667,\"y\":128.34636608021108},{\"x\":78.10113216285853,\"y\":127.33212078515794},{\"x\":76.67894651602401,\"y\":125.59030883723243},{\"x\":74.88520763814408,\"y\":122.9207483916586},{\"x\":73.15157579905822,\"y\":118.97378175451449},{\"x\":72.04959616819247,\"y\":115.08901881920491},{\"x\":71.40704391382842,\"y\":109.82328893505414},{\"x\":71.41981776048785,\"y\":105.99986605813596},{\"x\":71.7218784408005,\"y\":101.93404027156113},{\"x\":72.45356541800969,\"y\":97.65642338084253},{\"x\":73.56451193070136,\"y\":93.97605286468101},{\"x\":76.42754418859577,\"y\":87.7840683511439},{\"x\":79.80422482574942,\"y\":82.36706392008634},{\"x\":83.01082109898944,\"y\":78.13279108688826},{\"x\":86.11339310325005,\"y\":74.41880365835107},{\"x\":88.97505696774685,\"y\":71.4047768667337},{\"x\":92.06021568614148,\"y\":68.48799330076568},{\"x\":94.70091254437267,\"y\":66.09945606990901},{\"x\":96.96090690795815,\"y\":64.24145751969299},{\"x\":100.43773043222915,\"y\":61.581833867029104},{\"x\":103.21469824236713,\"y\":59.826010003184045},{\"x\":106.64321042719358,\"y\":57.87410328048705},{\"x\":109.01422476466779,\"y\":56.693991889691375},{\"x\":113.54475668714359,\"y\":54.69367273396796},{\"x\":117.01685832419085,\"y\":53.396924459913485},{\"x\":124.36180131554622,\"y\":51.373677246201055},{\"x\":131.0193372587034,\"y\":49.965730281588506},{\"x\":135.8566817798976,\"y\":49.12231773920619},{\"x\":143.7011012274293,\"y\":48.10038984854045},{\"x\":150.620686307684,\"y\":47.40382561430101},{\"x\":159.56388588238246,\"y\":46.749983128030074},{\"x\":169.53184634956926,\"y\":46.2359654482807},{\"x\":178.50061471263464,\"y\":46.17177260722092},{\"x\":186.53907480028136,\"y\":46.631035583556894},{\"x\":194.6322314062752,\"y\":47.48412592596459},{\"x\":201.65418303478413,\"y\":48.2839342310205},{\"x\":205.836975774027,\"y\":48.99234676138084},{\"x\":211.01040882925128,\"y\":50.076677277378316},{\"x\":216.17874149088127,\"y\":51.3326459832778},{\"x\":219.4577235498459,\"y\":52.2878098958184},{\"x\":222.73985526160723,\"y\":53.38581511339447},{\"x\":224.83263387328668,\"y\":54.113903825242225},{\"x\":228.9965851222144,\"y\":55.65755917981683},{\"x\":231.38889657662503,\"y\":56.667309851880056},{\"x\":234.62455483034628,\"y\":58.127568757926234},{\"x\":237.01029203862063,\"y\":59.3139131701718},{\"x\":239.38288859558125,\"y\":60.59528141805471},{\"x\":241.35231170170727,\"y\":61.6520803828079},{\"x\":243.7090131119023,\"y\":63.01105241403776},{\"x\":246.4479207925921,\"y\":64.8123497369759},{\"x\":249.85894808237722,\"y\":67.20764416173775},{\"x\":252.11311829391906,\"y\":68.85260385390922},{\"x\":254.77534200909597,\"y\":70.98709944335627},{\"x\":257.3857714544153,\"y\":73.25596226508823},{\"x\":259.5021998475477,\"y\":75.1229980892995},{\"x\":262.04741147617153,\"y\":77.52556059169444},{\"x\":263.5394822368741,\"y\":79.01939820834691},{\"x\":265.53842294918365,\"y\":81.02045630915777},{\"x\":267.0033481912349,\"y\":82.56840572120932},{\"x\":268.88931168136094,\"y\":84.77072655813443},{\"x\":269.8376266090414,\"y\":85.99961035809767},{\"x\":271.1515994257236,\"y\":87.7614085505174},{\"x\":272.0647072854461,\"y\":89.11299646316081},{\"x\":272.944466647931,\"y\":90.54618416419363},{\"x\":273.37771115005233,\"y\":91.28647511797101},{\"x\":274.57587499733455,\"y\":93.63031369144275},{\"x\":274.9684241810068,\"y\":94.4341494308989},{\"x\":274.9684241810068,\"y\":94.4341494308989},{\"x\":274.9684241810068,\"y\":94.4341494308989},{\"x\":274.9684241810068,\"y\":94.4341494308989},{\"x\":274.3867524124351,\"y\":96.73315350042706},{\"x\":272.05965008458867,\"y\":100.96729950952874},{\"x\":267.48210272785155,\"y\":106.0954644741507},{\"x\":260.9066595095175,\"y\":110.87974622460159},{\"x\":254.51407904921285,\"y\":114.40653280017435},{\"x\":251.2749308540547,\"y\":115.90780567462473},{\"x\":247.84795733376689,\"y\":117.24963983551906},{\"x\":244.524544706875,\"y\":118.2272353472814},{\"x\":242.8858248022747,\"y\":118.60526197880624},{\"x\":242.1195059955714,\"y\":118.74336558709021},{\"x\":242.1195059955714,\"y\":118.74336558709021},{\"x\":241.39981126680277,\"y\":118.8093331126783},{\"x\":241.39981126680277,\"y\":118.8093331126783},{\"x\":240.48733224072183,\"y\":118.77967427380122},{\"x\":240.43421756120836,\"y\":118.77573357594693},{\"x\":239.22947904721545,\"y\":118.59330267967545},{\"x\":238.62398228054784,\"y\":118.42506369531928},{\"x\":237.7248119385446,\"y\":118.05857242043832},{\"x\":236.59499926042002,\"y\":117.44556709835204},{\"x\":234.86426397977934,\"y\":116.17833842597291},{\"x\":232.55222859807898,\"y\":113.88850200103185},{\"x\":230.6772441848705,\"y\":111.59169865700319},{\"x\":228.48493270177514,\"y\":108.18394219993633},{\"x\":226.85317988538378,\"y\":105.14486477824148},{\"x\":225.6375516254126,\"y\":102.19245705848992},{\"x\":224.62065098137182,\"y\":98.91934400460643},{\"x\":224.15155646270844,\"y\":96.54491500248483},{\"x\":223.88547487699228,\"y\":93.8811538584558},{\"x\":223.85741725965937,\"y\":91.9973384545557},{\"x\":223.90696710244498,\"y\":89.99267204757356},{\"x\":224.08478924053887,\"y\":88.75576425772198},{\"x\":224.56190934094988,\"y\":86.48649102448047},{\"x\":225.3630581958764,\"y\":83.91427637270165},{\"x\":226.98928157010096,\"y\":80.57602368573461},{\"x\":227.59846916338492,\"y\":79.38122132662983},{\"x\":230.00322441027274,\"y\":75.84532813234748},{\"x\":231.181273657163,\"y\":74.26068731688838},{\"x\":232.90571725034093,\"y\":72.24330960992783},{\"x\":234.8229859136284,\"y\":70.25911936232445},{\"x\":237.34828301880466,\"y\":67.78745378540103},{\"x\":240.13164475073324,\"y\":65.44679660760555},{\"x\":243.57573110963835,\"y\":62.76048938773001},{\"x\":246.0126510235203,\"y\":61.008684087697006},{\"x\":248.94833496375534,\"y\":58.9187784776714},{\"x\":251.48353689998822,\"y\":57.24164661082099},{\"x\":254.09100187515693,\"y\":55.628253859506955},{\"x\":256.7589039588924,\"y\":54.07505424474565},{\"x\":259.85538969941234,\"y\":52.23928370195205},{\"x\":261.7812341951614,\"y\":51.11332916766698},{\"x\":262.9545002260714,\"y\":50.40493607559097},{\"x\":262.9545002260714,\"y\":50.40493607559097},{\"x\":263.3998963053697,\"y\":50.11433686715073},{\"x\":263.3998963053697,\"y\":50.11433686715073}],\"brushColor\":\"#d1bd47\",\"brushRadius\":10}],\"width\":400,\"height\":400}"}, "drawing"=>{}}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/drawings_controller.rb:13:in `create'
+  [1m[36mDrawing Create (4.4ms)[0m  [1m[32mINSERT INTO "drawings" ("svgdrawing", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["svgdrawing", "{\"lines\":[{\"points\":[{\"x\":179.2990077791087,\"y\":50.50298430786354},{\"x\":179.2990077791087,\"y\":50.50298430786354},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":178.3910770206751,\"y\":50.78899501917248},{\"x\":185.90505455663464,\"y\":49.39073450855459},{\"x\":190.91543863171083,\"y\":48.44617420547164},{\"x\":195.785165291709,\"y\":47.688714513002786},{\"x\":201.68281020560497,\"y\":46.956597757180646},{\"x\":206.6253286125487,\"y\":46.44950324376504},{\"x\":211.58589479075653,\"y\":46.02868727043722},{\"x\":215.56313174407384,\"y\":45.73963734681525},{\"x\":222.50084989027127,\"y\":45.79802472748511},{\"x\":226.5220842599666,\"y\":45.97065226290738},{\"x\":230.63946026184752,\"y\":46.41646687575969},{\"x\":234.967921409145,\"y\":47.283934140215685},{\"x\":238.45476386510694,\"y\":48.297978552181505},{\"x\":242.30098364501353,\"y\":49.87839526886616},{\"x\":245.40203511053144,\"y\":51.55990045835476},{\"x\":250.44008594756602,\"y\":55.41508737380202},{\"x\":255.1323959066659,\"y\":60.44717868136656},{\"x\":260.0029425459198,\"y\":66.87317786005484},{\"x\":264.0295042794931,\"y\":73.49422675233096},{\"x\":267.932175122714,\"y\":81.45188923912319},{\"x\":270.8769204640818,\"y\":90.24283281273644},{\"x\":272.6066362071099,\"y\":96.01127372778406},{\"x\":274.28864047131793,\"y\":103.5726285754715},{\"x\":274.8567256378869,\"y\":106.45345029100562},{\"x\":275.11156837842316,\"y\":108.24040128398843},{\"x\":275.028612843469,\"y\":112.00582219658861},{\"x\":272.9930660749811,\"y\":118.19969384424921},{\"x\":269.51157051836026,\"y\":124.22207484654787},{\"x\":261.894105023999,\"y\":131.4638241901553},{\"x\":252.8006223148721,\"y\":137.1982527118789},{\"x\":245.21187349402257,\"y\":140.77285233412755},{\"x\":236.34153056785425,\"y\":143.63355707836004},{\"x\":228.84338301177897,\"y\":145.42447584837183},{\"x\":221.24829207693142,\"y\":146.53321136658784},{\"x\":215.4179103507073,\"y\":147.01667842861312},{\"x\":208.48703489110557,\"y\":146.78876937876947},{\"x\":200.2354823323847,\"y\":145.55343192548472},{\"x\":193.9375426740963,\"y\":144.16542286748287},{\"x\":189.50296734016104,\"y\":142.84569160476028},{\"x\":185.9449465561387,\"y\":141.49849245996472},{\"x\":183.55226010126856,\"y\":140.47089353894333},{\"x\":180.80634358935882,\"y\":139.04715903987034},{\"x\":178.44182708574206,\"y\":137.72347552182714},{\"x\":175.6982260471946,\"y\":135.96270282566215},{\"x\":173.67216589409102,\"y\":134.43703760919993},{\"x\":170.59932827071927,\"y\":131.76116480938964},{\"x\":168.0445462702076,\"y\":129.37647386260377},{\"x\":165.65391172084142,\"y\":126.74967988768424},{\"x\":161.69483620445448,\"y\":121.35217365384851},{\"x\":159.9662093640601,\"y\":118.50837936287068},{\"x\":158.74381289009477,\"y\":116.20322314395948},{\"x\":157.9658651587891,\"y\":114.5978162432697},{\"x\":157.2301991438713,\"y\":112.93907984899563},{\"x\":156.87194603081076,\"y\":112.09449315090913},{\"x\":156.67934979069162,\"y\":111.56320537958898},{\"x\":156.6523602483063,\"y\":111.4404177409805},{\"x\":156.60542599122223,\"y\":110.90747124635907},{\"x\":156.63857404875276,\"y\":109.98453554544089},{\"x\":156.71686700620572,\"y\":108.93366743160024},{\"x\":156.75290435737926,\"y\":108.70568021055402},{\"x\":156.75290435737926,\"y\":108.70568021055402}],\"brushColor\":\"#ffc600\",\"brushRadius\":10},{\"points\":[{\"x\":136.095833460713,\"y\":84.8565259347356},{\"x\":136.095833460713,\"y\":84.8565259347356},{\"x\":136.095833460713,\"y\":84.8565259347356},{\"x\":135.41281700739364,\"y\":84.39700409905343},{\"x\":133.21840647254578,\"y\":83.11394375248511},{\"x\":130.05110417846802,\"y\":81.56171902148596},{\"x\":121.46842843627059,\"y\":78.96069645710229},{\"x\":117.1311682239523,\"y\":78.19140649081747},{\"x\":111.48062340656298,\"y\":77.96421005626547},{\"x\":105.48568950232787,\"y\":78.17132690527671},{\"x\":102.44508464748633,\"y\":78.37737212377128},{\"x\":101.36844651540692,\"y\":78.49056561329856},{\"x\":101.36844651540692,\"y\":78.49056561329856},{\"x\":101.36844651540692,\"y\":78.49056561329856},{\"x\":101.36844651540692,\"y\":78.49056561329856},{\"x\":101.36844651540692,\"y\":78.49056561329856},{\"x\":101.24470963944562,\"y\":78.5087589400876},{\"x\":101.24470963944562,\"y\":78.5087589400876},{\"x\":101.0818675127762,\"y\":78.5395600430148},{\"x\":101.0818675127762,\"y\":78.5395600430148},{\"x\":101.0818675127762,\"y\":78.5395600430148},{\"x\":99.68923652197726,\"y\":79.58565985889004},{\"x\":96.81249477797029,\"y\":84.39896914369443},{\"x\":94.48728653498829,\"y\":92.03964662994119},{\"x\":93.66630618421043,\"y\":101.0979683391505},{\"x\":93.8730235418746,\"y\":109.00819097022993},{\"x\":94.33420906672832,\"y\":114.09792164615475},{\"x\":94.79430183000052,\"y\":118.15300443634752},{\"x\":95.09393458746018,\"y\":120.24292277224532},{\"x\":95.22890555945696,\"y\":121.22396287938109},{\"x\":95.3586234525386,\"y\":122.20647665041894},{\"x\":95.3586234525386,\"y\":122.20647665041894},{\"x\":95.3586234525386,\"y\":122.20647665041894},{\"x\":95.36315047155753,\"y\":123.00039016553467},{\"x\":95.23081615946761,\"y\":124.15586774270889},{\"x\":95.10856115814744,\"y\":124.66453253660173},{\"x\":94.63786462234783,\"y\":125.80767181786364},{\"x\":93.72620287197064,\"y\":127.34764024782115},{\"x\":92.32734930905129,\"y\":129.1280707804587},{\"x\":90.45048297556129,\"y\":131.0093812091729},{\"x\":89.68717899318013,\"y\":131.58292115983036},{\"x\":88.03141460632492,\"y\":132.39819897137576},{\"x\":87.92160692763413,\"y\":132.44012016540714},{\"x\":87.09228034457233,\"y\":132.59496786128568},{\"x\":85.49699488793163,\"y\":132.62021539185596},{\"x\":85.0671691002009,\"y\":132.53745970808953},{\"x\":82.68829188987185,\"y\":131.27192471539757},{\"x\":80.96969564040977,\"y\":130.03320888712943},{\"x\":79.56311639035708,\"y\":128.80265250736133},{\"x\":79.07260128642667,\"y\":128.34636608021108},{\"x\":78.10113216285853,\"y\":127.33212078515794},{\"x\":76.67894651602401,\"y\":125.59030883723243},{\"x\":74.88520763814408,\"y\":122.9207483916586},{\"x\":73.15157579905822,\"y\":118.97378175451449},{\"x\":72.04959616819247,\"y\":115.08901881920491},{\"x\":71.40704391382842,\"y\":109.82328893505414},{\"x\":71.41981776048785,\"y\":105.99986605813596},{\"x\":71.7218784408005,\"y\":101.93404027156113},{\"x\":72.45356541800969,\"y\":97.65642338084253},{\"x\":73.56451193070136,\"y\":93.97605286468101},{\"x\":76.42754418859577,\"y\":87.7840683511439},{\"x\":79.80422482574942,\"y\":82.36706392008634},{\"x\":83.01082109898944,\"y\":78.13279108688826},{\"x\":86.11339310325005,\"y\":74.41880365835107},{\"x\":88.97505696774685,\"y\":71.4047768667337},{\"x\":92.06021568614148,\"y\":68.48799330076568},{\"x\":94.70091254437267,\"y\":66.09945606990901},{\"x\":96.96090690795815,\"y\":64.24145751969299},{\"x\":100.43773043222915,\"y\":61.581833867029104},{\"x\":103.21469824236713,\"y\":59.826010003184045},{\"x\":106.64321042719358,\"y\":57.87410328048705},{\"x\":109.01422476466779,\"y\":56.693991889691375},{\"x\":113.54475668714359,\"y\":54.69367273396796},{\"x\":117.01685832419085,\"y\":53.396924459913485},{\"x\":124.36180131554622,\"y\":51.373677246201055},{\"x\":131.0193372587034,\"y\":49.965730281588506},{\"x\":135.8566817798976,\"y\":49.12231773920619},{\"x\":143.7011012274293,\"y\":48.10038984854045},{\"x\":150.620686307684,\"y\":47.40382561430101},{\"x\":159.56388588238246,\"y\":46.749983128030074},{\"x\":169.53184634956926,\"y\":46.2359654482807},{\"x\":178.50061471263464,\"y\":46.17177260722092},{\"x\":186.53907480028136,\"y\":46.631035583556894},{\"x\":194.6322314062752,\"y\":47.48412592596459},{\"x\":201.65418303478413,\"y\":48.2839342310205},{\"x\":205.836975774027,\"y\":48.99234676138084},{\"x\":211.01040882925128,\"y\":50.076677277378316},{\"x\":216.17874149088127,\"y\":51.3326459832778},{\"x\":219.4577235498459,\"y\":52.2878098958184},{\"x\":222.73985526160723,\"y\":53.38581511339447},{\"x\":224.83263387328668,\"y\":54.113903825242225},{\"x\":228.9965851222144,\"y\":55.65755917981683},{\"x\":231.38889657662503,\"y\":56.667309851880056},{\"x\":234.62455483034628,\"y\":58.127568757926234},{\"x\":237.01029203862063,\"y\":59.3139131701718},{\"x\":239.38288859558125,\"y\":60.59528141805471},{\"x\":241.35231170170727,\"y\":61.6520803828079},{\"x\":243.7090131119023,\"y\":63.01105241403776},{\"x\":246.4479207925921,\"y\":64.8123497369759},{\"x\":249.85894808237722,\"y\":67.20764416173775},{\"x\":252.11311829391906,\"y\":68.85260385390922},{\"x\":254.77534200909597,\"y\":70.98709944335627},{\"x\":257.3857714544153,\"y\":73.25596226508823},{\"x\":259.5021998475477,\"y\":75.1229980892995},{\"x\":262.04741147617153,\"y\":77.52556059169444},{\"x\":263.5394822368741,\"y\":79.01939820834691},{\"x\":265.53842294918365,\"y\":81.02045630915777},{\"x\":267.0033481912349,\"y\":82.56840572120932},{\"x\":268.88931168136094,\"y\":84.77072655813443},{\"x\":269.8376266090414,\"y\":85.99961035809767},{\"x\":271.1515994257236,\"y\":87.7614085505174},{\"x\":272.0647072854461,\"y\":89.11299646316081},{\"x\":272.944466647931,\"y\":90.54618416419363},{\"x\":273.37771115005233,\"y\":91.28647511797101},{\"x\":274.57587499733455,\"y\":93.63031369144275},{\"x\":274.9684241810068,\"y\":94.4341494308989},{\"x\":274.9684241810068,\"y\":94.4341494308989},{\"x\":274.9684241810068,\"y\":94.4341494308989},{\"x\":274.9684241810068,\"y\":94.4341494308989},{\"x\":274.3867524124351,\"y\":96.73315350042706},{\"x\":272.05965008458867,\"y\":100.96729950952874},{\"x\":267.48210272785155,\"y\":106.0954644741507},{\"x\":260.9066595095175,\"y\":110.87974622460159},{\"x\":254.51407904921285,\"y\":114.40653280017435},{\"x\":251.2749308540547,\"y\":115.90780567462473},{\"x\":247.84795733376689,\"y\":117.24963983551906},{\"x\":244.524544706875,\"y\":118.2272353472814},{\"x\":242.8858248022747,\"y\":118.60526197880624},{\"x\":242.1195059955714,\"y\":118.74336558709021},{\"x\":242.1195059955714,\"y\":118.74336558709021},{\"x\":241.39981126680277,\"y\":118.8093331126783},{\"x\":241.39981126680277,\"y\":118.8093331126783},{\"x\":240.48733224072183,\"y\":118.77967427380122},{\"x\":240.43421756120836,\"y\":118.77573357594693},{\"x\":239.22947904721545,\"y\":118.59330267967545},{\"x\":238.62398228054784,\"y\":118.42506369531928},{\"x\":237.7248119385446,\"y\":118.05857242043832},{\"x\":236.59499926042002,\"y\":117.44556709835204},{\"x\":234.86426397977934,\"y\":116.17833842597291},{\"x\":232.55222859807898,\"y\":113.88850200103185},{\"x\":230.6772441848705,\"y\":111.59169865700319},{\"x\":228.48493270177514,\"y\":108.18394219993633},{\"x\":226.85317988538378,\"y\":105.14486477824148},{\"x\":225.6375516254126,\"y\":102.19245705848992},{\"x\":224.62065098137182,\"y\":98.91934400460643},{\"x\":224.15155646270844,\"y\":96.54491500248483},{\"x\":223.88547487699228,\"y\":93.8811538584558},{\"x\":223.85741725965937,\"y\":91.9973384545557},{\"x\":223.90696710244498,\"y\":89.99267204757356},{\"x\":224.08478924053887,\"y\":88.75576425772198},{\"x\":224.56190934094988,\"y\":86.48649102448047},{\"x\":225.3630581958764,\"y\":83.91427637270165},{\"x\":226.98928157010096,\"y\":80.57602368573461},{\"x\":227.59846916338492,\"y\":79.38122132662983},{\"x\":230.00322441027274,\"y\":75.84532813234748},{\"x\":231.181273657163,\"y\":74.26068731688838},{\"x\":232.90571725034093,\"y\":72.24330960992783},{\"x\":234.8229859136284,\"y\":70.25911936232445},{\"x\":237.34828301880466,\"y\":67.78745378540103},{\"x\":240.13164475073324,\"y\":65.44679660760555},{\"x\":243.57573110963835,\"y\":62.76048938773001},{\"x\":246.0126510235203,\"y\":61.008684087697006},{\"x\":248.94833496375534,\"y\":58.9187784776714},{\"x\":251.48353689998822,\"y\":57.24164661082099},{\"x\":254.09100187515693,\"y\":55.628253859506955},{\"x\":256.7589039588924,\"y\":54.07505424474565},{\"x\":259.85538969941234,\"y\":52.23928370195205},{\"x\":261.7812341951614,\"y\":51.11332916766698},{\"x\":262.9545002260714,\"y\":50.40493607559097},{\"x\":262.9545002260714,\"y\":50.40493607559097},{\"x\":263.3998963053697,\"y\":50.11433686715073},{\"x\":263.3998963053697,\"y\":50.11433686715073}],\"brushColor\":\"#d1bd47\",\"brushRadius\":10}],\"width\":400,\"height\":400}"], ["created_at", "2021-01-25 05:01:55.835057"], ["updated_at", "2021-01-25 05:01:55.835057"]]
+  ↳ app/controllers/drawings_controller.rb:13:in `create'
+  [1m[35m (12.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/drawings_controller.rb:13:in `create'
+Completed 200 OK in 102ms (Views: 6.4ms | ActiveRecord: 17.3ms | Allocations: 803121)
+
+
+Started POST "/drawings" for ::1 at 2021-01-25 00:02:14 -0500
+Processing by DrawingsController#create as */*
+  Parameters: {"data"=>{"svgdrawing"=>"{\"lines\":[{\"points\":[{\"x\":162.23139062710425,\"y\":168.0335519891036},{\"x\":162.23139062710425,\"y\":168.0335519891036},{\"x\":162.28206961788595,\"y\":169.03092313867046},{\"x\":162.28206961788595,\"y\":169.03092313867046},{\"x\":162.28206961788595,\"y\":169.03092313867046},{\"x\":162.28206961788595,\"y\":169.03092313867046},{\"x\":162.28206961788595,\"y\":169.03092313867046},{\"x\":162.28206961788595,\"y\":169.03092313867046},{\"x\":162.28206961788595,\"y\":169.03092313867046}],\"brushColor\":\"#25d1e9\",\"brushRadius\":10},{\"points\":[{\"x\":168.8741075699828,\"y\":162.13526118656128},{\"x\":168.8741075699828,\"y\":162.13526118656128},{\"x\":168.8741075699828,\"y\":162.13526118656128}],\"brushColor\":\"#25d1e9\",\"brushRadius\":10},{\"points\":[{\"x\":230.5924914615437,\"y\":148.894997509826},{\"x\":230.5924914615437,\"y\":148.894997509826},{\"x\":230.5924914615437,\"y\":148.894997509826},{\"x\":230.5924914615437,\"y\":148.894997509826}],\"brushColor\":\"#25d1e9\",\"brushRadius\":10},{\"points\":[{\"x\":251.27070586332988,\"y\":198.21824944671087},{\"x\":251.27070586332988,\"y\":198.21824944671087},{\"x\":251.27070586332988,\"y\":198.21824944671087},{\"x\":251.27070586332988,\"y\":198.21824944671087}],\"brushColor\":\"#a3e766\",\"brushRadius\":10},{\"points\":[{\"x\":189.0697293802864,\"y\":236.47585843058982},{\"x\":189.0697293802864,\"y\":236.47585843058982},{\"x\":189.0697293802864,\"y\":236.47585843058982}],\"brushColor\":\"#a3e766\",\"brushRadius\":10},{\"points\":[{\"x\":138.29646388016954,\"y\":223.92290003992127},{\"x\":138.29646388016954,\"y\":223.92290003992127},{\"x\":138.29646388016954,\"y\":223.92290003992127}],\"brushColor\":\"#a3e766\",\"brushRadius\":10},{\"points\":[{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.11819402439524,\"y\":197.7256964492474},{\"x\":91.68528463482117,\"y\":188.97071338810042},{\"x\":92.21974552886624,\"y\":178.96582876699952},{\"x\":92.88840460565656,\"y\":172.85748455927916},{\"x\":93.83655393808249,\"y\":166.71875129410108},{\"x\":95.50725999219384,\"y\":160.23977338957587},{\"x\":97.2177020372983,\"y\":154.86849659208997},{\"x\":99.44729359941218,\"y\":148.6087133562689},{\"x\":103.33959475834602,\"y\":139.18303351231924},{\"x\":105.72176225953666,\"y\":134.44363754613596},{\"x\":109.20253862315057,\"y\":128.61000833781725},{\"x\":112.24873391521464,\"y\":124.01009613045917},{\"x\":115.495941489065,\"y\":119.49067328807061},{\"x\":119.40509773946272,\"y\":114.65861532228013},{\"x\":123.17644618329278,\"y\":110.59379409885949},{\"x\":126.64188769183413,\"y\":107.08227295781408},{\"x\":129.79238224517496,\"y\":104.20000843978193},{\"x\":133.52289720328736,\"y\":100.90043317134557},{\"x\":137.30360635802043,\"y\":97.64900183481764},{\"x\":140.71459796611518,\"y\":94.93682263486167},{\"x\":144.2384071803667,\"y\":92.31750823469818},{\"x\":148.96575148360594,\"y\":88.9432110684647},{\"x\":155.272099573487,\"y\":84.91634794882341},{\"x\":158.6887963613783,\"y\":82.95381960344973},{\"x\":164.21069626737238,\"y\":80.07996148819697},{\"x\":168.18253136257388,\"y\":78.02567598346485},{\"x\":170.64182829889418,\"y\":76.91061702846888},{\"x\":173.52365609614714,\"y\":75.64574043915702},{\"x\":177.0010540421297,\"y\":74.35448566847967},{\"x\":180.6106445782339,\"y\":73.21646786011452},{\"x\":184.5476281168046,\"y\":72.01346026833411},{\"x\":190.1746207715228,\"y\":70.65037023988017},{\"x\":196.9060603671446,\"y\":69.39613609902777},{\"x\":201.77871387581902,\"y\":68.64699665680398},{\"x\":210.64769569149513,\"y\":67.6584918985169},{\"x\":215.6012362945054,\"y\":67.20206570041266},{\"x\":220.56937404748606,\"y\":66.823497058091},{\"x\":225.5475317771764,\"y\":66.50972382726968},{\"x\":232.52849781926946,\"y\":66.16922333163112},{\"x\":238.51824163709156,\"y\":65.93555642431161},{\"x\":245.50005191907795,\"y\":65.95007893184908},{\"x\":251.51468435297275,\"y\":66.16057560645986},{\"x\":257.6068847723429,\"y\":66.73746939956588},{\"x\":261.6625054510443,\"y\":67.21183687196987},{\"x\":264.8730914911652,\"y\":67.78464778278841},{\"x\":266.9820758345151,\"y\":68.21384883789666},{\"x\":268.14165243671897,\"y\":68.48750518250006},{\"x\":270.25435256240496,\"y\":69.03008582917376},{\"x\":271.4341574822139,\"y\":69.36924522058833},{\"x\":274.7164742913659,\"y\":70.45606493373596},{\"x\":275.9132187568342,\"y\":70.88598046136356},{\"x\":278.3045648275866,\"y\":71.86968469836913},{\"x\":281.87568479854974,\"y\":73.58899658686407},{\"x\":284.25350030283073,\"y\":74.83817888433136},{\"x\":288.5682665098725,\"y\":77.25851231324265},{\"x\":292.4488075892031,\"y\":79.81100144418834},{\"x\":296.5901609386231,\"y\":82.59857065272244},{\"x\":300.78849084025506,\"y\":85.97071442267524},{\"x\":304.70279067280813,\"y\":89.07803895227804},{\"x\":307.7479855216552,\"y\":91.84865386536973},{\"x\":311.28207993407415,\"y\":95.28045369624559},{\"x\":313.7494567423842,\"y\":97.8122339853388},{\"x\":317.5425962612793,\"y\":102.07344801922402},{\"x\":320.38693340491807,\"y\":105.21323287096685},{\"x\":322.73307350830083,\"y\":107.90569070106972},{\"x\":325.460148285896,\"y\":111.29698258521466},{\"x\":327.2354823964375,\"y\":113.69913117143028},{\"x\":329.76304202621816,\"y\":117.32016296747985},{\"x\":332.5965473422694,\"y\":121.76387118271619},{\"x\":334.5575633866753,\"y\":125.18226218493655},{\"x\":337.42927633171485,\"y\":130.70589101510768},{\"x\":339.7929793560624,\"y\":136.0506549022945},{\"x\":341.9375024005787,\"y\":140.9873073055325},{\"x\":343.4707362539534,\"y\":144.7632647134448},{\"x\":344.69005192606363,\"y\":148.30628476686954},{\"x\":346.1969095525309,\"y\":153.84247312835365},{\"x\":346.8777267893494,\"y\":156.6678324207801},{\"x\":347.4886321852123,\"y\":159.52903511517027},{\"x\":348.03572105008953,\"y\":162.4188589449665},{\"x\":348.66527145980973,\"y\":166.3083378163741},{\"x\":349.20790677918035,\"y\":170.22686132994986},{\"x\":349.67493402725984,\"y\":174.1668507693661},{\"x\":349.9871042273739,\"y\":177.13191765482787},{\"x\":350.26510127755444,\"y\":180.10428432332668},{\"x\":350.3541391491414,\"y\":181.09612413835882},{\"x\":350.5186418079686,\"y\":183.0819269230385},{\"x\":350.5186418079686,\"y\":183.0819269230385},{\"x\":350.5186418079686,\"y\":183.0819269230385},{\"x\":350.5186418079686,\"y\":183.0819269230385}],\"brushColor\":\"#5948dd\",\"brushRadius\":10},{\"points\":[{\"x\":33.53551437279884,\"y\":204.67271270805008},{\"x\":33.53551437279884,\"y\":204.67271270805008},{\"x\":33.53551437279884,\"y\":204.67271270805008},{\"x\":33.53551437279884,\"y\":204.67271270805008},{\"x\":34.00136690003379,\"y\":205.00702650495964},{\"x\":40.10646956355341,\"y\":214.08484641163975},{\"x\":45.57193729416994,\"y\":227.72243962367588},{\"x\":50.24185414986253,\"y\":240.46551471371362},{\"x\":54.89826504843247,\"y\":252.59441686045682},{\"x\":61.07002572003039,\"y\":265.38482855679433},{\"x\":69.30131678278416,\"y\":279.33137334591345},{\"x\":79.8417487248244,\"y\":292.9964300839602},{\"x\":92.76437909324589,\"y\":307.8784593734715},{\"x\":106.07814988816068,\"y\":320.49305786401965},{\"x\":118.1089749723419,\"y\":330.58020108976604},{\"x\":137.21030305115355,\"y\":344.72037844963444},{\"x\":142.6839185756628,\"y\":348.46032064692673},{\"x\":150.19892288752897,\"y\":353.19897394450334},{\"x\":162.07261930296963,\"y\":359.1894793620043},{\"x\":171.27545729948898,\"y\":362.9407670438849},{\"x\":182.47398825432006,\"y\":366.2322246574071},{\"x\":195.03915396530974,\"y\":368.9414722164884},{\"x\":206.7405271854947,\"y\":370.61068567748816},{\"x\":217.61328570778443,\"y\":371.67086275156134},{\"x\":223.57255081703795,\"y\":372.1352813625727},{\"x\":227.55332073699427,\"y\":372.4010777771475},{\"x\":230.54213863449237,\"y\":372.57842383562564},{\"x\":233.5055227172821,\"y\":372.51483971207966},{\"x\":236.60347519798458,\"y\":372.226230533135},{\"x\":242.21697805367523,\"y\":370.8224469982096},{\"x\":248.3566902563482,\"y\":368.25601607586634},{\"x\":256.54018991654715,\"y\":363.6912942510908},{\"x\":264.54774486743605,\"y\":358.33819759656734},{\"x\":269.4437715539268,\"y\":354.58972780455724},{\"x\":272.0811457057133,\"y\":352.3865462819256},{\"x\":274.6651006893217,\"y\":350.05977479848235},{\"x\":276.63044140199514,\"y\":348.07096929610265},{\"x\":278.9770063203559,\"y\":345.3040068624804},{\"x\":281.6731110115423,\"y\":341.8722908764133},{\"x\":284.23827118867575,\"y\":338.00316347318324},{\"x\":286.622803339388,\"y\":334.2528468656612},{\"x\":287.87290457034237,\"y\":331.9954912271572},{\"x\":288.9482983858855,\"y\":330.037067044112},{\"x\":289.35741708135913,\"y\":329.2565953506485},{\"x\":289.755855579002,\"y\":328.4607399839972},{\"x\":290.1434588102944,\"y\":327.65045160235536},{\"x\":290.52013258255676,\"y\":326.8266407477251},{\"x\":291.5485852302774,\"y\":324.26818747946027},{\"x\":292.48586675498035,\"y\":321.62241517458006},{\"x\":293.3355946815704,\"y\":318.905704451801},{\"x\":294.10276606053003,\"y\":316.1316968232703},{\"x\":294.79314115375905,\"y\":313.3116228973678},{\"x\":295.22136876723226,\"y\":311.4123055743865},{\"x\":295.796494151496,\"y\":308.5345922576341},{\"x\":296.15231163440626,\"y\":306.60291519867155},{\"x\":296.3883858813131,\"y\":304.79743384435363},{\"x\":296.7318122440259,\"y\":301.8398224940471},{\"x\":296.8615406310998,\"y\":299.94400657568536},{\"x\":296.95179561506956,\"y\":295.99373818212456},{\"x\":296.99395580803485,\"y\":293.99466439181384},{\"x\":297.0328749103277,\"y\":291.995453614187},{\"x\":296.97365408905284,\"y\":288.9953256240444},{\"x\":296.9372252057799,\"y\":286.99601704698995},{\"x\":296.8886509976947,\"y\":283.99685292704004},{\"x\":296.68894446663927,\"y\":279.9705321395927},{\"x\":296.4414705283294,\"y\":276.92134386249296},{\"x\":296.29254383379384,\"y\":274.93296443410065},{\"x\":296.093812036759,\"y\":271.9470199229775},{\"x\":295.91703079228927,\"y\":268.9581306393822},{\"x\":295.71485736652977,\"y\":264.9692328116481},{\"x\":295.39460636840664,\"y\":260.92510118492277},{\"x\":295.0164424821643,\"y\":254.9520438000244},{\"x\":294.80012598844377,\"y\":250.96475896841386},{\"x\":294.70024144481187,\"y\":248.96996913794752},{\"x\":294.56701315796124,\"y\":245.97626916183452},{\"x\":294.44854877809223,\"y\":242.98124799120305},{\"x\":294.3756320682856,\"y\":240.98402110741628},{\"x\":294.34062827752325,\"y\":239.98527348393236},{\"x\":294.27599837452294,\"y\":237.98745143867387},{\"x\":294.2163327868755,\"y\":235.98930735428698},{\"x\":294.161251183851,\"y\":233.99088883038425},{\"x\":294.1988120169322,\"y\":230.9981100463944},{\"x\":294.2219787687401,\"y\":228.9983896167007},{\"x\":294.32163790617386,\"y\":226.9710546863469},{\"x\":294.56789165275546,\"y\":223.92210185862663},{\"x\":294.80250654530187,\"y\":221.84792504730464},{\"x\":295.1014442599078,\"y\":219.75815268242644},{\"x\":295.36062451990273,\"y\":217.7937874579682},{\"x\":295.97892533514255,\"y\":214.5703178568891},{\"x\":296.32138486851403,\"y\":212.6334334277294},{\"x\":296.7473980169072,\"y\":210.52472687174713},{\"x\":297.1068010112394,\"y\":208.59448670018386},{\"x\":297.35930908350434,\"y\":207.44297969331242},{\"x\":297.7469073364943,\"y\":205.52462773631345},{\"x\":297.9335565042416,\"y\":204.5615702744967},{\"x\":298.39329634867914,\"y\":202.45040677296635},{\"x\":298.39329634867914,\"y\":202.45040677296635},{\"x\":298.59324784757723,\"y\":201.49305819417077},{\"x\":298.7856925744255,\"y\":200.53243093046643},{\"x\":298.7856925744255,\"y\":200.53243093046643}],\"brushColor\":\"#dac73\",\"brushRadius\":10}],\"width\":400,\"height\":400}"}, "drawing"=>{}}
+  [1m[35m (3.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/drawings_controller.rb:13:in `create'
+  [1m[36mDrawing Create (2.0ms)[0m  [1m[32mINSERT INTO "drawings" ("svgdrawing", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["svgdrawing", "{\"lines\":[{\"points\":[{\"x\":162.23139062710425,\"y\":168.0335519891036},{\"x\":162.23139062710425,\"y\":168.0335519891036},{\"x\":162.28206961788595,\"y\":169.03092313867046},{\"x\":162.28206961788595,\"y\":169.03092313867046},{\"x\":162.28206961788595,\"y\":169.03092313867046},{\"x\":162.28206961788595,\"y\":169.03092313867046},{\"x\":162.28206961788595,\"y\":169.03092313867046},{\"x\":162.28206961788595,\"y\":169.03092313867046},{\"x\":162.28206961788595,\"y\":169.03092313867046}],\"brushColor\":\"#25d1e9\",\"brushRadius\":10},{\"points\":[{\"x\":168.8741075699828,\"y\":162.13526118656128},{\"x\":168.8741075699828,\"y\":162.13526118656128},{\"x\":168.8741075699828,\"y\":162.13526118656128}],\"brushColor\":\"#25d1e9\",\"brushRadius\":10},{\"points\":[{\"x\":230.5924914615437,\"y\":148.894997509826},{\"x\":230.5924914615437,\"y\":148.894997509826},{\"x\":230.5924914615437,\"y\":148.894997509826},{\"x\":230.5924914615437,\"y\":148.894997509826}],\"brushColor\":\"#25d1e9\",\"brushRadius\":10},{\"points\":[{\"x\":251.27070586332988,\"y\":198.21824944671087},{\"x\":251.27070586332988,\"y\":198.21824944671087},{\"x\":251.27070586332988,\"y\":198.21824944671087},{\"x\":251.27070586332988,\"y\":198.21824944671087}],\"brushColor\":\"#a3e766\",\"brushRadius\":10},{\"points\":[{\"x\":189.0697293802864,\"y\":236.47585843058982},{\"x\":189.0697293802864,\"y\":236.47585843058982},{\"x\":189.0697293802864,\"y\":236.47585843058982}],\"brushColor\":\"#a3e766\",\"brushRadius\":10},{\"points\":[{\"x\":138.29646388016954,\"y\":223.92290003992127},{\"x\":138.29646388016954,\"y\":223.92290003992127},{\"x\":138.29646388016954,\"y\":223.92290003992127}],\"brushColor\":\"#a3e766\",\"brushRadius\":10},{\"points\":[{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.70462704394026,\"y\":201.57113196645034},{\"x\":92.11819402439524,\"y\":197.7256964492474},{\"x\":91.68528463482117,\"y\":188.97071338810042},{\"x\":92.21974552886624,\"y\":178.96582876699952},{\"x\":92.88840460565656,\"y\":172.85748455927916},{\"x\":93.83655393808249,\"y\":166.71875129410108},{\"x\":95.50725999219384,\"y\":160.23977338957587},{\"x\":97.2177020372983,\"y\":154.86849659208997},{\"x\":99.44729359941218,\"y\":148.6087133562689},{\"x\":103.33959475834602,\"y\":139.18303351231924},{\"x\":105.72176225953666,\"y\":134.44363754613596},{\"x\":109.20253862315057,\"y\":128.61000833781725},{\"x\":112.24873391521464,\"y\":124.01009613045917},{\"x\":115.495941489065,\"y\":119.49067328807061},{\"x\":119.40509773946272,\"y\":114.65861532228013},{\"x\":123.17644618329278,\"y\":110.59379409885949},{\"x\":126.64188769183413,\"y\":107.08227295781408},{\"x\":129.79238224517496,\"y\":104.20000843978193},{\"x\":133.52289720328736,\"y\":100.90043317134557},{\"x\":137.30360635802043,\"y\":97.64900183481764},{\"x\":140.71459796611518,\"y\":94.93682263486167},{\"x\":144.2384071803667,\"y\":92.31750823469818},{\"x\":148.96575148360594,\"y\":88.9432110684647},{\"x\":155.272099573487,\"y\":84.91634794882341},{\"x\":158.6887963613783,\"y\":82.95381960344973},{\"x\":164.21069626737238,\"y\":80.07996148819697},{\"x\":168.18253136257388,\"y\":78.02567598346485},{\"x\":170.64182829889418,\"y\":76.91061702846888},{\"x\":173.52365609614714,\"y\":75.64574043915702},{\"x\":177.0010540421297,\"y\":74.35448566847967},{\"x\":180.6106445782339,\"y\":73.21646786011452},{\"x\":184.5476281168046,\"y\":72.01346026833411},{\"x\":190.1746207715228,\"y\":70.65037023988017},{\"x\":196.9060603671446,\"y\":69.39613609902777},{\"x\":201.77871387581902,\"y\":68.64699665680398},{\"x\":210.64769569149513,\"y\":67.6584918985169},{\"x\":215.6012362945054,\"y\":67.20206570041266},{\"x\":220.56937404748606,\"y\":66.823497058091},{\"x\":225.5475317771764,\"y\":66.50972382726968},{\"x\":232.52849781926946,\"y\":66.16922333163112},{\"x\":238.51824163709156,\"y\":65.93555642431161},{\"x\":245.50005191907795,\"y\":65.95007893184908},{\"x\":251.51468435297275,\"y\":66.16057560645986},{\"x\":257.6068847723429,\"y\":66.73746939956588},{\"x\":261.6625054510443,\"y\":67.21183687196987},{\"x\":264.8730914911652,\"y\":67.78464778278841},{\"x\":266.9820758345151,\"y\":68.21384883789666},{\"x\":268.14165243671897,\"y\":68.48750518250006},{\"x\":270.25435256240496,\"y\":69.03008582917376},{\"x\":271.4341574822139,\"y\":69.36924522058833},{\"x\":274.7164742913659,\"y\":70.45606493373596},{\"x\":275.9132187568342,\"y\":70.88598046136356},{\"x\":278.3045648275866,\"y\":71.86968469836913},{\"x\":281.87568479854974,\"y\":73.58899658686407},{\"x\":284.25350030283073,\"y\":74.83817888433136},{\"x\":288.5682665098725,\"y\":77.25851231324265},{\"x\":292.4488075892031,\"y\":79.81100144418834},{\"x\":296.5901609386231,\"y\":82.59857065272244},{\"x\":300.78849084025506,\"y\":85.97071442267524},{\"x\":304.70279067280813,\"y\":89.07803895227804},{\"x\":307.7479855216552,\"y\":91.84865386536973},{\"x\":311.28207993407415,\"y\":95.28045369624559},{\"x\":313.7494567423842,\"y\":97.8122339853388},{\"x\":317.5425962612793,\"y\":102.07344801922402},{\"x\":320.38693340491807,\"y\":105.21323287096685},{\"x\":322.73307350830083,\"y\":107.90569070106972},{\"x\":325.460148285896,\"y\":111.29698258521466},{\"x\":327.2354823964375,\"y\":113.69913117143028},{\"x\":329.76304202621816,\"y\":117.32016296747985},{\"x\":332.5965473422694,\"y\":121.76387118271619},{\"x\":334.5575633866753,\"y\":125.18226218493655},{\"x\":337.42927633171485,\"y\":130.70589101510768},{\"x\":339.7929793560624,\"y\":136.0506549022945},{\"x\":341.9375024005787,\"y\":140.9873073055325},{\"x\":343.4707362539534,\"y\":144.7632647134448},{\"x\":344.69005192606363,\"y\":148.30628476686954},{\"x\":346.1969095525309,\"y\":153.84247312835365},{\"x\":346.8777267893494,\"y\":156.6678324207801},{\"x\":347.4886321852123,\"y\":159.52903511517027},{\"x\":348.03572105008953,\"y\":162.4188589449665},{\"x\":348.66527145980973,\"y\":166.3083378163741},{\"x\":349.20790677918035,\"y\":170.22686132994986},{\"x\":349.67493402725984,\"y\":174.1668507693661},{\"x\":349.9871042273739,\"y\":177.13191765482787},{\"x\":350.26510127755444,\"y\":180.10428432332668},{\"x\":350.3541391491414,\"y\":181.09612413835882},{\"x\":350.5186418079686,\"y\":183.0819269230385},{\"x\":350.5186418079686,\"y\":183.0819269230385},{\"x\":350.5186418079686,\"y\":183.0819269230385},{\"x\":350.5186418079686,\"y\":183.0819269230385}],\"brushColor\":\"#5948dd\",\"brushRadius\":10},{\"points\":[{\"x\":33.53551437279884,\"y\":204.67271270805008},{\"x\":33.53551437279884,\"y\":204.67271270805008},{\"x\":33.53551437279884,\"y\":204.67271270805008},{\"x\":33.53551437279884,\"y\":204.67271270805008},{\"x\":34.00136690003379,\"y\":205.00702650495964},{\"x\":40.10646956355341,\"y\":214.08484641163975},{\"x\":45.57193729416994,\"y\":227.72243962367588},{\"x\":50.24185414986253,\"y\":240.46551471371362},{\"x\":54.89826504843247,\"y\":252.59441686045682},{\"x\":61.07002572003039,\"y\":265.38482855679433},{\"x\":69.30131678278416,\"y\":279.33137334591345},{\"x\":79.8417487248244,\"y\":292.9964300839602},{\"x\":92.76437909324589,\"y\":307.8784593734715},{\"x\":106.07814988816068,\"y\":320.49305786401965},{\"x\":118.1089749723419,\"y\":330.58020108976604},{\"x\":137.21030305115355,\"y\":344.72037844963444},{\"x\":142.6839185756628,\"y\":348.46032064692673},{\"x\":150.19892288752897,\"y\":353.19897394450334},{\"x\":162.07261930296963,\"y\":359.1894793620043},{\"x\":171.27545729948898,\"y\":362.9407670438849},{\"x\":182.47398825432006,\"y\":366.2322246574071},{\"x\":195.03915396530974,\"y\":368.9414722164884},{\"x\":206.7405271854947,\"y\":370.61068567748816},{\"x\":217.61328570778443,\"y\":371.67086275156134},{\"x\":223.57255081703795,\"y\":372.1352813625727},{\"x\":227.55332073699427,\"y\":372.4010777771475},{\"x\":230.54213863449237,\"y\":372.57842383562564},{\"x\":233.5055227172821,\"y\":372.51483971207966},{\"x\":236.60347519798458,\"y\":372.226230533135},{\"x\":242.21697805367523,\"y\":370.8224469982096},{\"x\":248.3566902563482,\"y\":368.25601607586634},{\"x\":256.54018991654715,\"y\":363.6912942510908},{\"x\":264.54774486743605,\"y\":358.33819759656734},{\"x\":269.4437715539268,\"y\":354.58972780455724},{\"x\":272.0811457057133,\"y\":352.3865462819256},{\"x\":274.6651006893217,\"y\":350.05977479848235},{\"x\":276.63044140199514,\"y\":348.07096929610265},{\"x\":278.9770063203559,\"y\":345.3040068624804},{\"x\":281.6731110115423,\"y\":341.8722908764133},{\"x\":284.23827118867575,\"y\":338.00316347318324},{\"x\":286.622803339388,\"y\":334.2528468656612},{\"x\":287.87290457034237,\"y\":331.9954912271572},{\"x\":288.9482983858855,\"y\":330.037067044112},{\"x\":289.35741708135913,\"y\":329.2565953506485},{\"x\":289.755855579002,\"y\":328.4607399839972},{\"x\":290.1434588102944,\"y\":327.65045160235536},{\"x\":290.52013258255676,\"y\":326.8266407477251},{\"x\":291.5485852302774,\"y\":324.26818747946027},{\"x\":292.48586675498035,\"y\":321.62241517458006},{\"x\":293.3355946815704,\"y\":318.905704451801},{\"x\":294.10276606053003,\"y\":316.1316968232703},{\"x\":294.79314115375905,\"y\":313.3116228973678},{\"x\":295.22136876723226,\"y\":311.4123055743865},{\"x\":295.796494151496,\"y\":308.5345922576341},{\"x\":296.15231163440626,\"y\":306.60291519867155},{\"x\":296.3883858813131,\"y\":304.79743384435363},{\"x\":296.7318122440259,\"y\":301.8398224940471},{\"x\":296.8615406310998,\"y\":299.94400657568536},{\"x\":296.95179561506956,\"y\":295.99373818212456},{\"x\":296.99395580803485,\"y\":293.99466439181384},{\"x\":297.0328749103277,\"y\":291.995453614187},{\"x\":296.97365408905284,\"y\":288.9953256240444},{\"x\":296.9372252057799,\"y\":286.99601704698995},{\"x\":296.8886509976947,\"y\":283.99685292704004},{\"x\":296.68894446663927,\"y\":279.9705321395927},{\"x\":296.4414705283294,\"y\":276.92134386249296},{\"x\":296.29254383379384,\"y\":274.93296443410065},{\"x\":296.093812036759,\"y\":271.9470199229775},{\"x\":295.91703079228927,\"y\":268.9581306393822},{\"x\":295.71485736652977,\"y\":264.9692328116481},{\"x\":295.39460636840664,\"y\":260.92510118492277},{\"x\":295.0164424821643,\"y\":254.9520438000244},{\"x\":294.80012598844377,\"y\":250.96475896841386},{\"x\":294.70024144481187,\"y\":248.96996913794752},{\"x\":294.56701315796124,\"y\":245.97626916183452},{\"x\":294.44854877809223,\"y\":242.98124799120305},{\"x\":294.3756320682856,\"y\":240.98402110741628},{\"x\":294.34062827752325,\"y\":239.98527348393236},{\"x\":294.27599837452294,\"y\":237.98745143867387},{\"x\":294.2163327868755,\"y\":235.98930735428698},{\"x\":294.161251183851,\"y\":233.99088883038425},{\"x\":294.1988120169322,\"y\":230.9981100463944},{\"x\":294.2219787687401,\"y\":228.9983896167007},{\"x\":294.32163790617386,\"y\":226.9710546863469},{\"x\":294.56789165275546,\"y\":223.92210185862663},{\"x\":294.80250654530187,\"y\":221.84792504730464},{\"x\":295.1014442599078,\"y\":219.75815268242644},{\"x\":295.36062451990273,\"y\":217.7937874579682},{\"x\":295.97892533514255,\"y\":214.5703178568891},{\"x\":296.32138486851403,\"y\":212.6334334277294},{\"x\":296.7473980169072,\"y\":210.52472687174713},{\"x\":297.1068010112394,\"y\":208.59448670018386},{\"x\":297.35930908350434,\"y\":207.44297969331242},{\"x\":297.7469073364943,\"y\":205.52462773631345},{\"x\":297.9335565042416,\"y\":204.5615702744967},{\"x\":298.39329634867914,\"y\":202.45040677296635},{\"x\":298.39329634867914,\"y\":202.45040677296635},{\"x\":298.59324784757723,\"y\":201.49305819417077},{\"x\":298.7856925744255,\"y\":200.53243093046643},{\"x\":298.7856925744255,\"y\":200.53243093046643}],\"brushColor\":\"#dac73\",\"brushRadius\":10}],\"width\":400,\"height\":400}"], ["created_at", "2021-01-25 05:02:14.912902"], ["updated_at", "2021-01-25 05:02:14.912902"]]
+  ↳ app/controllers/drawings_controller.rb:13:in `create'
+  [1m[35m (9.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/drawings_controller.rb:13:in `create'
+Completed 200 OK in 100ms (Views: 8.7ms | ActiveRecord: 15.1ms | Allocations: 779579)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 00:02:43 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 42ms (Views: 7.0ms | ActiveRecord: 2.3ms | Allocations: 301046)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 00:02:44 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 105ms (Views: 101.5ms | ActiveRecord: 1.1ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 00:02:44 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 50ms (Views: 43.4ms | ActiveRecord: 1.4ms | Allocations: 369497)
+
+
+Started POST "/drawings" for ::1 at 2021-01-25 00:03:22 -0500
+Processing by DrawingsController#create as */*
+  Parameters: {"data"=>{"svgdrawing"=>"{\"lines\":[{\"points\":[{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":107.0793943951709,\"y\":329.0805452577012},{\"x\":104.3876718711272,\"y\":312.6830320572018},{\"x\":102.8400320665827,\"y\":296.885649455842},{\"x\":101.94164642077179,\"y\":281.9566620295373},{\"x\":101.43550707732439,\"y\":268.98176028794126},{\"x\":103.9867317054067,\"y\":251.74146048351292},{\"x\":111.47778995964994,\"y\":230.61955229593428},{\"x\":118.94260102797756,\"y\":217.03393755342768},{\"x\":125.94405467369153,\"y\":206.8049576194986},{\"x\":136.7506938854204,\"y\":192.9329862710145},{\"x\":147.20749182584132,\"y\":181.62254741502977},{\"x\":155.3032069942771,\"y\":173.7412756478806},{\"x\":163.3762699289885,\"y\":166.7330991325013},{\"x\":171.8537027086413,\"y\":160.78488312389885},{\"x\":178.98497823062286,\"y\":156.4552752599845},{\"x\":188.42756596273705,\"y\":152.42378138915984},{\"x\":197.47342375612257,\"y\":149.76585445342272},{\"x\":207.96082871043492,\"y\":147.68053575998675},{\"x\":218.71737859719315,\"y\":146.22287437092314},{\"x\":236.51027246488863,\"y\":145.70212021130263},{\"x\":246.6895938888665,\"y\":146.98925909070599},{\"x\":255.4085383319761,\"y\":149.45902163020065},{\"x\":261.58473358838717,\"y\":152.21628403376133},{\"x\":267.35564091259107,\"y\":155.95374394864464},{\"x\":273.12219311740085,\"y\":161.44669737028016},{\"x\":279.449366230327,\"y\":169.30565799148903},{\"x\":283.91740048421894,\"y\":176.5628233499471},{\"x\":288.1302034883717,\"y\":185.35589409775903},{\"x\":290.905434772815,\"y\":192.5916656452189},{\"x\":292.7676313964056,\"y\":198.96361111230024},{\"x\":294.41227682316014,\"y\":206.54546796723827},{\"x\":295.6678420517196,\"y\":214.307921883899},{\"x\":296.8649384699379,\"y\":225.14509587668007},{\"x\":296.79334775176585,\"y\":231.00179283578598},{\"x\":296.11909931895144,\"y\":237.1433380633948},{\"x\":295.0482314434198,\"y\":241.65011503560996},{\"x\":293.1603857100291,\"y\":247.25536347237923},{\"x\":290.41690199328923,\"y\":252.62662284829753},{\"x\":284.41351054336354,\"y\":260.1960854268856},{\"x\":276.51711568398315,\"y\":267.14492061104806},{\"x\":265.1803547466606,\"y\":273.82120993069213},{\"x\":249.9623496970332,\"y\":279.547612994651},{\"x\":244.50694537374272,\"y\":281.1676896609113},{\"x\":235.00178558923722,\"y\":283.13522106180335},{\"x\":226.33210407264912,\"y\":284.1661306539606},{\"x\":216.45095894591807,\"y\":283.53348151959744},{\"x\":203.16228418911612,\"y\":278.90068828215226},{\"x\":197.4502498810569,\"y\":275.7084170544645},{\"x\":190.6060230963317,\"y\":269.75347351015336},{\"x\":185.63142397593091,\"y\":263.62900986259393},{\"x\":181.1301087503297,\"y\":254.51745310105645},{\"x\":177.56373830655883,\"y\":242.9369483832626},{\"x\":175.39061593373708,\"y\":232.49642261682993},{\"x\":174.1148806740837,\"y\":220.85712470228347},{\"x\":174.70815277739737,\"y\":212.93301659905936},{\"x\":176.78971593061505,\"y\":202.53323658117807},{\"x\":179.78145125078603,\"y\":193.7249643609403},{\"x\":183.05893348941007,\"y\":186.0650461849192},{\"x\":187.24012630016134,\"y\":178.19469849428583},{\"x\":191.1838325130137,\"y\":171.59883536592548},{\"x\":198.15731976739607,\"y\":162.24285643414908},{\"x\":202.69360957663807,\"y\":157.05984556368776},{\"x\":207.03271347339228,\"y\":152.45933774375774},{\"x\":211.7550196673963,\"y\":148.1590740141726},{\"x\":214.44127278158183,\"y\":145.80766811553062},{\"x\":216.1042793334115,\"y\":144.41419674056516},{\"x\":217.17986243707014,\"y\":143.50395303383385},{\"x\":218.2516547040065,\"y\":142.58838971665105},{\"x\":218.2516547040065,\"y\":142.58838971665105},{\"x\":218.2516547040065,\"y\":142.58838971665105}],\"brushColor\":\"#3d35e0\",\"brushRadius\":10},{\"points\":[{\"x\":54.18523532466879,\"y\":203.98272539597778},{\"x\":54.18523532466879,\"y\":203.98272539597778},{\"x\":54.18523532466879,\"y\":203.98272539597778}],\"brushColor\":\"#3d35e0\",\"brushRadius\":10},{\"points\":[{\"x\":76.39550429699074,\"y\":146.8355643429538},{\"x\":76.39550429699074,\"y\":146.8355643429538},{\"x\":76.39550429699074,\"y\":146.8355643429538}],\"brushColor\":\"#3d35e0\",\"brushRadius\":10},{\"points\":[{\"x\":120.68497112423277,\"y\":132.97395353803205},{\"x\":120.68497112423277,\"y\":132.97395353803205},{\"x\":120.68497112423277,\"y\":132.97395353803205}],\"brushColor\":\"#4e6599\",\"brushRadius\":10}],\"width\":400,\"height\":400}"}, "drawing"=>{}}
+  [1m[35m (3.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/drawings_controller.rb:13:in `create'
+  [1m[36mDrawing Create (1.8ms)[0m  [1m[32mINSERT INTO "drawings" ("svgdrawing", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["svgdrawing", "{\"lines\":[{\"points\":[{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":108.91619970859504,\"y\":335.5240665941313},{\"x\":107.0793943951709,\"y\":329.0805452577012},{\"x\":104.3876718711272,\"y\":312.6830320572018},{\"x\":102.8400320665827,\"y\":296.885649455842},{\"x\":101.94164642077179,\"y\":281.9566620295373},{\"x\":101.43550707732439,\"y\":268.98176028794126},{\"x\":103.9867317054067,\"y\":251.74146048351292},{\"x\":111.47778995964994,\"y\":230.61955229593428},{\"x\":118.94260102797756,\"y\":217.03393755342768},{\"x\":125.94405467369153,\"y\":206.8049576194986},{\"x\":136.7506938854204,\"y\":192.9329862710145},{\"x\":147.20749182584132,\"y\":181.62254741502977},{\"x\":155.3032069942771,\"y\":173.7412756478806},{\"x\":163.3762699289885,\"y\":166.7330991325013},{\"x\":171.8537027086413,\"y\":160.78488312389885},{\"x\":178.98497823062286,\"y\":156.4552752599845},{\"x\":188.42756596273705,\"y\":152.42378138915984},{\"x\":197.47342375612257,\"y\":149.76585445342272},{\"x\":207.96082871043492,\"y\":147.68053575998675},{\"x\":218.71737859719315,\"y\":146.22287437092314},{\"x\":236.51027246488863,\"y\":145.70212021130263},{\"x\":246.6895938888665,\"y\":146.98925909070599},{\"x\":255.4085383319761,\"y\":149.45902163020065},{\"x\":261.58473358838717,\"y\":152.21628403376133},{\"x\":267.35564091259107,\"y\":155.95374394864464},{\"x\":273.12219311740085,\"y\":161.44669737028016},{\"x\":279.449366230327,\"y\":169.30565799148903},{\"x\":283.91740048421894,\"y\":176.5628233499471},{\"x\":288.1302034883717,\"y\":185.35589409775903},{\"x\":290.905434772815,\"y\":192.5916656452189},{\"x\":292.7676313964056,\"y\":198.96361111230024},{\"x\":294.41227682316014,\"y\":206.54546796723827},{\"x\":295.6678420517196,\"y\":214.307921883899},{\"x\":296.8649384699379,\"y\":225.14509587668007},{\"x\":296.79334775176585,\"y\":231.00179283578598},{\"x\":296.11909931895144,\"y\":237.1433380633948},{\"x\":295.0482314434198,\"y\":241.65011503560996},{\"x\":293.1603857100291,\"y\":247.25536347237923},{\"x\":290.41690199328923,\"y\":252.62662284829753},{\"x\":284.41351054336354,\"y\":260.1960854268856},{\"x\":276.51711568398315,\"y\":267.14492061104806},{\"x\":265.1803547466606,\"y\":273.82120993069213},{\"x\":249.9623496970332,\"y\":279.547612994651},{\"x\":244.50694537374272,\"y\":281.1676896609113},{\"x\":235.00178558923722,\"y\":283.13522106180335},{\"x\":226.33210407264912,\"y\":284.1661306539606},{\"x\":216.45095894591807,\"y\":283.53348151959744},{\"x\":203.16228418911612,\"y\":278.90068828215226},{\"x\":197.4502498810569,\"y\":275.7084170544645},{\"x\":190.6060230963317,\"y\":269.75347351015336},{\"x\":185.63142397593091,\"y\":263.62900986259393},{\"x\":181.1301087503297,\"y\":254.51745310105645},{\"x\":177.56373830655883,\"y\":242.9369483832626},{\"x\":175.39061593373708,\"y\":232.49642261682993},{\"x\":174.1148806740837,\"y\":220.85712470228347},{\"x\":174.70815277739737,\"y\":212.93301659905936},{\"x\":176.78971593061505,\"y\":202.53323658117807},{\"x\":179.78145125078603,\"y\":193.7249643609403},{\"x\":183.05893348941007,\"y\":186.0650461849192},{\"x\":187.24012630016134,\"y\":178.19469849428583},{\"x\":191.1838325130137,\"y\":171.59883536592548},{\"x\":198.15731976739607,\"y\":162.24285643414908},{\"x\":202.69360957663807,\"y\":157.05984556368776},{\"x\":207.03271347339228,\"y\":152.45933774375774},{\"x\":211.7550196673963,\"y\":148.1590740141726},{\"x\":214.44127278158183,\"y\":145.80766811553062},{\"x\":216.1042793334115,\"y\":144.41419674056516},{\"x\":217.17986243707014,\"y\":143.50395303383385},{\"x\":218.2516547040065,\"y\":142.58838971665105},{\"x\":218.2516547040065,\"y\":142.58838971665105},{\"x\":218.2516547040065,\"y\":142.58838971665105}],\"brushColor\":\"#3d35e0\",\"brushRadius\":10},{\"points\":[{\"x\":54.18523532466879,\"y\":203.98272539597778},{\"x\":54.18523532466879,\"y\":203.98272539597778},{\"x\":54.18523532466879,\"y\":203.98272539597778}],\"brushColor\":\"#3d35e0\",\"brushRadius\":10},{\"points\":[{\"x\":76.39550429699074,\"y\":146.8355643429538},{\"x\":76.39550429699074,\"y\":146.8355643429538},{\"x\":76.39550429699074,\"y\":146.8355643429538}],\"brushColor\":\"#3d35e0\",\"brushRadius\":10},{\"points\":[{\"x\":120.68497112423277,\"y\":132.97395353803205},{\"x\":120.68497112423277,\"y\":132.97395353803205},{\"x\":120.68497112423277,\"y\":132.97395353803205}],\"brushColor\":\"#4e6599\",\"brushRadius\":10}],\"width\":400,\"height\":400}"], ["created_at", "2021-01-25 05:03:23.040613"], ["updated_at", "2021-01-25 05:03:23.040613"]]
+  ↳ app/controllers/drawings_controller.rb:13:in `create'
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/drawings_controller.rb:13:in `create'
+Completed 200 OK in 103ms (Views: 9.5ms | ActiveRecord: 8.8ms | Allocations: 779579)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 00:03:42 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 67ms (Views: 20.5ms | ActiveRecord: 2.9ms | Allocations: 299953)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 00:03:42 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 105ms (Views: 99.7ms | ActiveRecord: 0.9ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 00:03:42 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 57ms (Views: 47.9ms | ActiveRecord: 1.1ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 00:13:32 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 43ms (Views: 9.2ms | ActiveRecord: 2.1ms | Allocations: 352649)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 00:13:33 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 97ms (Views: 91.0ms | ActiveRecord: 1.4ms | Allocations: 1008199)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 00:13:33 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 58ms (Views: 51.5ms | ActiveRecord: 1.2ms | Allocations: 432802)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 00:15:30 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 40ms (Views: 10.4ms | ActiveRecord: 1.3ms | Allocations: 299953)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 00:15:30 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 105ms (Views: 99.3ms | ActiveRecord: 1.0ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 00:15:30 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (4.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 64ms (Views: 57.2ms | ActiveRecord: 4.5ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 00:36:34 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 44ms (Views: 11.4ms | ActiveRecord: 4.9ms | Allocations: 352649)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 00:36:34 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 111ms (Views: 104.9ms | ActiveRecord: 1.6ms | Allocations: 1008201)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 00:36:34 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.8ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 53ms (Views: 43.9ms | ActiveRecord: 3.8ms | Allocations: 432802)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 00:36:42 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 66ms (Views: 19.2ms | ActiveRecord: 3.2ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 00:36:42 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (4.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 117ms (Views: 110.5ms | ActiveRecord: 4.1ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 00:36:42 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 58ms (Views: 51.4ms | ActiveRecord: 1.2ms | Allocations: 423725)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 00:42:50 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 74ms (Views: 8.5ms | ActiveRecord: 16.4ms | Allocations: 353421)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 00:42:51 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 127ms (Views: 120.3ms | ActiveRecord: 1.1ms | Allocations: 1008201)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 00:42:51 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.9ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 57ms (Views: 50.5ms | ActiveRecord: 1.9ms | Allocations: 432800)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 00:52:19 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 49ms (Views: 11.1ms | ActiveRecord: 2.3ms | Allocations: 352651)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 00:52:19 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 110ms (Views: 103.9ms | ActiveRecord: 1.1ms | Allocations: 1008201)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 00:52:19 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 1.5ms | Allocations: 432800)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 00:56:24 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 39ms (Views: 8.1ms | ActiveRecord: 1.3ms | Allocations: 299953)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 00:56:24 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 111ms (Views: 102.7ms | ActiveRecord: 1.0ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 00:56:25 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 61ms (Views: 56.9ms | ActiveRecord: 1.2ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 00:58:39 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 60ms (Views: 18.7ms | ActiveRecord: 6.3ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 00:58:39 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 155ms (Views: 147.1ms | ActiveRecord: 1.8ms | Allocations: 1001424)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 00:58:39 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.3ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 62ms (Views: 53.5ms | ActiveRecord: 3.3ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:03:54 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (14.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 106ms (Views: 21.5ms | ActiveRecord: 14.5ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:03:54 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 203ms (Views: 193.6ms | ActiveRecord: 1.0ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:03:54 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (5.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 98ms (Views: 80.8ms | ActiveRecord: 5.0ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:06:37 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 40ms (Views: 9.7ms | ActiveRecord: 5.1ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:06:37 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 109ms (Views: 101.9ms | ActiveRecord: 1.0ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:06:37 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 82ms (Views: 71.8ms | ActiveRecord: 1.0ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:06:38 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 61ms (Views: 9.0ms | ActiveRecord: 1.6ms | Allocations: 299953)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:06:38 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (5.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 172ms (Views: 164.4ms | ActiveRecord: 5.0ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:06:39 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (9.6ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 221ms (Views: 208.1ms | ActiveRecord: 9.6ms | Allocations: 426027)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:13:46 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (14.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 107ms (Views: 13.5ms | ActiveRecord: 16.1ms | Allocations: 352650)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:13:47 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 234ms (Views: 222.4ms | ActiveRecord: 1.8ms | Allocations: 1008969)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:13:47 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (22.9ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 186ms (Views: 153.3ms | ActiveRecord: 22.9ms | Allocations: 432802)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:32:10 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 148ms (Views: 10.8ms | ActiveRecord: 65.8ms | Allocations: 353419)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:32:10 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 110ms (Views: 101.5ms | ActiveRecord: 1.1ms | Allocations: 1008201)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:32:10 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.9ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 55ms (Views: 47.9ms | ActiveRecord: 3.9ms | Allocations: 432802)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:32:29 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 39ms (Views: 10.3ms | ActiveRecord: 4.6ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:32:30 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 108ms (Views: 102.7ms | ActiveRecord: 1.0ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:32:30 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.8ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 59ms (Views: 52.8ms | ActiveRecord: 3.8ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:42:57 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 36ms (Views: 6.8ms | ActiveRecord: 1.8ms | Allocations: 352649)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:42:57 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.3ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 96ms (Views: 90.0ms | ActiveRecord: 1.3ms | Allocations: 1008199)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:42:57 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.3ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 49ms (Views: 43.0ms | ActiveRecord: 1.3ms | Allocations: 432802)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:47:56 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 40ms (Views: 15.7ms | ActiveRecord: 1.2ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:47:56 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (6.4ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 136ms (Views: 122.6ms | ActiveRecord: 6.4ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:47:56 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 132ms (Views: 116.2ms | ActiveRecord: 1.1ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:50:44 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (29.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 85ms (Views: 13.0ms | ActiveRecord: 29.5ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:50:44 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 111ms (Views: 102.2ms | ActiveRecord: 0.9ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:50:44 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.9ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 53ms (Views: 46.8ms | ActiveRecord: 3.9ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:51:03 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 76ms (Views: 29.1ms | ActiveRecord: 2.2ms | Allocations: 299953)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:51:03 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 119ms (Views: 112.9ms | ActiveRecord: 1.0ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:51:03 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 68ms (Views: 60.9ms | ActiveRecord: 1.2ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:55:20 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 70ms (Views: 20.3ms | ActiveRecord: 9.8ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:55:20 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (3.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 108ms (Views: 102.9ms | ActiveRecord: 3.5ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:55:20 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 48ms (Views: 41.4ms | ActiveRecord: 1.4ms | Allocations: 423725)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:55:31 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 50ms (Views: 17.2ms | ActiveRecord: 1.7ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:55:31 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 120ms (Views: 108.0ms | ActiveRecord: 1.0ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:55:31 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 51ms (Views: 44.1ms | ActiveRecord: 1.2ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:55:45 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 37ms (Views: 7.2ms | ActiveRecord: 5.7ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:55:45 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 100ms (Views: 93.8ms | ActiveRecord: 0.8ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:55:45 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.6ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 45ms (Views: 36.2ms | ActiveRecord: 3.6ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:57:05 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 37ms (Views: 8.5ms | ActiveRecord: 0.8ms | Allocations: 299953)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:57:05 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 112ms (Views: 107.2ms | ActiveRecord: 0.8ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:57:06 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (11.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 60ms (Views: 46.3ms | ActiveRecord: 11.1ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:58:42 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 32ms (Views: 6.8ms | ActiveRecord: 0.8ms | Allocations: 299953)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:58:42 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (3.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 106ms (Views: 97.9ms | ActiveRecord: 3.5ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:58:42 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 49ms (Views: 42.8ms | ActiveRecord: 1.2ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:58:45 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 84ms (Views: 23.5ms | ActiveRecord: 2.6ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:58:45 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 122ms (Views: 112.2ms | ActiveRecord: 1.2ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:58:45 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 77ms (Views: 71.6ms | ActiveRecord: 1.0ms | Allocations: 423728)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:58:58 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 63ms (Views: 19.7ms | ActiveRecord: 1.6ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:58:58 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (4.5ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 125ms (Views: 118.0ms | ActiveRecord: 4.5ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:58:59 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.2ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 44ms (Views: 37.9ms | ActiveRecord: 1.2ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 01:59:19 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (23.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 86ms (Views: 8.5ms | ActiveRecord: 23.4ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 01:59:19 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.0ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 114ms (Views: 107.1ms | ActiveRecord: 1.0ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 01:59:19 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (4.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 57ms (Views: 49.9ms | ActiveRecord: 4.0ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 02:00:39 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 107ms (Views: 68.4ms | ActiveRecord: 1.0ms | Allocations: 299953)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 02:00:39 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 113ms (Views: 104.7ms | ActiveRecord: 1.1ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 02:00:39 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 1.0ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 02:01:33 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 39ms (Views: 9.9ms | ActiveRecord: 0.9ms | Allocations: 299953)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 02:01:33 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (4.6ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 120ms (Views: 108.8ms | ActiveRecord: 4.6ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 02:01:33 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.1ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 50ms (Views: 43.4ms | ActiveRecord: 1.1ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 02:03:25 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 41ms (Views: 15.5ms | ActiveRecord: 3.6ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 02:03:25 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.2ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 156ms (Views: 152.0ms | ActiveRecord: 1.2ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 02:03:26 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 160ms (Views: 152.5ms | ActiveRecord: 1.5ms | Allocations: 423726)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 02:11:41 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 46ms (Views: 10.2ms | ActiveRecord: 1.8ms | Allocations: 352649)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 02:11:42 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.7ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 110ms (Views: 102.9ms | ActiveRecord: 1.7ms | Allocations: 1008201)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 02:11:42 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.3ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 56ms (Views: 49.9ms | ActiveRecord: 1.3ms | Allocations: 432802)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 02:11:56 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 45ms (Views: 12.2ms | ActiveRecord: 1.8ms | Allocations: 299953)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 02:11:56 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.7ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 168ms (Views: 151.2ms | ActiveRecord: 1.7ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 02:11:56 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.6ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 1.6ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 02:12:23 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 42ms (Views: 11.2ms | ActiveRecord: 1.3ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 02:12:23 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.9ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 124ms (Views: 114.7ms | ActiveRecord: 0.9ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 02:12:23 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 1.0ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 02:12:53 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 40ms (Views: 10.5ms | ActiveRecord: 3.8ms | Allocations: 302197)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 02:12:53 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 108ms (Views: 105.0ms | ActiveRecord: 0.8ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 02:12:53 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.0ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 122ms (Views: 116.2ms | ActiveRecord: 1.0ms | Allocations: 423728)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 02:13:10 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 35ms (Views: 12.4ms | ActiveRecord: 0.8ms | Allocations: 299953)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 02:13:11 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (1.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 110ms (Views: 106.6ms | ActiveRecord: 1.1ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 02:13:11 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (1.4ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 55ms (Views: 48.2ms | ActiveRecord: 1.4ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 02:13:19 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 75ms (Views: 24.3ms | ActiveRecord: 1.3ms | Allocations: 299951)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 02:13:19 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (2.1ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 129ms (Views: 120.8ms | ActiveRecord: 2.1ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 02:13:20 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (4.8ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 51ms (Views: 44.5ms | ActiveRecord: 4.8ms | Allocations: 423727)
+
+
+Started GET "/users/10" for ::1 at 2021-01-25 02:13:27 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `show'
+Completed 200 OK in 73ms (Views: 18.4ms | ActiveRecord: 2.1ms | Allocations: 299953)
+
+
+Started GET "/activities" for ::1 at 2021-01-25 02:13:27 -0500
+Processing by ActivitiesController#index as */*
+  [1m[36mActivity Load (0.8ms)[0m  [1m[34mSELECT "activities".* FROM "activities"[0m
+  ↳ app/controllers/activities_controller.rb:4:in `index'
+Completed 200 OK in 117ms (Views: 111.2ms | ActiveRecord: 0.8ms | Allocations: 999124)
+
+
+Started GET "/drawings" for ::1 at 2021-01-25 02:13:28 -0500
+Processing by DrawingsController#index as */*
+  [1m[36mDrawing Load (3.5ms)[0m  [1m[34mSELECT "drawings".* FROM "drawings"[0m
+  ↳ app/controllers/drawings_controller.rb:4:in `index'
+Completed 200 OK in 58ms (Views: 52.8ms | ActiveRecord: 3.5ms | Allocations: 423727)
+
+

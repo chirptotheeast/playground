@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import classNames from "../drawing.css";
 import { Link } from "react-router-dom";
-import playlogo from "../images/lgplaygroundlogo.png";
+import playlogo from "../images/sunnyplay.png";
 
 import CanvasDraw from "react-canvas-draw";
 
@@ -26,6 +26,7 @@ class Drawing extends Component {
 
 submitHandler =(event) => {
 
+
   const savedDraw = localStorage.getItem("savedDrawing");
 
             let data = {
@@ -40,7 +41,7 @@ submitHandler =(event) => {
             fetch("http://localhost:3000/drawings", requestOptions)
               .then((response) => response.json())
               .then((data) => {
-                console.log(data)
+                //console.log(data)
                 this.saveableCanvas.clear();
               }
                 );

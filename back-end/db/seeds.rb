@@ -19,12 +19,12 @@ user3 = User.create(username: 'RedTruckin', password: '123', avatar: '')
 
 puts 'activities'
 
-music_activity_sheep = Activity.create(name: 'SheepMusic', video_link: 'https://youtu.be/xT2zOAZAWoM', youtube_video: true, avatar: '')
-music_activity_love = Activity.create(name: 'LoveMusic', video_link: 'https://youtu.be/nYKNeMqww-I', youtube_video: true, avatar: '')
-music_activity_bee = Activity.create(name: 'BeeMusic', video_link: 'https://youtu.be/Z6zWxullnuA', youtube_video: true, avatar: '')
-music_activity_hedgie = Activity.create(name: 'HedgieMusic', video_link: 'https://youtu.be/1YNVnXEckHM', youtube_video: true, avatar: '')
-music_activity_sick = Activity.create(name: 'SickMusic', video_link: 'https://youtu.be/wdKQIhtclZc', youtube_video: true, avatar: '')
-music_activity_bunny = Activity.create(name: 'bunnyMusic', video_link: 'https://youtu.be/IWWjTl39sFo', youtube_video: true, avatar: '')
+music_activity_sheep = Activity.create(name: 'SheepMusic', video_link: 'https://youtu.be/xT2zOAZAWoM', youtube_video: true, avatar: '/static/media/sheep-avatar.e0855861.png')
+music_activity_love = Activity.create(name: 'LoveMusic', video_link: 'https://youtu.be/nYKNeMqww-I', youtube_video: true, avatar: '/static/media/heart-avatar.6682dcf4.PNG')
+music_activity_bee = Activity.create(name: 'BeeMusic', video_link: 'https://youtu.be/Z6zWxullnuA', youtube_video: true, avatar: '/static/media/bee-avatar.b2bb6fe4.png')
+music_activity_hedgie = Activity.create(name: 'HedgieMusic', video_link: 'https://youtu.be/1YNVnXEckHM', youtube_video: true, avatar: '/static/media/hedgehog-avatar.49d9df0b.png')
+music_activity_sick = Activity.create(name: 'SickMusic', video_link: 'https://youtu.be/wdKQIhtclZc', youtube_video: true, avatar: '/static/media/tissue-avatar.98110c16.PNG')
+music_activity_bunny = Activity.create(name: 'bunnyMusic', video_link: 'https://youtu.be/IWWjTl39sFo', youtube_video: true, avatar: '/static/media/bunny-avatar-purple.eef03baa.PNG')
 games_activity = Activity.create(name: 'games', video_link: '', youtube_video: false , avatar: '')
 puppet_activity = Activity.create(name: 'puppets', video_link: '', youtube_video: false, avatar: '')
 nap_time = Activity.create(name: 'nap time', video_link: '', youtube_video: false, avatar: '')

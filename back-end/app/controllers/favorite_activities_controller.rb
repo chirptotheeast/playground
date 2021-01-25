@@ -10,5 +10,12 @@ class FavoriteActivitiesController < ApplicationController
   end
 
   def create
+    newfav = FavoriteActivity.create(fave_acty_params)
+    render json: newfav
+  end 
+
+  
+  def fave_acty_params
+    params.require(:favorite_activity).permit(:user_id, :activity_id)
   end
 end

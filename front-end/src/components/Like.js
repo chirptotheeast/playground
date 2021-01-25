@@ -14,6 +14,30 @@ export default class Like extends Component {
         localLiked = !localLiked;
         this.setState({liked: localLiked })
     }
+    
+
+    likeHander = (event) => {
+
+        const currentUser = localStorage.getItem("userId");
+        const userId = parseInt(currentUser, 10)
+
+       let data = {
+         user_id: userId,
+         activity_id: ''
+       };
+
+       const requestOptions = {
+         method: "POST",
+         headers: { "Content-Type": "application/json" },
+         body: JSON.stringify({ data }),
+       };
+       fetch("http://localhost:3000/favorite_activities", requestOptions)
+         .then((response) => response.json())
+         .then((data) => {
+           console.log(data)
+         });
+
+    }
     render() {
         return (
           <div>

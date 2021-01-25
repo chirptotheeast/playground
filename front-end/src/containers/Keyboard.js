@@ -6,7 +6,7 @@ import Like from "../components/Like.js"
 
 
 
-export default function Keyboard () {
+export default function Keyboard (props) {
 const firstNote = MidiNumbers.fromNote("c3");
 const lastNote = MidiNumbers.fromNote("f5");
 const keyboardShortcuts = KeyboardShortcuts.create({
@@ -14,12 +14,16 @@ const keyboardShortcuts = KeyboardShortcuts.create({
   lastNote: lastNote,
   keyboardConfig: KeyboardShortcuts.HOME_ROW,
 });
+
+
         return (
           <div>
             <Piano
               noteRange={{ first: firstNote, last: lastNote }}
               playNote={(midiNumber) => {
                 // Play a given note - see notes below
+               
+    
               }}
               stopNote={(midiNumber) => {
                 // Stop playing a given note - see notes below

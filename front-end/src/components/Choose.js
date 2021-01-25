@@ -16,6 +16,32 @@ import cow from '../images/cow-avatar.png'
 
 export default class Choose extends Component {
 
+  state ={
+    avatar: false
+  }
+
+  chooseAvatar = (event) => {
+
+  // const savedDraw = localStorage.getItem("savedDrawing");
+
+  // let data = {
+  //   avatar: ''
+  // };
+
+  // const requestOptions = {
+  //   method: "POST",
+  //   headers: { "Content-Type": "application/json" },
+  //   body: JSON.stringify({ data }),
+  // };
+  // fetch("http://localhost:3000/drawings", requestOptions)
+  //   .then((response) => response.json())
+  //   .then((data) => {
+  //     //console.log(data)
+  //     this.saveableCanvas.clear();
+  //   });
+
+  }
+
     render() {
         return (
           <div>
@@ -26,7 +52,7 @@ export default class Choose extends Component {
                 {avatarArr.map((avatar) => {
                   return (
                     <Link to="/playground">
-                      <button>
+                      <button onClick={() => {}}>
                         <img
                           className="playlogo avatarchoose"
                           src={avatar}
