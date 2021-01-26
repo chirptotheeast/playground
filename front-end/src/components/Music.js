@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import playlogo from "../images/sunnyplay.png";
 import Musicplayer from "../containers/Musicplayer.js";
 import { Link } from "react-router-dom";
-import Keyboard from "../containers/Keyboard.js";
-// import { act } from '@testing-library/react';
+// import Keyboard from "../containers/Keyboard.js";
+import Drummachine from "../containers/DrumMachine.js"
 
 export default class Music extends Component {
   render() {
@@ -34,7 +34,7 @@ export default class Music extends Component {
         <hr></hr>
         <div className="divider"></div>
         <div className="music-player">
-          <Keyboard />
+          <Drummachine />
         </div>
       </div>
     );

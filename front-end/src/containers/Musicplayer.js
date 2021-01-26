@@ -6,7 +6,7 @@ import bee from "../images/bee-avatar.png";
 import hedgie from "../images/hedgehog-avatar.png"
 import tissue from "../images/tissue-avatar.PNG"
 import bunny from "../images/bunny-avatar-purple.PNG"
-import Like from "../components/Like.js"
+
 
 export default function Musicplayer (props) {
 
@@ -63,9 +63,7 @@ export default function Musicplayer (props) {
               <ReactPlayer url={url} />
               <div className="divider"></div>
             </div>
-            <div className="music-player">
-              <Like />
-            </div>
+           
           </div>
         );
 }
