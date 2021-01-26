@@ -19,13 +19,14 @@ export default class Choose extends Component {
   state ={
     avatar: false
   }
+  
 
   chooseAvatar = (event) => {
 
-  // const savedDraw = localStorage.getItem("savedDrawing");
+  // const chosenAvatar = localStorage.getItem("character");
 
   // let data = {
-  //   avatar: ''
+  //   avatar: chosenAvatar
   // };
 
   // const requestOptions = {
@@ -33,28 +34,32 @@ export default class Choose extends Component {
   //   headers: { "Content-Type": "application/json" },
   //   body: JSON.stringify({ data }),
   // };
-  // fetch("http://localhost:3000/drawings", requestOptions)
+  // fetch("http://localhost:3000/users", requestOptions)
   //   .then((response) => response.json())
   //   .then((data) => {
   //     //console.log(data)
-  //     this.saveableCanvas.clear();
   //   });
 
   }
 
     render() {
+      console.log(avatarArr);
         return (
           <div>
             <div className="helpful-vert-align"></div>
-            <div className="choosediv ">
+            <div className="choosediv  bg-yellow-100 ">
               <img className="playlogo" src={logo} alt="logo" />
               <div className="flex-container">
                 {avatarArr.map((avatar) => {
                   return (
                     <Link to="/playground">
-                      <button onClick={() => {}}>
+                      <button onClick={() => {localStorage.setItem(
+                        "character",
+                        avatar
+                      );
+                      this.chooseAvatar();}}>
                         <img
-                          className="playlogo avatarchoose"
+                          className="playlogo avatarchoose hvr-grow-rotate "
                           src={avatar}
                           alt={avatar}
                         />
@@ -64,7 +69,7 @@ export default class Choose extends Component {
                 })}
               </div>
               <img
-                className="playlogo imgnobr choose"
+                className="playlogo imgnobr choose "
                 src={choose}
                 alt="logo"
               />

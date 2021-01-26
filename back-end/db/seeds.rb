@@ -29,7 +29,7 @@ games_activity = Activity.create(name: 'games', video_link: '', youtube_video: f
 puppet_activity = Activity.create(name: 'puppets', video_link: '', youtube_video: false, avatar: '')
 nap_time = Activity.create(name: 'nap time', video_link: '', youtube_video: false, avatar: '')
 sidewalk = Activity.create(name: 'sidewalk art', video_link: '', youtube_video: false, avatar: '')
-
+keyboard = Activity.create(name: 'keyboard', video_link: '', youtube_video: false, avatar: '')
 
 
 puts 'drawings'

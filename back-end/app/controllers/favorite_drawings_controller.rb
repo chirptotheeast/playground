@@ -9,12 +9,16 @@ class FavoriteDrawingsController < ApplicationController
     render json: favorite_drawing
   end
 
-  def new
-  end
+   def create
+    drawFav = FavoriteDrawing.create(user_id: params[:data][:user_id] ,  
+                                    drawing_id: params[:data][:drawing_id])
+    render json: drawFav
+  end 
 
-  def create
-  end
+  
 
-  def edit
-  end
+  
+  # def fave_draw_params
+  #   params.require(:favorite_drawing).permit(:user_id, :drawing_id)
+  # end
 end

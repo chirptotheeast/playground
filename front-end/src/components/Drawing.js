@@ -42,7 +42,8 @@ submitHandler =(event) => {
               .then((response) => response.json())
               .then((data) => {
                 //console.log(data)
-                this.saveableCanvas.clear();
+                this.saveableCanvas.clear()
+                 localStorage.setItem("drawingId", data.id);
               }
                 );
 
@@ -83,6 +84,7 @@ submitHandler =(event) => {
                     "savedDrawing",
                     this.saveableCanvas.getSaveData()
                   );
+                 
                   this.submitHandler();
                 }}
               >

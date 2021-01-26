@@ -16,12 +16,14 @@ import Sidewalk from "./components/Sidewalk.js"
 // const user ="http://localhost:3000/users/4"
 const activities = "http://localhost:3000/activities";
 const drawings = "http://localhost:3000/drawings";
+const favdrawings = "http://localhost:3000/favorite_drawings";
 
 class App extends Component {
   state = {
     user: [],
     favorite_activities: [],
-    drawings: []
+    drawings: [],
+    favorite_drawings: []
   }
 
 
@@ -41,6 +43,11 @@ class App extends Component {
            const drawData = await drawResponse.json();
            //console.log(userData);
            this.setState({ drawings: drawData});
+
+                const favdrawResponse = await fetch(favdrawings);
+                const favdrawData = await favdrawResponse.json();
+                console.log(favdrawData);
+                this.setState({ favorite_drawings: favdrawData });
   }
 
   render(){
@@ -49,21 +56,24 @@ class App extends Component {
       <header className="App-header">
         <Route exact path="/" component={Welcome} />
         <Route exact path="/choose" component={Choose} />
-        <Route exact path="/playground" >
-          <Playground activities={this.state.activities}/>
+        <Route exact path="/playground">
+          <Playground activities={this.state.activities} />
         </Route>
-        <Route exact path="/myplayground" component={Myplayground} >
-          <Myplayground drawings={this.state.drawings} />
-        </Route >
+        <Route exact path="/myplayground" component={Myplayground}>
+          <Myplayground
+            drawings={this.state.drawings}
+            favdrawings={this.state.favorite_drawings}
+          />
+        </Route>
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
-        <Route exact path="/music" component={Music} >
+        <Route exact path="/music" component={Music}>
           <Music activities={this.state.activities} />
         </Route>
         <Route exact path="/drawing" component={Drawing} />
         <Route exact path="/games" component={Games} />
         <Route exact path="/sidewalk" component={Sidewalk}>
-          <Sidewalk drawings={this.state.drawings}/>
+          <Sidewalk drawings={this.state.drawings} />
         </Route>
       </header>
     </div>

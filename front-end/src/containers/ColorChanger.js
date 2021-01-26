@@ -24,7 +24,10 @@ const Color = () => {
           Randomize Color
         </button>
         <div className="divider"></div>
-        <Toggle />
+        <div className="divider"></div>
+        <div className="float-right max-w-xs rounded overflow-hidden my-2 border-4 border-light-blue-500 border-opacity-50 m-4 shadow">
+          <Toggle />
+        </div>
       </div>
     </div>
   );

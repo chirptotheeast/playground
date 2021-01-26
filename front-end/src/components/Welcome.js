@@ -9,18 +9,20 @@ export default class Welcome extends Component {
           <div className="flex-container">
             <div className="rcorners1">
               <div className="inner-div">
-                <img className="welcomelogo" src={logo} alt="logo" />
+                <img className="welcomelogo hvr-wobble-vertical" src={logo} alt="logo" />
               </div>
               <div className="divider"></div>
               <Link to="/choose">
-                <button className="btn">let's play!</button>
+                <button className="btn hvr-pulse">let's play!</button>
               </Link>
               <Link to="/login">
-                <button className="btn">login</button>
+                <button className="btn hvr-pulse">login</button>
               </Link>
-                <Link to="/register">
-                  <p id="createaccount" className="p-play">create account</p>
-                </Link>
+              <Link to="/register">
+                <p className="createaccount p-play">
+                  create account
+                </p>
+              </Link>
             </div>
           </div>
         );

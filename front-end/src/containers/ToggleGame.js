@@ -23,7 +23,10 @@ class Toggle extends PureComponent {
   render() {
     return (
       <div>
-        <button onClick={this.handleClick}>Toggle</button>
+        <h1 style={{ textAlign: "center" }}>Move it!</h1>
+        <button className="sm-btn justify-center" onClick={this.handleClick}>
+          Move the square
+        </button>
         <Animate
           start={() => ({
             x: 0,

@@ -15,6 +15,8 @@ class FavoriteActivitiesController < ApplicationController
   end 
 
   
+
+  
   def fave_acty_params
     params.require(:favorite_activity).permit(:user_id, :activity_id)
   end

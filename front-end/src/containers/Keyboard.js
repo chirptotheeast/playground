@@ -1,12 +1,14 @@
 import { Piano, KeyboardShortcuts, MidiNumbers } from "react-piano";
 import "react-piano/dist/styles.css";
 import Like from "../components/Like.js"
+import { useState } from 'react'
 
 
 
 
 
-export default function Keyboard (props) {
+export default function Keyboard (props) {  
+ 
 const firstNote = MidiNumbers.fromNote("c3");
 const lastNote = MidiNumbers.fromNote("f5");
 const keyboardShortcuts = KeyboardShortcuts.create({
@@ -17,7 +19,7 @@ const keyboardShortcuts = KeyboardShortcuts.create({
 
 
         return (
-          <div>
+          <div >
             <Piano
               noteRange={{ first: firstNote, last: lastNote }}
               playNote={(midiNumber) => {
@@ -32,7 +34,7 @@ const keyboardShortcuts = KeyboardShortcuts.create({
               keyboardShortcuts={keyboardShortcuts}
             />
             <div className="music-player">
-              <Like />
+              <Like activity={'keyboard'}/>
             </div>
           </div>
         );
