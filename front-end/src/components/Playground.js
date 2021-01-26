@@ -7,6 +7,7 @@ import myplay from "../images/myplayground.png";
 import { Link } from "react-router-dom";
 import sidewalk from "../images/sidewalk.png"
 import fairy from "../sounds/fairy.mp3"
+import sleepyicon from '../icons/sleepyicon.png'
 
 
 class Playground extends Component {
@@ -34,7 +35,7 @@ class Playground extends Component {
                   alt="user"
                 />
                 <div>
-                  <button className="bttn" onClick={start}>
+                  <button className="bttn" onMouseOver={start}>
                     Play
                   </button>
                 </div>
@@ -78,6 +79,7 @@ class Playground extends Component {
                       </p>
 
                       <img
+                        onMouseOver={start}
                         className="playlogo imgnobr hvr-buzz "
                         src={musicicon}
                         alt="logo"
@@ -122,7 +124,7 @@ class Playground extends Component {
                   id="jh-stats-positive"
                   className="flex flex-col justify-center px-8 py-8 bg-white border border-gray-300 rounded shadow-lg hvr-grow-rotate "
                 >
-                  <Link to="/music">
+                  <Link to="/napmusic">
                     <div>
                       <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor-pointer">
                         sleepy
@@ -130,7 +132,7 @@ class Playground extends Component {
 
                       <img
                         className="playlogo imgnobr hvr-buzz "
-                        src={musicicon}
+                        src={sleepyicon}
                         alt="logo"
                       />
                     </div>
