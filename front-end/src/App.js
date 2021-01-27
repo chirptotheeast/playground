@@ -48,9 +48,21 @@ class App extends Component {
 
                 const favdrawResponse = await fetch(favdrawings);
                 const favdrawData = await favdrawResponse.json();
-                console.log(favdrawData);
+                //console.log(favdrawData);
                 this.setState({ favorite_drawings: favdrawData });
   }
+
+updateDraw = (id) => {
+
+  this.setState({
+    favorite_drawings: this.state.favorite_drawings.filter(drawing => {
+       return drawing.id !== id
+  })
+})
+}
+
+
+
 
   render(){
   return (
@@ -65,6 +77,7 @@ class App extends Component {
           <Myplayground
             drawings={this.state.drawings}
             favdrawings={this.state.favorite_drawings}
+            updateDraw={this.updateDraw}
           />
         </Route>
         <Route exact path="/login" component={Login} />
@@ -78,7 +91,6 @@ class App extends Component {
           <Sidewalk drawings={this.state.drawings} />
         </Route>
         <Route exact path="/napmusic" component={NapMusic} />
-   
       </header>
     </div>
   );

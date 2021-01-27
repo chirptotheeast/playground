@@ -11,14 +11,14 @@ class FavoriteDrawingsController < ApplicationController
 
    def create
     drawFav = FavoriteDrawing.create(user_id: params[:data][:user_id] ,  
-                                    drawing_id: params[:data][:drawing_id])
+                                    drawing_id: params[:data][:drawing_id],
+                                    drawing: params[:data][:drawing])
     render json: drawFav
   end 
 
+  def destroy
+    deleteDraw = FavoriteDrawing.find_by(id: params[:id])
+    deleteDraw.destroy
+  end
   
-
-  
-  # def fave_draw_params
-  #   params.require(:favorite_drawing).permit(:user_id, :drawing_id)
-  # end
 end

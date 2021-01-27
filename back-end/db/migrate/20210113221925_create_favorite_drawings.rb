@@ -3,6 +3,7 @@ class CreateFavoriteDrawings < ActiveRecord::Migration[6.0]
     create_table :favorite_drawings do |t|
       t.integer :user_id
       t.integer :drawing_id
+      t.text :drawing
       t.boolean :creator
 
       t.timestamps

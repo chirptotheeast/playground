@@ -7,18 +7,22 @@ import play from "../images/lgplaygroundlogo.png";
 
 export default class Thesidewalk extends Component {
   
-  likeHandler = (event) => {
+  likeHandler = (drawingid) => {
+    //console.log(drawingsvgdrawing)
     const currentUser = localStorage.getItem("userId");
     const userId = parseInt(currentUser, 10);
+   const drawCode = localStorage.getItem('favDrawingStr')
 
-    const drawingUser = localStorage.getItem("drawingId");
-    const drawId = parseInt(drawingUser, 10);
+   
+    
 
 
     let data = {
       user_id: userId,
-      drawing_id: drawId
+      drawing_id: drawingid,
+      drawing: drawCode
     };
+    
 
     const requestOptions = {
       method: "POST",
@@ -32,11 +36,15 @@ export default class Thesidewalk extends Component {
   };
 
   render() {
-    console.log(
-      this.props.drawings.map((drawing) => {
+ 
+       const drawingIdArr =  this.props.drawings.map((drawing) => {
         return drawing.id;
       })
-    );
+      //console.log(drawingIdArr)
+
+    // const findId = drawingIdArr.find((drawId) =>{
+    //   return drawId === drawing.Id
+    // })
     const characterPic = localStorage.getItem("character");
 
     return (
@@ -85,15 +93,22 @@ export default class Thesidewalk extends Component {
 
         <div className="grid grid-cols-3 gap-4 place-content-center">
           {this.props.drawings.map((drawing) => {
+
             return (
               <div className="flex-container ">
+                {/* {console.log(drawing.id)} */}
                 <div
                   className="container-images"
                   onClick={() => {
-                    console.log(drawing.id)
-                   { this.likeHandler()}
-                  }
-                }
+                    // const findId = drawingIdArr.find((drawId) => {
+                    //   return drawId === drawing.Id;
+                    // });
+                    // console.log(findId)
+                   localStorage.setItem('favDrawingStr', drawing.svgdrawing)
+                    {
+                      this.likeHandler(drawing.id)
+                    }
+                  }}
                 >
                   <CanvasDraw
                     className="shadow"

@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2021_01_13_221925) do
   create_table "favorite_drawings", force: :cascade do |t|
     t.integer "user_id"
     t.integer "drawing_id"
+    t.text "drawing"
     t.boolean "creator"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

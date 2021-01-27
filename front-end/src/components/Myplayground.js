@@ -8,24 +8,31 @@ import CanvasDraw from "react-canvas-draw";
 
 
 export default class Myplayground extends Component {
-    render() {
-    //  this.props.drawings.map(drawing => {
-    //       const newdraw = localStorage.setItem("drawing", drawing.svgdrawing);
-       
-    //     console.log(newdraw);
-    //   });
   
+
+    removeDraw(id){
+     fetch("http://localhost:3000/favorite_drawings/" + id, {
+       method: "DELETE",
+      headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
+      })
+      .then( resp => this.props.updateDraw(id))
+      console.log(this.props);
+    }
+
+    render() {
+ 
       const characterPic = localStorage.getItem('character')
 
-      const favDrawy = this.props.favorite_drawings
-    
-      console.log(favDrawy)
         return (
           <div>
             <div
               className="bannerFondo bg-yellow-100 bg-left-top bg-auto bg-repeat-x"
               style={{ backgroundImage: `url(./img/bear-avatar.png)` }}
             ></div>
+         
             <div className="-mt-64 ">
               <div className="w-full text-center">
                 <h1 className="font-bold text-5xl text-white">
@@ -36,8 +43,8 @@ export default class Myplayground extends Component {
               </div>
             </div>
 
-            <section className="h-screen w-screen bg-teal-200 flex flex-col-reverse sm:flex-row min-h-0 min-w-0 overflow-hidden">
-              <main className="sm:h-full flex-1 flex flex-col min-h-0 min-w-0 ">
+            {/* <section className="h-screen w-screen bg-teal-200 flex flex-col-reverse sm:flex-row min-h-0 min-w-0 overflow-hidden"> */}
+              {/* <main className="sm:h-full flex-1 flex flex-col min-h-0 min-w-0 "> */}
                 <nav className="border-b border-indigo-300 bg-white  px-7 py-4 flex items-center min-w-0 h-17">
                   <h1 className="font-semibold text-lg"></h1>
                   {/* <span className="flex-1"></span>
@@ -95,7 +102,7 @@ export default class Myplayground extends Component {
                   </div>
 
                   <div className="grid grid-cols-2 gap-3 m-3">
-                    {this.props.drawings.map((drawing) => {
+                    {this.props.favdrawings.map((drawing) => {
                       return (
                         <div className="flex-container">
                           <div className="container-images box-border h-410 w-410 p-4 border-4 m-4 ">
@@ -105,16 +112,21 @@ export default class Myplayground extends Component {
                               ref={(canvasDraw) =>
                                 (this.loadableCanvas = canvasDraw)
                               }
-                              saveData={drawing.svgdrawing}
+                              saveData={drawing.drawing}
+                              
                             />
+                           
+                            <button onClick={() => this.removeDraw(drawing.id)}>
+                              delete
+                            </button>
                           </div>
                         </div>
                       );
                     })}
                   </div>
                 </div>
-              </main>
-            </section>
+              {/* </main> */}
+            {/* </section> */}
           </div>
         );
     }

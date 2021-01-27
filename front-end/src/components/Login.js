@@ -74,7 +74,7 @@ export default class Login extends Component {
             </div>
           </div>
         ) : (
-          <Redirect to="/playground" />
+          <Redirect to="/choose" />
         )}
       </div>
     );

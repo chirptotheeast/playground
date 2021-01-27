@@ -7,6 +7,8 @@ import myplay from "../images/myplayground.png";
 import { Link } from "react-router-dom";
 import sidewalk from "../images/sidewalk.png"
 import fairy from "../sounds/fairy.mp3"
+import gamesverbal from "../sounds/gamesaudio.mp3";
+import drawverbal from "../sounds/drawaudio.mp3";
 import sleepyicon from '../icons/sleepyicon.png'
 
 
@@ -15,10 +17,20 @@ class Playground extends Component {
   
    render(){
       const audio = new Audio(fairy);
+      const gamesaudio = new Audio(gamesverbal)
+      const drawaudio = new Audio(drawverbal)
 
       const start = () => {
         audio.play();
       };
+
+        const gamestart = () => {
+          gamesaudio.play();
+        };
+
+          const drawstart = () => {
+            drawaudio.play();
+          };
 
       const characterPic = localStorage.getItem("character");
 
@@ -35,9 +47,11 @@ class Playground extends Component {
                   alt="user"
                 />
                 <div>
-                  <button className="bttn" onMouseOver={start}>
-                    Play
-                  </button>
+                  <Link to="/">
+                    <button className="bttn" onMouseOver={start}>
+                     start
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -95,9 +109,9 @@ class Playground extends Component {
                   <Link to="/drawing">
                     <div>
                       <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor-pointer">
-                        drawing
+                        draw
                       </p>
-                      <img className="playlogo" src={drawicon} alt="logo" />
+                      <img className="playlogo" src={drawicon} alt="logo" onMouseOver={drawstart}/>
                     </div>
                   </Link>
                 </div>
@@ -112,6 +126,7 @@ class Playground extends Component {
                         games
                       </p>
                       <img
+                      onMouseOver={gamestart}
                         className="playlogo hvr-buzz"
                         src={gameicon}
                         alt="logo"

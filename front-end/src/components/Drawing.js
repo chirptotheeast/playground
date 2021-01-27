@@ -33,6 +33,8 @@ submitHandler =(event) => {
              svgdrawing: savedDraw
             };
 
+            
+
             const requestOptions = {
               method: "POST",
               headers: { "Content-Type": "application/json" },
@@ -41,7 +43,7 @@ submitHandler =(event) => {
             fetch("http://localhost:3000/drawings", requestOptions)
               .then((response) => response.json())
               .then((data) => {
-                //console.log(data)
+                console.log(data)
                 this.saveableCanvas.clear()
                  localStorage.setItem("drawingId", data.id);
               }

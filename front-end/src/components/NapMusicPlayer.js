@@ -20,7 +20,7 @@ export default function Musicplayer(props) {
             <Link to="/playground">
               <img className="playlogo" src={playlogo} alt="logo" />
             </Link>
-            sleepy time
+            nap time music
           </h1>
         </div>
       </div>
