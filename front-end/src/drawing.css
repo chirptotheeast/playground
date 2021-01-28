@@ -58,3 +58,37 @@ input[type=number] {
   margin: 8px;
 }
 
+
+.sm-bttn:hover {background-color: #f099f8}
+
+.sm-bttn {
+  padding: 15px 20px;
+  font-size: 19px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(238, 245, 240);
+  background-color: #a06de4;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4.5px #999;
+  font-family: DejaVu Sans Mono, monospace;
+  margin-top: 10px
+}
+
+.lg-bttn {
+  padding: 20px 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: rgb(238, 245, 240);
+  background-color: #a06de4;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4.5px #999;
+  font-family: DejaVu Sans Mono, monospace;
+  font-size: 35px;
+  margin: 8px;
+}
+
+.lg-bttn:hover {background-color: #f099f8}

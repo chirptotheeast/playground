@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import classNames from "../drawing.css";
 import { Link } from "react-router-dom";
 import playlogo from "../images/sunnyplay.png";
+import sidewalk from "../images/sidewalk.png";
 
 import CanvasDraw from "react-canvas-draw";
 
@@ -52,26 +53,59 @@ submitHandler =(event) => {
 }
 
   render() {
-      
+       const characterPic = localStorage.getItem("character");
     return (
       <div>
-        <div className="bannerFondo bg-yellow-100 bg-left-top bg-auto bg-repeat-x"></div>
+        <div className="bannerFondo bg-yellow-100 bg-left-top bg-auto bg-repeat-x">
+          <div className="float-right">
+            <Link to="/myplayground">
+              <img
+                className="rounded-full m-4 hvr-pulse"
+                src={characterPic}
+                alt="user"
+              />
+            </Link>
+          </div>
+        </div>
         <div className="-mt-64 ">
           <div className="w-full text-center">
             <h1 className="font-bold text-5xl text-white">
               <Link to="/playground">
                 <img className="playlogo" src={playlogo} alt="logo" />
               </Link>
-          
-              drawing!
             </h1>
           </div>
         </div>
         <div>
+          <center>
+            <div className="container items-center pt-20">
+              <div className="bg-white w-1/2 flex items-center p-2 rounded-xl shadow border-double border-8 border-yellow-300">
+                <div className="flex items-center "></div>
+                <div className="flex-grow p-2">
+                  <div className="pageheading">
+                    see your drawing on the sidewalk
+                    {/* <img
+                      src={}
+                      alt="My profile"
+                      className="w-16 h-16  hvr-buzz"
+                    /> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </center>
+
           <div className="flex-container">
-              <div className="drawing-container">
-    
-            {/* <p>
+            <Link to="/sidewalk">
+              <img
+                className="hvr-pulse "
+                src={sidewalk}
+                alt="logo"
+                style={{ float: "right" }}
+              />
+            </Link>
+            <div className="drawing-container">
+              {/* <p>
               This part got me most excited. Very easy to use saving and loading
               of drawings. It even comes with a customizable loading speed to
               control whether your drawing should load instantly (loadTimeOffset
@@ -79,86 +113,86 @@ submitHandler =(event) => {
               <span>{`<CanvasDraw loadTimeOffset={10} />`}</span>
             </p>
             <p>Try it out! Draw something, hit "Save" and then "Load".</p> */}
-            <div className={classNames.tools}>
-              <button className= "bttn"
-                onClick={() => {
-                  localStorage.setItem(
-                    "savedDrawing",
-                    this.saveableCanvas.getSaveData()
-                  );
-                 
-                  this.submitHandler();
-                }}
-              >
-                Save
-              </button>
-              <button className="bttn"
-                onClick={() => {
-                
-                }}
-              >
-                Clear
-              </button>
-              <button className="bttn"
-                onClick={() => {
-                  this.saveableCanvas.undo();
-                }}
-              >
-                Undo
-              </button>
+              <div className={classNames.tools}>
+                <button
+                  className="bttn"
+                  onClick={() => {
+                    localStorage.setItem(
+                      "savedDrawing",
+                      this.saveableCanvas.getSaveData()
+                    );
 
+                    this.submitHandler();
+                  }}
+                >
+                  Save
+                </button>
+                <button className="bttn" onClick={() => {}}>
+                  Clear
+                </button>
+                <button
+                  className="bttn"
+                  onClick={() => {
+                    this.saveableCanvas.undo();
+                  }}
+                >
+                  Undo
+                </button>
+
+                <div>
+                  <label>Brush-size:</label>
+                  <input
+                    type="number"
+                    value={this.state.brushRadius}
+                    onChange={(e) =>
+                      this.setState({
+                        brushRadius: parseInt(e.target.value, 10),
+                      })
+                    }
+                  />
+                </div>
+              </div>
               <div>
-                <label>Brush-size:</label>
-                <input
-                  type="number"
-                  value={this.state.brushRadius}
-                  onChange={(e) =>
-                    this.setState({ brushRadius: parseInt(e.target.value, 10) })
-                  }
+                Current color:{" "}
+                <div
+                  style={{
+                    display: "inline-block",
+                    width: "24px",
+                    height: "24px",
+                    backgroundColor: this.state.color,
+                    border: "1px solid #272727",
+                  }}
                 />
               </div>
-            </div>
-            <div>
-              Current color:{" "}
-              <div
-                style={{
-                  display: "inline-block",
-                  width: "24px",
-                  height: "24px",
-                  backgroundColor: this.state.color,
-                  border: "1px solid #272727",
-                }}
+              <CanvasDraw
+                loadTimeOffset={0}
+                hideInterface
+                hideGrid
+                ref={(canvasDraw) => (this.saveableCanvas = canvasDraw)}
+                brushColor={this.state.color}
+                brushRadius={this.state.brushRadius}
+                lazyRadius={this.state.lazyRadius}
+                canvasWidth={this.state.width}
+                canvasHeight={this.state.height}
               />
-            </div>
-            <CanvasDraw
-              loadTimeOffset={0}
-              hideInterface
-              hideGrid
-              ref={(canvasDraw) => (this.saveableCanvas = canvasDraw)}
-              brushColor={this.state.color}
-              brushRadius={this.state.brushRadius}
-              lazyRadius={this.state.lazyRadius}
-              canvasWidth={this.state.width}
-              canvasHeight={this.state.height}
-            />
-          
-            <button className="bttn"
-              onClick={() => { 
-                this.loadableCanvas.loadSaveData(
-                localStorage.getItem("savedDrawing")
-                );
-              }}
-            >
-             replay my drawing
-            </button>
-            <CanvasDraw
-              disabled
-              hideGrid
-              ref={(canvasDraw) => (this.loadableCanvas = canvasDraw)}
-              saveData={localStorage.getItem("savedDrawing")}
-              
-            />
-            {/* <p>
+
+              <button
+                className="bttn"
+                onClick={() => {
+                  this.loadableCanvas.loadSaveData(
+                    localStorage.getItem("savedDrawing")
+                  );
+                }}
+              >
+                replay my drawing
+              </button>
+              <CanvasDraw
+                disabled
+                hideGrid
+                ref={(canvasDraw) => (this.loadableCanvas = canvasDraw)}
+                saveData={localStorage.getItem("savedDrawing")}
+              />
+              {/* <p>
             The saving / loading also takes different dimensions into account.
             Change the width / height, draw something and save it and then load
             it into the disabled canvas. It will load your previously saved

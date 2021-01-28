@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
-import heart from "../images/heart-avatar.PNG";
 import sheep from "../images/sheep-avatar.png";
 import { Link } from "react-router-dom";
 import playlogo from "../images/sunnyplay.png";
 
-
 export default function Musicplayer(props) {
   // console.log(props)
 
-  const [url, setUrl] = useState("https://www.youtube.com/playlist?list=PLj5CbpRClQ4Q7g1dXsF62tBajbFpRC34k");
-     const characterPic = localStorage.getItem("character");
+  const [url, setUrl] = useState("https://youtu.be/5uTaz8jTjaE");
+       const characterPic = localStorage.getItem("character");
   return (
     <div>
-      <div className="bannerFondo ">
+      <div className="bannerFondo">
         <div className="float-right">
           <Link to="/myplayground">
             <img
@@ -30,17 +28,14 @@ export default function Musicplayer(props) {
             <Link to="/playground">
               <img className="playlogo" src={playlogo} alt="logo" />
             </Link>
+            Welcome to the puppet show!
           </h1>
         </div>
       </div>
       <div className="music-player">
         <button
           className="mp-button-space"
-          onClick={() =>
-            setUrl(
-              "https://www.youtube.com/watch?v=GzOf517T1uQ&ab_channel=BabyRelaxChannel"
-            )
-          }
+          onClick={() => setUrl("https://youtu.be/0NpQronsFic")}
         >
           <img className="hvr-pulse" src={sheep} alt="sheeplogo" />
         </button>

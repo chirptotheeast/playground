@@ -5,19 +5,26 @@ import ColorChanger from "../containers/ColorChanger.js"
 
 export default class Games extends Component {
     render() {
+       const characterPic = localStorage.getItem("character");
         return (
           <div>
-            <div
-              className="bannerFondo bg-yellow-100 bg-left-top bg-auto bg-repeat-x"
-              style={{ backgroundImage: `url(./img/bear-avatar.png)` }}
-            ></div>
+            <div className="bannerFondo ">
+              <div className="float-right">
+                <Link to="/myplayground">
+                  <img
+                    className="rounded-full m-4 hvr-pulse"
+                    src={characterPic}
+                    alt="user"
+                  />
+                </Link>
+              </div>
+            </div>
             <div className="-mt-64 ">
               <div className="w-full text-center">
                 <h1 className="font-bold text-5xl text-white">
                   <Link to="/playground">
                     <img className="playlogo" src={playlogo} alt="logo" />
                   </Link>
-                  games!
                 </h1>
               </div>
             </div>

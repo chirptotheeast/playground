@@ -4,6 +4,9 @@ import HiHatclosed from '../drumsounds/Hi-Hat-Closed.mp3'
 import HiHatopen from '../drumsounds/Hi-Hat-OpenC2.mp3'
 import Snarelow from '../drumsounds/Snare-Drum-Hit5b.mp3'
 import Snarehigh from '../drumsounds/Snare-Drum-Hit6b.mp3'
+import cowbell from '../drumsounds/cowbell.mp3'
+import triangle from '../drumsounds/triangle.mp3'
+import drumachinelogo from '../images/thedrummachine.png'
 
 export default class DrumMachine extends Component {
     render() {
@@ -12,6 +15,8 @@ export default class DrumMachine extends Component {
         const hithatopen = new Audio(HiHatopen);
         const snarelow = new Audio(Snarelow);
         const snarehigh = new Audio(Snarehigh);
+        const cowbelly = new Audio(cowbell)
+        const trianglely = new Audio(triangle)
 
          const start = () => {
            floortomy.play();
@@ -33,29 +38,116 @@ export default class DrumMachine extends Component {
              snarehigh.play()
          }
 
+         const cowbellSound = () => {
+           cowbelly.play()
+         }
+
+         const triangleSound = () =>{
+           trianglely.play()
+         }
+
 
         return (
           <div>
             <div>
-              <h1>Drum Machine</h1>
-              <div>
-                <div className="divider"></div>
-                <button className="bttn shadow" onClick={start}>
-                  Tom
-                </button>
-                <button className="bttn shadow" onClick={hihatClosed}>
-                  hi-hat 1
-                </button>
-                <button className="bttn shadow" onClick={hihatOpen}>
-                  hi-hat 2
-                </button>
-                <button className="bttn shadow" onClick={snareLow}>
-                  snare 1
-                </button>
-                <button className="bttn shadow" onClick={snareHigh}>
-                  snare 2
-                </button>
-              </div>
+              {/* <!-- animation --> */}
+              <section class="p-10 min-h-screen flex md:flex-row items-center justify-around bg-pink-400 flex-wrap sm:flex-col">
+                <center>
+                  <img src={drumachinelogo} alt="drummachinelogo" />{" "}
+                  <h1>click to make some noise</h1>
+                </center>
+                {/* <!-- scale --> */}
+                <div class="h-32 w-32 relative cursor-pointer mb-5">
+                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                  <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                    <div
+                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      onClick={start}
+                    >
+                      Tom
+                    </div>
+                  </div>
+                </div>
+
+                {/* <!-- roatate and scale --> */}
+                <div class="h-32 w-32 relative cursor-pointer mb-5">
+                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                  <div class="absolute inset-0 transform hover:rotate-90 hover:scale-75 transition duration-300">
+                    <div
+                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      onClick={hihatClosed}
+                    >
+                      Hi hat1
+                    </div>
+                  </div>
+                </div>
+
+                {/* <!-- rotate --> */}
+                <div class="h-32 w-32 relative cursor-pointer mb-5">
+                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                  <div class="absolute inset-0 transform  hover:rotate-45 transition duration-300">
+                    <div
+                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      onClick={hihatOpen}
+                    >
+                      Hi hat2
+                    </div>
+                  </div>
+                </div>
+
+                {/* <!-- rotate minus --> */}
+                <div class="h-32 w-32 relative cursor-pointer mb-5">
+                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                  <div class="absolute inset-0 transform  hover:-rotate-45 transition duration-300">
+                    <div
+                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      onClick={snareLow}
+                    >
+                      snare 1
+                    </div>
+                  </div>
+                </div>
+
+                {/* <!-- Origin --> */}
+                <div class="h-32 w-32 relative cursor-pointer mb-5">
+                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                  <div class="absolute inset-0 transform origin-left hover:-rotate-45 transition duration-300">
+                    <div
+                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      onClick={snareHigh}
+                    >
+                      snare 2
+                    </div>
+                  </div>
+                </div>
+
+                {/* <!-- scale --> */}
+                <div class="h-32 w-32 relative cursor-pointer mb-5">
+                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                  <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                    <div
+                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      onClick={cowbellSound}
+                    >
+                      cow bell
+                    </div>
+                  </div>
+                </div>
+
+               
+                {/* <!-- scale --> */}
+                <div class="h-32 w-32 relative cursor-pointer mb-5">
+                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
+                  <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                    <div
+                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      onClick={triangleSound}
+                    >
+                      tri angle
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         );

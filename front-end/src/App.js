@@ -13,6 +13,7 @@ import Drawing from "./components/Drawing.js"
 import Games from "./components/Games.js"
 import Sidewalk from "./components/Sidewalk.js"
 import NapMusic from './components/NapMusicPlayer.js'
+import PuppetShow from './components/PuppetShow.js'
 
 
 // const user ="http://localhost:3000/users/4"
@@ -91,6 +92,7 @@ updateDraw = (id) => {
           <Sidewalk drawings={this.state.drawings} />
         </Route>
         <Route exact path="/napmusic" component={NapMusic} />
+        <Route exact path="/puppetshow" component={PuppetShow} />
       </header>
     </div>
   );
