@@ -19,6 +19,8 @@ export default class Games extends Component {
                 </Link>
               </div>
             </div>
+            <div className="smdivider"></div>
+
             <div className="-mt-64 ">
               <div className="w-full text-center">
                 <h1 className="font-bold text-5xl text-white">
@@ -28,7 +30,7 @@ export default class Games extends Component {
                 </h1>
               </div>
             </div>
-            <div className="bannerFondo">
+            <div className="bannerFondo ">
               <ColorChanger />
             </div>
           </div>

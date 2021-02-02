@@ -8,10 +8,12 @@ export default function Musicplayer(props) {
   // console.log(props)
 
   const [url, setUrl] = useState("https://youtu.be/5uTaz8jTjaE");
-       const characterPic = localStorage.getItem("character");
+     const characterPic = localStorage.getItem("character");
+        
   return (
     <div>
       <div className="bannerFondo">
+
         <div className="float-right">
           <Link to="/myplayground">
             <img
@@ -28,10 +30,21 @@ export default function Musicplayer(props) {
             <Link to="/playground">
               <img className="playlogo" src={playlogo} alt="logo" />
             </Link>
-            Welcome to the puppet show!
+            <div className="divider"></div>
           </h1>
         </div>
       </div>
+
+      <center>
+        <div className="container items-center pt-4">
+          <div className="bg-white bg-opacity-80 w-1/4 flex items-center p-2 rounded-xl shadow  ">
+            <div className="flex items-center "></div>
+            <div className="flex-grow p-2">
+              <div className="lg-pageheading">puppets</div>
+            </div>
+          </div>
+        </div>
+      </center>
       <div className="music-player">
         <button
           className="mp-button-space"

@@ -7,6 +7,7 @@ import Snarehigh from '../drumsounds/Snare-Drum-Hit6b.mp3'
 import cowbell from '../drumsounds/cowbell.mp3'
 import triangle from '../drumsounds/triangle.mp3'
 import drumachinelogo from '../images/thedrummachine.png'
+import noise from '../images/tealsingleand.png'
 
 export default class DrumMachine extends Component {
     render() {
@@ -54,7 +55,7 @@ export default class DrumMachine extends Component {
               <section class="p-10 min-h-screen flex md:flex-row items-center justify-around bg-pink-400 flex-wrap sm:flex-col">
                 <center>
                   <img src={drumachinelogo} alt="drummachinelogo" />{" "}
-                  <h1>click to make some noise</h1>
+                <img src={noise} alt="noiselogo"/>
                 </center>
                 {/* <!-- scale --> */}
                 <div class="h-32 w-32 relative cursor-pointer mb-5">
@@ -143,7 +144,7 @@ export default class DrumMachine extends Component {
                       class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
                       onClick={triangleSound}
                     >
-                      tri angle
+                      tri- angle
                     </div>
                   </div>
                 </div>

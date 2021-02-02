@@ -513,11 +513,21 @@ width: 5px;
 }
 
 .lg-pageheading {
-   font-family: DejaVu Sans Mono, monospace;
+  font-family: 'Fredoka One', cursive;
       font-size: 60px;
       color:#a06de4;
 }
 
 .moveright{
   width: 10px;
+}
+
+.card-font{
+   font-family: 'Fredoka One', cursive;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-align: center;
+         color:#a06de4;
+
+         
 }

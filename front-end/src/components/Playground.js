@@ -16,6 +16,7 @@ import sleepyicon from '../icons/sleepyicon.png'
 import puppeticon from '../icons/sockpuppet.png'
 import articon from '../icons/playsidewalkicon.PNG'
 import bee from "../images/smbee.PNG"
+import buzz from "../sounds/buzzverbal.mp3"
 
 
 class Playground extends Component {
@@ -28,7 +29,8 @@ class Playground extends Component {
       const zipaudio = new Audio(zipvocal)
       const snoreaudio = new Audio(snore)
       const artaudio = new Audio(artverbal)
-
+      const buzzaudio = new Audio(buzz)
+    
       const start = () => {
         audio.play();
       };
@@ -52,6 +54,10 @@ class Playground extends Component {
              const snorestart = () => {
                snoreaudio.play();
              };
+
+             const buzzstart = () => {
+               buzzaudio.play()
+             }
       const characterPic = localStorage.getItem("character");
 
         return (
@@ -70,7 +76,7 @@ class Playground extends Component {
               <div>
                 <div className="float-right">
                   <Link to="/">
-                    <img src={bee} className="hvr-buzz" onMouseOver={start} />
+                    <img src={bee} className="hvr-buzz" onMouseOver={buzzstart} />
                   </Link>
                 </div>
               </div>
@@ -106,7 +112,7 @@ class Playground extends Component {
               </Link>
             </nav>
             <div className="smdivider"></div>
-            <div id="wrapper" className="max-w-xl px-4 py-4 mx-auto">
+            <div id="wrapper" className="max-w-xl px-4 py-4 mx-auto card-font">
               <div className="md:grid md:h-32 md:grid-flow-row md:gap-14 md:grid-cols-3">
                 <div
                   id="jh-stats-positive"
@@ -173,7 +179,7 @@ class Playground extends Component {
                   <Link to="/napmusic">
                     <div>
                       <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor-pointer ">
-                        sleepy
+                        nap
                       </p>
 
                       <img
@@ -212,7 +218,7 @@ class Playground extends Component {
                   <Link to="/puppetshow">
                     <div>
                       <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor pointer">
-                        puppets
+                        puppet
                       </p>
                       <center>
                         <img

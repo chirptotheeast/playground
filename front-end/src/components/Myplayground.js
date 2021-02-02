@@ -28,9 +28,7 @@ export default class Myplayground extends Component {
 
         return (
           <div>
-            <div
-              className="bannerFondo"
-            ></div>
+            <div className="bannerFondo"></div>
 
             <div className="-mt-64 ">
               <div className="w-full text-center">
@@ -38,7 +36,6 @@ export default class Myplayground extends Component {
                   <img className="playlogo" src={myplaylogo} alt="logo" />
                   <div className="smdivider"></div>
                   {/* <img className="playlogo py-2" src={home} alt="logo" /> */}
-
                 </h1>
               </div>
             </div>
@@ -67,6 +64,24 @@ export default class Myplayground extends Component {
                   </button> */}
             </nav>
 
+            <center>
+              <div className="container items-center pt-20">
+                <div className="bg-white bg-opacity-95 w-1/4 flex items-center p-2 rounded-xl shadow border-double border-8 border-yellow-300">
+                  <div className="flex items-center "></div>
+                  <div className="flex-grow p-2">
+                    <div className="pageheading">
+                  my favorite drawings
+                      {/* <img
+                        src={bee}
+                        alt="My profile"
+                        className="w-16 h-16  hvr-buzz"
+                      /> */}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </center>
+            
             <div className="flex">
               <div className="max-w-sm m-4 float-left">
                 <div className="bg-white shadow-xl rounded-lg py-3">

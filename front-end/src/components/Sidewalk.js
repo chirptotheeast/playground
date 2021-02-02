@@ -78,7 +78,7 @@ export default class Thesidewalk extends Component {
         </nav>
         <center>
           <div className="container items-center pt-20">
-            <div className="bg-white w-1/2 flex items-center p-2 rounded-xl shadow border-double border-8 border-yellow-300">
+            <div className="bg-white bg-opacity-95 w-1/2 flex items-center p-2 rounded-xl shadow border-double border-8 border-yellow-300">
               <div className="flex items-center "></div>
               <div className="flex-grow p-2">
                 <div className="pageheading">
