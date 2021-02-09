@@ -29,18 +29,24 @@ class UsersController < ApplicationController
 
 
   def create
-    user_new = User.new(user_params)
-    if user_new.save 
-      session[:user_id] = user_new.id 
-      redirect_to root_path
+    @user = User.new(user_params)
+    if @user.save 
+      login!
+      render json: {
+        status: :created,
+        user: @user
+      }
     else 
-      render :new
+      render json: {
+        status: 500,
+        errors: @user.errors.full_messages
+      }
     end
   end
 
   private
 
   def user_params 
-    params.require(:user).permit(:username, :password, :avatar)
+    params.require(:user).permit(:username, :password, :password_confirmation, :avatar)
   end
 end
