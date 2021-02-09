@@ -1,73 +1,121 @@
 import React, { Component } from 'react'
+import axios from "axios";
 import { Redirect } from "react-router-dom";
 
 
 
 
-export default class Login extends Component {
+class Login extends Component {
+ state = {
+    username: '',
+    password: '',
+    errors: '',
+    avatar: ''
+  }
  
-  state = {
-    username: "",
-    password: "",
-    loggedin: false
+  
+  handleChange = (event) => {
+    const {name, value} = event.target
+    this.setState({
+      [name]: value
+    })
   }
 
- submitHandler = (event) =>{
-  event.preventDefault()
+  handleSubmit = (event) => {
+    event.preventDefault()
+    const {username, password} = this.state 
+
+    let user = {
+      username: username,
+      password: password
+    }
+  
+
+axios.post('http://localhost:3001/login', {user}, {withCredentials: true})
+.then(response => {
+  if(response.data.logged_in) {
+    this.props.handleLogin(response.data)
+    this.redirect()
+  } else {
+    this.setState({
+      errors: response.data.errors
+    })
+  }
+})
+.catch(error => console.log('api errors:', error))
+}
 
 
-            let data = {
-              username: this.state.username,
-              password: this.state.password
-            };
+    
+redirect = () => {
+    this.props.history.push('/')
+  }
+  
+handleErrors = () => {
+    return (
+      <div>
+        <ul>
+        {this.state.errors.map(error => {
+        return <li key={error}>{error}</li>
+          })}
+        </ul>
+      </div>
+    )
+  };
 
-            const requestOptions = {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(data),
-            };
-            fetch("http://localhost:3000/login", requestOptions)
-              .then((response) => response.json())
-              .then((data) => {localStorage.setItem('user', data.username) 
-              localStorage.setItem('userId', data.id )
-              this.setState({loggedin: !this.state.loggedin})
-            });
+//  submitHandler = (event) =>{
+//   event.preventDefault()
+
+
+//             let data = {
+//               username: this.state.username,
+//               password: this.state.password
+//             };
+
+//             const requestOptions = {
+//               method: "POST",
+//               headers: { "Content-Type": "application/json" },
+//               body: JSON.stringify(data),
+//             };
+//             fetch("http://localhost:3000/login", requestOptions)
+//               .then((response) => response.json())
+//               .then((data) => {localStorage.setItem('user', data.username) 
+//               localStorage.setItem('userId', data.id )
+//               this.setState({loggedin: !this.state.loggedin})
+//             });
      
-          }
+//           }
 
 
   render() {
+    const {username, password} = this.state
     return (
       <div>
         <div className="helpful-vert-align"></div>
         {!this.state.loggedin ? (
-          <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
-            <div className="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+          <div className="container flex flex-col items-center justify-center flex-1 max-w-sm px-2 mx-auto">
+            <div className="w-full px-6 py-8 text-black bg-white rounded shadow-md">
               <h1 class="mb-8 text-3xl text-center">Login</h1>
-              <form onSubmit={(event) => this.submitHandler(event)}>
+              <form onSubmit={this.handleSubmit}>
                 <input
-                  onChange={(event) =>
-                    this.setState({ username: event.target.value })
-                  }
-                  value={this.state.username}
+                  onChange={this.handleChange}
+                  value={username}
                   type="text"
-                  className="block border border-grey-light w-full p-3 rounded mb-4"
+                  className="block w-full p-3 mb-4 border rounded border-grey-light"
                   name="username"
                   placeholder="username"
                 />
 
                 <input
-                  value={this.state.password}
-                  onChange={(event) =>
-                    this.setState({ password: event.target.value })
-                  }
+                  value={password}
+                  onChange={this.handleChange}
                   type="password"
-                  className="block border border-grey-light w-full p-3 rounded mb-4"
+                  className="block w-full p-3 mb-4 border rounded border-grey-light"
                   name="password"
                   placeholder="password"
                 />
 
-                <button type="submit" className="btn-center">
+                <button type="submit" className="btn-center" placeholder="submit">
                   Login
                 </button>
               </form>
@@ -80,3 +128,4 @@ export default class Login extends Component {
     );
   }
 }
+export default Login
