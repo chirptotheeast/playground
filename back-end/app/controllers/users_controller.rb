@@ -1,27 +1,46 @@
 class UsersController < ApplicationController
   def index
-    options = { 
-        :include => {
-          :favorite_activities => {
-            :except => [:created_at, :updated_at]
-          },
-          :favorite_drawings => {
-            :except => [:created_at, :updated_at]
-          }
-        },
-         :except => [:created_at, :updated_at]
-    }
-    render json: User.all.to_json(options)
+     @users = User.all
+      if @users 
+        render json: {
+          users: @users
+        }
+      else 
+        render json: {
+          status: 500,
+          errors: ['no users found']
+        }
+      end
   end
 
   def show
-    user = User.find(params[:id])
-    render json: user
+    @user = User.find(params[:id])
+      if @user 
+        render json: {
+          user: @user
+        } 
+      else 
+        render json: {
+          status: 500,
+          errors: ['user not found']
+        }
+      end
   end
 
-  def new
-  end
 
   def create
+    user_new = User.new(user_params)
+    if user_new.save 
+      session[:user_id] = user_new.id 
+      redirect_to root_path
+    else 
+      render :new
+    end
+  end
+
+  private
+
+  def user_params 
+    params.require(:user).permit(:username, :password, :avatar)
   end
 end
