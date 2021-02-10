@@ -1,10 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
+import axios from "axios";
 
+if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
+  axios.defaults.baseURL = "http://localhost:3001";
+}
+// ekse {
+//   axios.defaults.baseURL = "https://jot-down-api-herkou.com/api/v1";
+// }
 
 ReactDOM.render(
   <React.StrictMode>

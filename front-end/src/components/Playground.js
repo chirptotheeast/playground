@@ -64,9 +64,15 @@ class Playground extends Component {
           <div>
             <div className="bannerFondo ">
               <div className="float-right">
+                <button className="btn" onClick={this.props.handleLogout}>
+
+                  <Link to="/" >logout</Link>
+                </button>
+              </div>
+              <div className="float-right">
                 <Link to="/myplayground">
                   <img
-                    className="rounded-full m-4 hvr-pulse"
+                    className="m-4 rounded-full hvr-pulse"
                     src={characterPic}
                     alt="user"
                   />
@@ -76,7 +82,11 @@ class Playground extends Component {
               <div>
                 <div className="float-right">
                   <Link to="/">
-                    <img src={bee} className="hvr-buzz" onMouseOver={buzzstart} />
+                    <img
+                      src={bee}
+                      className="hvr-buzz"
+                      onMouseOver={buzzstart}
+                    />
                   </Link>
                 </div>
               </div>
@@ -84,19 +94,19 @@ class Playground extends Component {
             <div className="-mt-64 ">
               <center>
                 <div className="w-full text-center">
-                  <h1 className="font-bold text-5xl text-white">
+                  <h1 className="text-5xl font-bold text-white">
                     <img className="playlogo" src={playlogo} alt="logo" />
                   </h1>
                 </div>
               </center>
             </div>
 
-            <nav className="border-b border-indigo-300 bannerFondo px-6 py-4 flex items-center min-w-0 h-1/2">
+            <nav className="flex items-center min-w-0 px-6 py-4 border-b border-indigo-300 bannerFondo h-1/2">
               <div className="moveright"></div>
-              <h1 className="font-semibold text-lg"></h1>
+              <h1 className="text-lg font-semibold"></h1>
               <Link to="/myplayground">
                 <img
-                  className="playlogo hvr-pulse w-3/4 h-3/4"
+                  className="w-3/4 playlogo hvr-pulse h-3/4"
                   src={myplay}
                   alt="logo"
                 />
@@ -116,17 +126,17 @@ class Playground extends Component {
               <div className="md:grid md:h-32 md:grid-flow-row md:gap-14 md:grid-cols-3">
                 <div
                   id="jh-stats-positive"
-                  className="flex flex-col justify-center px-8 py-8 bg-white border border-gray-300 rounded shadow-lg hvr-grow-rotate  "
+                  className="flex flex-col justify-center px-8 py-8 bg-white border border-gray-300 rounded shadow-lg hvr-grow-rotate "
                 >
                   <Link to="/music">
                     <div>
-                      <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor-pointer ">
+                      <p className="text-3xl font-semibold text-center text-gray-800 cursor-pointer p-play ">
                         music
                       </p>
 
                       <img
                         onMouseOver={start}
-                        className="playlogo imgnobr hvr-buzz pt-4  "
+                        className="pt-4 playlogo imgnobr hvr-buzz "
                         src={musicicon}
                         alt="logo"
                       />
@@ -136,15 +146,15 @@ class Playground extends Component {
 
                 <div
                   id="jh-stats-negative"
-                  className="flex flex-col justify-center px-4 py-4 mt-4 bg-purple-300 border border-gray-300 rounded sm:mt-0 shadow-lg hvr-grow-rotate "
+                  className="flex flex-col justify-center px-4 py-4 mt-4 bg-purple-300 border border-gray-300 rounded shadow-lg sm:mt-0 hvr-grow-rotate "
                 >
                   <Link to="/drawing">
                     <div>
-                      <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor-pointer">
+                      <p className="text-3xl font-semibold text-center text-gray-800 cursor-pointer p-play">
                         draw
                       </p>
                       <img
-                        className="playlogo pt-4"
+                        className="pt-4 playlogo"
                         src={drawicon}
                         alt="logo"
                         onMouseOver={drawstart}
@@ -155,16 +165,16 @@ class Playground extends Component {
 
                 <div
                   id="jh-stats-neutral"
-                  className="flex flex-col justify-center px-4 py-4 mt-4 bg-white border border-gray-300 rounded sm:mt-0 shadow-lg hvr-grow-rotate "
+                  className="flex flex-col justify-center px-4 py-4 mt-4 bg-white border border-gray-300 rounded shadow-lg sm:mt-0 hvr-grow-rotate "
                 >
                   <Link to="/games">
                     <div>
-                      <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor pointer">
+                      <p className="text-3xl font-semibold text-center text-gray-800 p-play cursor pointer">
                         games
                       </p>
                       <img
                         onMouseOver={gamestart}
-                        className="playlogo hvr-buzz pt-4"
+                        className="pt-4 playlogo hvr-buzz"
                         src={gameicon}
                         alt="logo"
                       />
@@ -178,7 +188,7 @@ class Playground extends Component {
                 >
                   <Link to="/napmusic">
                     <div>
-                      <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor-pointer ">
+                      <p className="text-3xl font-semibold text-center text-gray-800 cursor-pointer p-play ">
                         nap
                       </p>
 
@@ -194,11 +204,11 @@ class Playground extends Component {
 
                 <div
                   id="jh-stats-negative"
-                  className="flex flex-col justify-center px-4 py-4 mt-4 bg-white border border-gray-300 rounded sm:mt-0 shadow-lg hvr-grow-rotate "
+                  className="flex flex-col justify-center px-4 py-4 mt-4 bg-white border border-gray-300 rounded shadow-lg sm:mt-0 hvr-grow-rotate "
                 >
                   <Link to="/sidewalk">
                     <div>
-                      <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor-pointer">
+                      <p className="text-3xl font-semibold text-center text-gray-800 cursor-pointer p-play">
                         art
                       </p>
                       <img
@@ -213,16 +223,16 @@ class Playground extends Component {
 
                 <div
                   id="jh-stats-neutral"
-                  className="flex flex-col justify-center px-4 py-4 mt-4 bg-purple-300 border border-gray-300 rounded sm:mt-0 shadow-lg hvr-grow-rotate "
+                  className="flex flex-col justify-center px-4 py-4 mt-4 bg-purple-300 border border-gray-300 rounded shadow-lg sm:mt-0 hvr-grow-rotate "
                 >
                   <Link to="/puppetshow">
                     <div>
-                      <p className="p-play text-3xl font-semibold text-center text-gray-800 cursor pointer">
+                      <p className="text-3xl font-semibold text-center text-gray-800 p-play cursor pointer">
                         puppet
                       </p>
                       <center>
                         <img
-                          onClickr={zipstart}
+                          onClick={zipstart}
                           className="playlogo hvr-buzz "
                           src={puppeticon}
                           alt="puppetlogo"

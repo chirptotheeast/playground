@@ -1,28 +1,27 @@
-import Welcome from "./components/Welcome.js"
-import './App.css';
+import Welcome from "./components/Welcome.js";
+import "./App.css";
 import "./assets/output.css";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Choose from "./components/Choose.js"
-import Playground from './components/Playground.js'
-import Myplayground from './components/Myplayground.js'
-import Login from "./components/Login.js"
+import Choose from "./components/Choose.js";
+import Playground from "./components/Playground.js";
+import Myplayground from "./components/Myplayground.js";
+import Login from "./components/Login.js";
 
-import React, {Component} from "react"
-import axios from 'axios'
+import React, { Component } from "react";
+import axios from "axios";
 
-import Register from "./components/Registration.js"
-import Music from "./components/Music.js"
-import Drawing from "./components/Drawing.js"
-import Games from "./components/Games.js"
-import Sidewalk from "./components/Sidewalk.js"
-import NapMusic from './components/NapMusicPlayer.js'
-import PuppetShow from './components/PuppetShow.js'
-
+import Register from "./components/Registration.js";
+import Music from "./components/Music.js";
+import Drawing from "./components/Drawing.js";
+import Games from "./components/Games.js";
+import Sidewalk from "./components/Sidewalk.js";
+import NapMusic from "./components/NapMusicPlayer.js";
+import PuppetShow from "./components/PuppetShow.js";
 
 // const user ="http://localhost:3000/users/4"
-const activities = "http://localhost:3000/activities";
-const drawings = "http://localhost:3000/drawings";
-const favdrawings = "http://localhost:3000/favorite_drawings";
+const activities = "http://localhost:3001/activities";
+const drawings = "http://localhost:3001/drawings";
+const favdrawings = "http://localhost:3001/favorite_drawings";
 
 class App extends Component {
   state = {
@@ -30,7 +29,7 @@ class App extends Component {
     drawings: [],
     favorite_drawings: [],
     isLoggedIn: false,
-    user: {}
+    user: {},
   };
 
   async componentDidMount() {
@@ -39,7 +38,7 @@ class App extends Component {
     // const userData = await userResponse.json();
     // //console.log(userData);
     // this.setState({ user: userData });
-    this.loginStatus()
+    this.loginStatus();
 
     const response = await fetch(activities);
     const activityData = await response.json();
@@ -58,30 +57,32 @@ class App extends Component {
   }
 
   loginStatus = () => {
-    axios.get('http:/localhost:3001/logged_in', {withCredentials: true})
-  .then(response => {
-    if(response.data.logged_in){
-      this.handleLogin(response)
-    } else {
-      this.handleLogout()
-    }
-  })
-  .catch(error => console.log('api errors:', error))
-  }
+    axios
+      .get("/logged_in", { withCredentials: true })
+      .then((response) => {
+        if (response.data.logged_in) {
+          this.handleLogin(response);
+        } else {
+          this.handleLogout();
+        }
+      })
+      .catch((error) => console.log("api errors:", error));
+  };
 
   handleLogin = (data) => {
     this.setState({
       isLoggedIn: true,
-      user: data.user
-    })
-  }
+      user: data.user,
+    });
+  };
 
   handleLogout = () => {
+    console.log("hello");
     this.setState({
       isLoggedIn: false,
-      user: {}
-    })
-  }
+      user: {},
+    });
+  };
 
   updateDraw = (id) => {
     this.setState({
@@ -100,7 +101,10 @@ class App extends Component {
               <Route exact path="/" component={Welcome} />
               <Route exact path="/choose" component={Choose} />
               <Route exact path="/playground">
-                <Playground activities={this.state.activities} />
+                <Playground
+                  activities={this.state.activities}
+                  handleLogout={this.handleLogout}
+                />
               </Route>
               <Route exact path="/myplayground" component={Myplayground}>
                 <Myplayground
@@ -109,8 +113,24 @@ class App extends Component {
                   updateDraw={this.updateDraw}
                 />
               </Route>
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/register" component={Register} />
+              <Route
+                exact
+                path="/login"
+                render={(routeProps) => (
+                  <Login handleLogin={this.handleLogin} {...routeProps} />
+                )}
+              />
+
+              {/* <Route exact path="/register" component={Register} /> */}
+
+              <Route
+                exact
+                path="/register"
+                render={(routeProps) => (
+                  <Register handleLogin={this.handleLogin} {...routeProps} />
+                )}
+              />
+
               <Route exact path="/music" component={Music}>
                 <Music activities={this.state.activities} />
               </Route>

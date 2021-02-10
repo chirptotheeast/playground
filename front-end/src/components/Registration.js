@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -11,61 +11,57 @@ export default class Registration extends Component {
   };
 
   handleChange = (event) => {
-    const {name, value} = event.target
+    const { name, value } = event.target;
     this.setState({
-      [name]: value
-    })
-  }
+      [name]: value,
+    });
+  };
 
   handleSubmit = (event) => {
-     event.preventDefault()
-      const { username,  password, password_confirmation } = this.state;
-          let user = {
-            username: username,
-            email: email,
-            password: password,
-            password_confirmation: password_confirmation,
-          };
-  
+    event.preventDefault();
+    const { username, password, password_confirmation } = this.state;
+    let user = {
+      username: username,
+      password: password,
+      password_confirmation: password_confirmation,
+    };
 
-  axios.post('http://localhost:3001/users', {user}, {withCredentials: true})
-    .then(response => {
-      if (response.data.status === 'created') {
-        this.props.handleLogin(response.data)
-        this.redirect()
-      } else {
-        this.setState({
-          errors: response.data.errors
-        })
-      }
-    })
-    .catch(error => console.log('api errors:', error))
+    axios
+      .post("/users", { user }, { withCredentials: true })
+      .then((response) => {
+        if (response.data.status === "created") {
+          this.props.handleLogin(response.data);
+          this.props.history.push("/choose");
+        } else {
+          this.setState({
+            errors: response.data.errors,
+          });
+        }
+      })
+      .catch((error) => console.log("api errors:", error));
   };
 
   
-
-  redirect = () => {
-    this.props.history.push('/')
-  }
-handleErrors = () => {
+  handleErrors = () => {
     return (
       <div>
-        <ul>{this.state.errors.map((error) => {
-          return <li key={error}>{error}</li>
-        })}
-        </ul> 
+        <ul>
+          {this.state.errors.map((error) => {
+            return <li key={error}>{error}</li>;
+          })}
+        </ul>
       </div>
-    )
-  }
-
+    );
+  };
 
   render() {
-      const { username, password, password_confirmation } = this.state
+    const { username, password, password_confirmation } = this.state;
     return (
       <div>
+        <div className="helpful-vert-align"></div>
         <div className="container flex flex-col items-center justify-center flex-1 max-w-sm px-2 mx-auto">
           <div className="w-full px-6 py-8 text-black bg-white rounded shadow-md">
-            <h1 class="mb-8 text-3xl text-center">Register</h1>
+            <h1 className="mb-8 text-3xl text-center">Register</h1>
             <form onSubmit={this.handleSubmit}>
               <input
                 value={username}
@@ -92,11 +88,9 @@ handleErrors = () => {
                 placeholder="password confirmation"
                 onChange={this.handleChange}
               />
-              <Link to="/choose">
-                <button type="submit" placeholder="submit" className="btn">
-                  Create Account
-                </button>
-              </Link>
+              <button type="submit" placeholder="submit" className="btn">
+                Create Account
+              </button>
             </form>
           </div>
 

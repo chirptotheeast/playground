@@ -43,16 +43,15 @@ export default class Choose extends Component {
   }
 
     render() {
-      console.log(avatarArr);
         return (
           <div>
             <div className="helpful-vert-align"></div>
-            <div className="choosediv  bg-yellow-100  border-b border-indigo-300">
+            <div className="bg-yellow-100 border-b border-indigo-300 choosediv">
               <img className="playlogo" src={logo} alt="logo" />
               <div className="flex-container">
-                {avatarArr.map((avatar) => {
+                {avatarArr.map((avatar, index ) => {
                   return (
-                    <Link to="/playground">
+                    <Link to="/playground" key={index}>
                       <button
                         onClick={() => {
                           localStorage.setItem("character", avatar);
