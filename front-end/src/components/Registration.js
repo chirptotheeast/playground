@@ -88,14 +88,18 @@ export default class Registration extends Component {
                 placeholder="password confirmation"
                 onChange={this.handleChange}
               />
-              <button type="submit" placeholder="submit" className="btn">
+              <button
+                type="submit"
+                placeholder="submit"
+                className="btn focus:outline-none"
+              >
                 Create Account
               </button>
             </form>
           </div>
 
           <div className="mt-6 text-grey-dark">
-            Already have an account?
+            <p>Already have an account?</p>
             <Link to="/login">
               <a className="no-underline border-b border-blue text-blue">
                 Log in

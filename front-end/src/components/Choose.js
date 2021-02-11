@@ -53,6 +53,7 @@ export default class Choose extends Component {
                   return (
                     <Link to="/playground" key={index}>
                       <button
+                        className="focus:outline-none"
                         onClick={() => {
                           localStorage.setItem("character", avatar);
                           this.chooseAvatar();

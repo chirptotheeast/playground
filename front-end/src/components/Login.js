@@ -105,7 +105,11 @@ class Login extends Component {
                 placeholder="password"
               />
 
-              <button type="submit" className="btn-center" placeholder="submit">
+              <button
+                type="submit"
+                className="btn focus:outline-none"
+                placeholder="submit"
+              >
                 Login
                 {/* <Link to="/choose"> Login</Link> */}
               </button>

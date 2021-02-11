@@ -11,7 +11,7 @@ export default class Myplayground extends Component {
   
 
     removeDraw(id){
-     fetch("http://localhost:3000/favorite_drawings/" + id, {
+     fetch("http://localhost:3001/favorite_drawings/" + id, {
        method: "DELETE",
       headers: {
             'Content-Type': 'application/json',
@@ -32,24 +32,24 @@ export default class Myplayground extends Component {
 
             <div className="-mt-64 ">
               <div className="w-full text-center">
-                <h1 className="font-bold text-5xl text-white">
+                <h1 className="text-5xl font-bold text-white">
                   <img className="playlogo" src={myplaylogo} alt="logo" />
                   <div className="smdivider"></div>
-                  {/* <img className="playlogo py-2" src={home} alt="logo" /> */}
+                  {/* <img className="py-2 playlogo" src={home} alt="logo" /> */}
                 </h1>
               </div>
             </div>
 
-            {/* <section className="h-screen w-screen bg-teal-200 flex flex-col-reverse sm:flex-row min-h-0 min-w-0 overflow-hidden"> */}
-            {/* <main className="sm:h-full flex-1 flex flex-col min-h-0 min-w-0 "> */}
-            <nav className="border-b border-indigo-300 bg-white  px-7 py-4 flex items-center min-w-0 h-17">
-              <h1 className="font-semibold text-lg"></h1>
+            {/* <section className="flex flex-col-reverse w-screen h-screen min-w-0 min-h-0 overflow-hidden bg-teal-200 sm:flex-row"> */}
+            {/* <main className="flex flex-col flex-1 min-w-0 min-h-0 sm:h-full "> */}
+            <nav className="flex items-center min-w-0 py-4 bg-white border-b border-indigo-300 px-7 h-17">
+              <h1 className="text-lg font-semibold"></h1>
               {/* <span className="flex-1"></span>
                   <span className="mr-2"> */}
               {/* <input
                       type="text"
                       placeholder="Search"
-                      className="w-full border-2 px-2 py-1 border border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent bg-gray-300 focus:bg-gray-100"
+                      className="w-full px-2 py-1 bg-gray-300 border border-2 border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent focus:bg-gray-100"
                     /> */}
               {/* </span> */}
               <Link to="/playground">
@@ -59,14 +59,14 @@ export default class Myplayground extends Component {
               <Link to="/sidewalk">
                 <img className="hvr-pulse" src={sidewalk} alt="sidewalklogo" />
               </Link>
-              {/* <button className="ml-auto border rounded-full ml-2 w-10 h-10 text-center leading-none text-gray-200 bg-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
-                    <i className="fas fa-user fill-current"></i>
+              {/* <button className="w-10 h-10 ml-2 ml-auto leading-none text-center text-gray-200 bg-gray-400 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    <i className="fill-current fas fa-user"></i>
                   </button> */}
             </nav>
 
             <center>
               <div className="container items-center pt-20">
-                <div className="bg-white bg-opacity-95 w-1/4 flex items-center p-2 rounded-xl shadow border-double border-8 border-yellow-300">
+                <div className="flex items-center w-1/4 p-2 bg-white border-8 border-yellow-300 border-double shadow bg-opacity-95 rounded-xl">
                   <div className="flex items-center "></div>
                   <div className="flex-grow p-2">
                     <div className="pageheading">
@@ -74,7 +74,7 @@ export default class Myplayground extends Component {
                       {/* <img
                         src={bee}
                         alt="My profile"
-                        className="w-16 h-16  hvr-buzz"
+                        className="w-16 h-16 hvr-buzz"
                       /> */}
                     </div>
                   </div>
@@ -83,27 +83,27 @@ export default class Myplayground extends Component {
             </center>
             
             <div className="flex">
-              <div className="max-w-sm m-4 float-left">
-                <div className="bg-white shadow-xl rounded-lg py-3">
-                  <div className="photo-wrapper p-2">
+              <div className="float-left max-w-sm m-4">
+                <div className="py-3 bg-white rounded-lg shadow-xl">
+                  <div className="p-2 photo-wrapper">
                     <img
-                      className="rounded-full mx-auto"
+                      className="mx-auto rounded-full"
                       src={characterPic}
                       alt="user"
                     />
                   </div>
 
                   <div className="p-2">
-                    <h3 className="text-center text-xl text-gray-900 font-medium leading-8">
+                    <h3 className="text-xl font-medium leading-8 text-center text-gray-900">
                       Hello,
                     </h3>
-                    <div className="text-center text-pink-400 text-s font-semibold">
+                    <div className="font-semibold text-center text-pink-400 text-s">
                       <h4>{localStorage.getItem("user")}!</h4>
                     </div>
-                    {/* <table className="text-xs my-3">
+                    {/* <table className="my-3 text-xs">
                     <tbody>
                   <tr>
-                    <td className="px-2 py-2 text-gray-500 font-semibold">username</td>
+                    <td className="px-2 py-2 font-semibold text-gray-500">username</td>
                     <td className="px-2 py-2">__username here__</td>
                   </tr>
                    </tbody>
@@ -116,7 +116,7 @@ export default class Myplayground extends Component {
                 {this.props.favdrawings.map((drawing) => {
                   return (
                     <div className="flex-container">
-                      <div className=" box-border lg:box-content h-480 w-480 p-6 border-4 bg-green-100 bg-opacity-50 shadow">
+                      <div className="box-border p-6 bg-green-100 bg-opacity-50 border-4 shadow lg:box-content h-480 w-480">
                         <center>
                           <CanvasDraw
                             disabled
@@ -128,7 +128,7 @@ export default class Myplayground extends Component {
                           />
 
                           <button
-                            className="sm-bttn "
+                            className="sm-bttn focus:outline-none"
                             onClick={() => this.removeDraw(drawing.id)}
                           >
                             delete
