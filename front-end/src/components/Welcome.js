@@ -38,20 +38,3 @@ export default class Welcome extends Component {
 
 
 
-
-//   <div className="flex items-center justify-center h-screen bg-gray-600">
-//         //     <div className="flex flex-col w-2/3 overflow-hidden bg-white rounded-lg shadow-lg">
-//         //       <div className="flex flex-col items-center justify center">
-//         //         <div className="bg-green-600 ">1</div>
-//         //         <div className="bg-blue-700 ">2</div>
-//         //         <div className="bg-red-700 ">3</div>
-//         //       </div>
-//         //     </div>
-//         //   </div>
-
-//   <div className="flex items-center justify-center min-h-screen p-10 bg-cool-gray-700">
-//                 <div className="h-56 overflow-hidden bg-indigo-500 rounded-lg w-96 shadow-2x1">
-//                     <div className="w-full h-full bg-gradient-to-tl from-teal-500 via-blue-500 to-green-300">
-//                     </div>
-//                  </div>
-//             </div>
