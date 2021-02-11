@@ -20,12 +20,12 @@ const Color = () => {
           zoom: 3,
         }}
       >
-        <button className="sm-btn" onClick={randomizedHex}>
+        <button className="sm-btn focus:outline-none" onClick={randomizedHex}>
           Randomize Color
         </button>
         <div className="divider"></div>
         <div className="divider"></div>
-        <div className="float-right max-w-xs rounded overflow-hidden my-2 border-4 border-light-blue-500 border-opacity-50 m-4 shadow">
+        <div className="float-right max-w-xs m-4 my-2 overflow-hidden border-4 border-opacity-50 rounded shadow border-light-blue-500">
           <Toggle />
         </div>
       </div>

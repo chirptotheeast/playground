@@ -3,11 +3,13 @@ import classNames from "../drawing.css";
 import { Link } from "react-router-dom";
 import playlogo from "../images/sunnyplay.png";
 import sidewalk from "../images/sidewalk.png";
+// import honk from "../sounds/honkaudiovocal.mp3";
 
 import CanvasDraw from "react-canvas-draw";
 
 class Drawing extends Component {
-   
+
+  
   state = {
     color: "#ffc600",
     width: 400,
@@ -25,42 +27,42 @@ class Drawing extends Component {
     }, 2000);
   }
 
-submitHandler =(event) => {
+  submitHandler = (event) => {
+    const savedDraw = localStorage.getItem("savedDrawing");
 
+    let data = {
+      svgdrawing: savedDraw,
+    };
 
-  const savedDraw = localStorage.getItem("savedDrawing");
-
-            let data = {
-             svgdrawing: savedDraw
-            };
-
-            
-
-            const requestOptions = {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({data}),
-            };
-            fetch("http://localhost:3000/drawings", requestOptions)
-              .then((response) => response.json())
-              .then((data) => {
-                console.log(data)
-                this.saveableCanvas.clear()
-                 localStorage.setItem("drawingId", data.id);
-              }
-                );
-
-}
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ data }),
+    };
+    fetch("http://localhost:3001/drawings", requestOptions)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        this.saveableCanvas.clear();
+        localStorage.setItem("drawingId", data.id);
+      });
+  };
 
   render() {
-       const characterPic = localStorage.getItem("character");
+    const characterPic = localStorage.getItem("character");
+    // const honkaudio = new Audio(honk);
+
+    
+    //          const honkstart = () => {
+    //            honkaudio.play();
+    //          };
     return (
       <div>
-        <div className="bannerFondo bg-yellow-100 bg-left-top bg-auto bg-repeat-x">
+        <div className="bg-yellow-100 bg-left-top bg-repeat-x bg-auto bannerFondo">
           <div className="float-right">
             <Link to="/myplayground">
               <img
-                className="rounded-full m-4 hvr-pulse"
+                className="m-4 rounded-full hvr-pulse"
                 src={characterPic}
                 alt="user"
               />
@@ -69,30 +71,29 @@ submitHandler =(event) => {
         </div>
         <div className="-mt-64 ">
           <div className="w-full text-center">
-            <h1 className="font-bold text-5xl text-white">
+            <h1 className="text-5xl font-bold text-white">
               <Link to="/playground">
                 <img className="playlogo" src={playlogo} alt="logo" />
               </Link>
             </h1>
           </div>
         </div>
-      
 
         <center>
           <div className="container items-center pt-20">
-        <div className="bg-white bg-opacity-80 w-1/4 flex items-center p-2 rounded-xl shadow  ">
-          <div className="flex items-center "></div>
-          <div className="flex-grow p-2">
-            <div className="lg-pageheading">Drawing</div>
+            <div className="flex items-center w-1/4 p-2 bg-white shadow bg-opacity-80 rounded-xl ">
+              <div className="flex items-center "></div>
+              <div className="flex-grow p-2">
+                <div className="lg-pageheading">Drawing</div>
+              </div>
+            </div>
           </div>
-        </div>
-        </div>
         </center>
 
         <div>
           <center>
             <div className="container items-center pt-20">
-              <div className="bg-white w-1/2 flex items-center p-2 rounded-xl shadow border-double border-8 border-yellow-300">
+              <div className="flex items-center w-1/2 p-2 bg-white border-8 border-yellow-300 border-double shadow rounded-xl">
                 <div className="flex items-center "></div>
                 <div className="flex-grow p-2">
                   <div className="pageheading">
@@ -100,7 +101,7 @@ submitHandler =(event) => {
                     {/* <img
                       src={}
                       alt="My profile"
-                      className="w-16 h-16  hvr-buzz"
+                      className="w-16 h-16 hvr-buzz"
                     /> */}
                   </div>
                 </div>
@@ -128,7 +129,8 @@ submitHandler =(event) => {
             <p>Try it out! Draw something, hit "Save" and then "Load".</p> */}
               <div className={classNames.tools}>
                 <button
-                  className="bttn"
+                  className="bttn focus:outline-none"
+                  // onClick={honkstart}
                   onClick={() => {
                     localStorage.setItem(
                       "savedDrawing",
@@ -140,11 +142,11 @@ submitHandler =(event) => {
                 >
                   Save
                 </button>
-                <button className="bttn" onClick={() => {}}>
+                <button className="bttn focus:outline-none" onClick={() => {}}>
                   Clear
                 </button>
                 <button
-                  className="bttn"
+                  className="bttn focus:outline-none"
                   onClick={() => {
                     this.saveableCanvas.undo();
                   }}
@@ -190,7 +192,7 @@ submitHandler =(event) => {
               />
 
               <button
-                className="bttn"
+                className="bttn focus:outline-none"
                 onClick={() => {
                   this.loadableCanvas.loadSaveData(
                     localStorage.getItem("savedDrawing")

@@ -33,7 +33,7 @@ export default class Thesidewalk extends Component {
       body: JSON.stringify({ data }),
     };
 
-    fetch("http://localhost:3000/favorite_drawings", requestOptions)
+    fetch("http://localhost:3001/favorite_drawings", requestOptions)
       .then((response) => response.json())
       .then((data) => console.log(data));
   };
@@ -49,7 +49,7 @@ export default class Thesidewalk extends Component {
           <div className="float-right">
             <Link to="/myplayground">
               <img
-                className="rounded-full m-4 hvr-pulse"
+                className="m-4 rounded-full hvr-pulse"
                 src={characterPic}
                 alt="user"
               />
@@ -59,14 +59,14 @@ export default class Thesidewalk extends Component {
 
         <div className="-mt-64 ">
           <div className="w-full text-center">
-            <h1 className="font-bold text-5xl text-white">
+            <h1 className="text-5xl font-bold text-white">
               <img className="playlogo" src={sidewalk} alt="logo" />
             </h1>
           </div>
         </div>
 
-        <nav className="border-b border-indigo-300 bg-white px-7 py-4 flex items-center min-w-0 h-17">
-          <h1 className="font-semibold text-lg"></h1>
+        <nav className="flex items-center min-w-0 py-4 bg-white border-b border-indigo-300 px-7 h-17">
+          <h1 className="text-lg font-semibold"></h1>
 
           <Link to="/playground">
             <img className="hvr-pulse" src={playlogo} alt="logo" />
@@ -78,7 +78,7 @@ export default class Thesidewalk extends Component {
         </nav>
         <center>
           <div className="container items-center pt-20">
-            <div className="bg-white bg-opacity-95 w-1/2 flex items-center p-2 rounded-xl shadow border-double border-8 border-yellow-300">
+            <div className="flex items-center w-1/2 p-2 bg-white border-8 border-yellow-300 border-double shadow bg-opacity-95 rounded-xl">
               <div className="flex items-center "></div>
               <div className="flex-grow p-2">
                 <div className="pageheading">
@@ -86,7 +86,7 @@ export default class Thesidewalk extends Component {
                   <img
                     src={bee}
                     alt="My profile"
-                    className="w-16 h-16  hvr-buzz"
+                    className="w-16 h-16 hvr-buzz"
                   />
                 </div>
               </div>
@@ -94,13 +94,13 @@ export default class Thesidewalk extends Component {
           </div>
         </center>
 
-        <div className="grid grid-cols-3 gap-4 place-content-center -m-4">
+        <div className="grid grid-cols-3 gap-4 -m-4 place-content-center">
           {this.props.drawings.map((drawing) => {
             return (
               <div className="flex-container ">
                 {/* {console.log(drawing.id)} */}
                 <div
-                  className="box-border lg:box-content h-480 w-480 p-6 border-4 bg-green-100 bg-opacity-50 shadow "
+                  className="box-border p-6 bg-green-100 bg-opacity-50 border-4 shadow lg:box-content h-480 w-480 "
                   onClick={() => {
                     // const findId = drawingIdArr.find((drawId) => {
                     //   return drawId === drawing.Id;
