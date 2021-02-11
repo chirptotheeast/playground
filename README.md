@@ -1,4 +1,4 @@
-# playground
+# the-playground
 
 This app is called The Playground. 
 
