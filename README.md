@@ -1,4 +1,4 @@
-# playground-back-end
+# playground
 
 This app is called The Playground. 
 
