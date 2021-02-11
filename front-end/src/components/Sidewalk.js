@@ -5,27 +5,34 @@ import { Link } from "react-router-dom";
 import playlogo from "../images/sunnyplay.png";
 import myplay from "../images/bigmyplayground.png";
 import bee from '../images/bee.PNG'
+import axios from "axios";
 
 // import Like from "../components/Like.js"
 
 export default class Thesidewalk extends Component {
+
+  state = {
+    drawings: []
+  }
   
+  componentDidMount() {
+    axios.get("/drawings",{ withCredentials: true }).then((response) => {
+      const drawings = response.data;
+      this.setState({ drawings });
+    });
+  }
+
   likeHandler = (drawingid) => {
     //console.log(drawingsvgdrawing)
-    const currentUser = localStorage.getItem("userId");
-    const userId = parseInt(currentUser, 10);
-   const drawCode = localStorage.getItem('favDrawingStr')
-
-   
-    
-
+    // const currentUser = localStorage.getItem("userId");
+    // const userId = parseInt(currentUser, 10);
+    const drawCode = localStorage.getItem("favDrawingStr");
 
     let data = {
-      user_id: userId,
+      user_id: this.props.user.id,
       drawing_id: drawingid,
-      drawing: drawCode
+      drawing: drawCode,
     };
-    
 
     const requestOptions = {
       method: "POST",
@@ -39,10 +46,8 @@ export default class Thesidewalk extends Component {
   };
 
   render() {
- 
-   
     const characterPic = localStorage.getItem("character");
-
+    console.log(this.state.drawings)
     return (
       <div>
         <div className="bannerFondo">
@@ -59,15 +64,11 @@ export default class Thesidewalk extends Component {
 
         <div className="-mt-64 ">
           <div className="w-full text-center">
-            <h1 className="text-5xl font-bold text-white">
-              <img className="playlogo" src={sidewalk} alt="logo" />
-            </h1>
+            <img className="playlogo" src={sidewalk} alt="logo" />
           </div>
         </div>
 
         <nav className="flex items-center min-w-0 py-4 bg-white border-b border-indigo-300 px-7 h-17">
-          <h1 className="text-lg font-semibold"></h1>
-
           <Link to="/playground">
             <img className="hvr-pulse" src={playlogo} alt="logo" />
           </Link>
@@ -95,7 +96,7 @@ export default class Thesidewalk extends Component {
         </center>
 
         <div className="grid grid-cols-3 gap-4 -m-4 place-content-center">
-          {this.props.drawings.map((drawing) => {
+          {this.state.drawings.reverse().map((drawing) => {
             return (
               <div className="flex-container ">
                 {/* {console.log(drawing.id)} */}
@@ -107,9 +108,7 @@ export default class Thesidewalk extends Component {
                     // });
                     // console.log(findId)
                     localStorage.setItem("favDrawingStr", drawing.svgdrawing);
-                    {
-                      this.likeHandler(drawing.id);
-                    }
+                    {this.likeHandler(drawing.id)}
                   }}
                 >
                   <CanvasDraw

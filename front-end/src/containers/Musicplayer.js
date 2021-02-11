@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import ReactPlayer from 'react-player'
-import heart from "../images/heart-avatar.PNG";
 import sheep from "../images/sheep-avatar.png";
 import bee from "../images/bee-avatar.png";
 import hedgie from "../images/hedgehog-avatar.png"

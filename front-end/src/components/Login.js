@@ -53,27 +53,6 @@ class Login extends Component {
     );
   };
 
-  //  submitHandler = (event) =>{
-  //   event.preventDefault()
-
-  //             let data = {
-  //               username: this.state.username,
-  //               password: this.state.password
-  //             };
-
-  //             const requestOptions = {
-  //               method: "POST",
-  //               headers: { "Content-Type": "application/json" },
-  //               body: JSON.stringify(data),
-  //             };
-  //             fetch("http://localhost:3000/login", requestOptions)
-  //               .then((response) => response.json())
-  //               .then((data) => {localStorage.setItem('user', data.username)
-  //               localStorage.setItem('userId', data.id )
-  //               this.setState({loggedin: !this.state.loggedin})
-  //             });
-
-  //           }
 
   render() {
     const { username, password } = this.state;

@@ -62,10 +62,10 @@ class Playground extends Component {
 
         return (
           <div>
-            <div className="bannerFondo ">
-              <div className="float-right">
+            <div className="bannerFondo">
+              <div className="float-right ">
                 <button
-                  className="btn focus:outline-none"
+                  className="mt-8 mr-2 btn focus:outline-none"
                   onClick={this.props.handleLogout}
                 >
                   <Link to="/">logout</Link>
