@@ -7,7 +7,6 @@ import myplay from "../images/bigmyplayground.png";
 import bee from '../images/bee.PNG'
 import axios from "axios";
 
-// import Like from "../components/Like.js"
 
 export default class Thesidewalk extends Component {
 
@@ -23,9 +22,6 @@ export default class Thesidewalk extends Component {
   }
 
   likeHandler = (drawingid) => {
-    //console.log(drawingsvgdrawing)
-    // const currentUser = localStorage.getItem("userId");
-    // const userId = parseInt(currentUser, 10);
     const drawCode = localStorage.getItem("favDrawingStr");
 
     let data = {
@@ -99,14 +95,9 @@ export default class Thesidewalk extends Component {
           {this.state.drawings.reverse().map((drawing) => {
             return (
               <div className="flex-container ">
-                {/* {console.log(drawing.id)} */}
                 <div
                   className="box-border p-6 bg-green-100 bg-opacity-50 border-4 shadow lg:box-content h-480 w-480 "
                   onClick={() => {
-                    // const findId = drawingIdArr.find((drawId) => {
-                    //   return drawId === drawing.Id;
-                    // });
-                    // console.log(findId)
                     localStorage.setItem("favDrawingStr", drawing.svgdrawing);
                     {this.likeHandler(drawing.id)}
                   }}
@@ -119,8 +110,6 @@ export default class Thesidewalk extends Component {
                     saveData={drawing.svgdrawing}
                     key={drawing.id}
                   />
-
-                  {/* <Like drawings={this.props.drawings} /> */}
                 </div>
               </div>
             );

@@ -42,10 +42,6 @@ export default class Like extends Component {
 
     render() {
 
-  //    const drawFind= this.props.drawings.map(drawing => {
-  //          return drawing.id  
-  //    })
-  // console.log(drawFind);
         return (
           <div>
             <div className="container place-content-center">
@@ -61,7 +57,6 @@ export default class Like extends Component {
                   ) : (
                     <img className="m-3" src={heartliked} alt="heartlikelogo" />
                   )}
-                  {/* { this.likeHandler()} */}
                 </button>
               </center>
             </div>

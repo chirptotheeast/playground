@@ -3,13 +3,9 @@ import classNames from "../drawing.css";
 import { Link } from "react-router-dom";
 import playlogo from "../images/sunnyplay.png";
 import sidewalk from "../images/sidewalk.png";
-// import honk from "../sounds/honkaudiovocal.mp3";
-
 import CanvasDraw from "react-canvas-draw";
 
 class Drawing extends Component {
-
-  
   state = {
     color: "#ffc600",
     width: 400,
@@ -42,7 +38,6 @@ class Drawing extends Component {
     fetch("http://localhost:3001/drawings", requestOptions)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         this.saveableCanvas.clear();
         localStorage.setItem("drawingId", data.id);
       });
@@ -50,12 +45,7 @@ class Drawing extends Component {
 
   render() {
     const characterPic = localStorage.getItem("character");
-    // const honkaudio = new Audio(honk);
-
     
-    //          const honkstart = () => {
-    //            honkaudio.play();
-    //          };
     return (
       <div>
         <div className="bg-yellow-100 bg-left-top bg-repeat-x bg-auto bannerFondo">
@@ -98,11 +88,6 @@ class Drawing extends Component {
                 <div className="flex-grow p-2">
                   <div className="pageheading">
                     see your drawing on the sidewalk
-                    {/* <img
-                      src={}
-                      alt="My profile"
-                      className="w-16 h-16 hvr-buzz"
-                    /> */}
                   </div>
                 </div>
               </div>
@@ -119,18 +104,9 @@ class Drawing extends Component {
               />
             </Link>
             <div className="drawing-container">
-              {/* <p>
-              This part got me most excited. Very easy to use saving and loading
-              of drawings. It even comes with a customizable loading speed to
-              control whether your drawing should load instantly (loadTimeOffset
-              = 0) or appear after some time (loadTimeOffset > 0){" "}
-              <span>{`<CanvasDraw loadTimeOffset={10} />`}</span>
-            </p>
-            <p>Try it out! Draw something, hit "Save" and then "Load".</p> */}
               <div className={classNames.tools}>
                 <button
                   className="bttn focus:outline-none"
-                  // onClick={honkstart}
                   onClick={() => {
                     localStorage.setItem(
                       "savedDrawing",
@@ -207,12 +183,6 @@ class Drawing extends Component {
                 ref={(canvasDraw) => (this.loadableCanvas = canvasDraw)}
                 saveData={localStorage.getItem("savedDrawing")}
               />
-              {/* <p>
-            The saving / loading also takes different dimensions into account.
-            Change the width / height, draw something and save it and then load
-            it into the disabled canvas. It will load your previously saved
-            masterpiece scaled to the current canvas dimensions.
-          </p> */}
             </div>
           </div>
         </div>

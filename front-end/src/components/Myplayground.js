@@ -7,8 +7,6 @@ import CanvasDraw from "react-canvas-draw";
 import axios from "axios";
 
 
-
-
 export default class Myplayground extends Component {
   state = {
     favorite_drawings: [],
@@ -30,7 +28,6 @@ export default class Myplayground extends Component {
         Accept: "application/json",
       },
     }).then((resp) => this.updateDraw(id));
-    // console.log(this.state.favorite_drawings);
   }
 
   componentDidMount() {
@@ -53,23 +50,11 @@ export default class Myplayground extends Component {
             <h1 className="text-5xl font-bold text-white">
               <img className="playlogo" src={myplaylogo} alt="logo" />
               <div className="smdivider"></div>
-              {/* <img className="py-2 playlogo" src={home} alt="logo" /> */}
             </h1>
           </div>
         </div>
 
-        {/* <section className="flex flex-col-reverse w-screen h-screen min-w-0 min-h-0 overflow-hidden bg-teal-200 sm:flex-row"> */}
-        {/* <main className="flex flex-col flex-1 min-w-0 min-h-0 sm:h-full "> */}
         <nav className="flex items-center min-w-0 py-4 bg-white border-b border-indigo-300 px-7 h-17">
-          
-          {/* <span className="flex-1"></span>
-                  <span className="mr-2"> */}
-          {/* <input
-                      type="text"
-                      placeholder="Search"
-                      className="w-full px-2 py-1 bg-gray-300 border border-2 border-gray-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent focus:bg-gray-100"
-                    /> */}
-          {/* </span> */}
           <Link to="/playground">
             <img className="hvr-pulse" src={play} alt="logo" />
           </Link>
@@ -77,9 +62,6 @@ export default class Myplayground extends Component {
           <Link to="/sidewalk">
             <img className="hvr-pulse" src={sidewalk} alt="sidewalklogo" />
           </Link>
-          {/* <button className="w-10 h-10 ml-2 ml-auto leading-none text-center text-gray-200 bg-gray-400 border rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
-                    <i className="fill-current fas fa-user"></i>
-                  </button> */}
         </nav>
 
         <center>
@@ -89,11 +71,6 @@ export default class Myplayground extends Component {
               <div className="flex-grow p-2">
                 <div className="pageheading">
                   my favorite drawings
-                  {/* <img
-                        src={bee}
-                        alt="My profile"
-                        className="w-16 h-16 hvr-buzz"
-                      /> */}
                 </div>
               </div>
             </div>
@@ -117,16 +94,7 @@ export default class Myplayground extends Component {
                 </h3>
                 <div className="font-semibold text-center text-pink-400 text-s">
                   Playgrounder!
-                  {/* <h4>{this.props.user.username}! </h4>  */}
                 </div>
-                {/* <table className="my-3 text-xs">
-                    <tbody>
-                  <tr>
-                    <td className="px-2 py-2 font-semibold text-gray-500">username</td>
-                    <td className="px-2 py-2">__username here__</td>
-                  </tr>
-                   </tbody>
-                 </table> */}
               </div>
             </div>
           </div>
@@ -157,8 +125,6 @@ export default class Myplayground extends Component {
             })}
           </div>
         </div>
-        {/* </main> */}
-        {/* </section> */}
       </div>
     );
   }

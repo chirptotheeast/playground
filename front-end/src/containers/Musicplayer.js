@@ -8,10 +8,6 @@ import bunny from "../images/bunny-avatar-purple.PNG"
 
 
 export default function Musicplayer (props) {
-
-   // console.log(props)
-
-
    
     const [url, setUrl] = useState("https://youtu.be/xT2zOAZAWoM");
 

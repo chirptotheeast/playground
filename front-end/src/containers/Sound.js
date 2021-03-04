@@ -10,7 +10,6 @@
    }
 
    componentDidMount() {
-     // we add the even listener to buttons
 
      this.props.buttonsSelectors.forEach((selector) => {
        var button1 = document.querySelector(selector);
