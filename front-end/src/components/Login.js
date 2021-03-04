@@ -59,7 +59,6 @@ class Login extends Component {
     return (
       <div>
         <div className="helpful-vert-align"></div>
-        {/* {!this.state.loggedin ? ( */}
         <div className="container flex flex-col items-center justify-center flex-1 max-w-sm px-2 mx-auto">
           <div className="w-full px-6 py-8 text-black bg-white rounded shadow-md">
             <h1 className="mb-8 text-3xl text-center">Login</h1>
@@ -88,14 +87,10 @@ class Login extends Component {
                 placeholder="submit"
               >
                 Login
-                {/* <Link to="/choose"> Login</Link> */}
               </button>
             </form>
           </div>
         </div>
-        {/* ) : (
-          <Redirect to="/choose" />
-        )} */}
       </div>
     );
   }

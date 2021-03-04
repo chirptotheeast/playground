@@ -9,8 +9,6 @@ import water from '../images/watermusicicon.png'
 
 
 export default function Musicplayer(props) {
-  // console.log(props)
-
   const [url, setUrl] = useState(
     "https://www.youtube.com/watch?v=4WEdhyuzdJI&list=PLj5CbpRClQ4Tyz0H3P7Se4gVCweW0-VpX&ab_channel=BabyRelaxChannel"
   );

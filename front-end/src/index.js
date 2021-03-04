@@ -10,7 +10,7 @@ if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
   axios.defaults.baseURL = ("http://localhost:3001")
   
 }
-// ekse {
+// else {
 //   axios.defaults.baseURL = "https://jot-down-api-herkou.com/api/v1";
 // }
 

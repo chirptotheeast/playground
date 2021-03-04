@@ -5,8 +5,6 @@ import { Link } from "react-router-dom";
 import playlogo from "../images/sunnyplay.png";
 
 export default function Musicplayer(props) {
-  // console.log(props)
-
   const [url, setUrl] = useState("https://youtu.be/5uTaz8jTjaE");
      const characterPic = localStorage.getItem("character");
         
