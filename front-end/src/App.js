@@ -18,42 +18,16 @@ import Sidewalk from "./components/Sidewalk.js";
 import NapMusic from "./components/NapMusicPlayer.js";
 import PuppetShow from "./components/PuppetShow.js";
 
-// const user ="http://localhost:3000/users/4"
-const activities = "http://localhost:3001/activities";
-const drawings = "http://localhost:3001/drawings";
-const favdrawings = "http://localhost:3001/favorite_drawings";
+
 
 class App extends Component {
   state = {
-    favorite_activities: [],
-    drawings: [],
-    favorite_drawings: [],
     isLoggedIn: false,
     user: {},
   };
 
   async componentDidMount() {
-    // const url = "http://localhost:3000/users/" + localStorage.getItem("userId");
-    // const userResponse = await fetch(url);
-    // const userData = await userResponse.json();
-    // //console.log(userData);
-    // this.setState({ user: userData });
     this.loginStatus();
-
-    const response = await fetch(activities);
-    const activityData = await response.json();
-    //console.log(activityData);
-    this.setState({ activities: activityData });
-
-    const drawResponse = await fetch(drawings);
-    const drawData = await drawResponse.json();
-    //console.log(userData);
-    this.setState({ drawings: drawData });
-
-    const favdrawResponse = await fetch(favdrawings);
-    const favdrawData = await favdrawResponse.json();
-    //console.log(favdrawData);
-    this.setState({ favorite_drawings: favdrawData });
   }
 
   loginStatus = () => {
@@ -84,13 +58,6 @@ class App extends Component {
     });
   };
 
-  updateDraw = (id) => {
-    this.setState({
-      favorite_drawings: this.state.favorite_drawings.filter((drawing) => {
-        return drawing.id !== id;
-      }),
-    });
-  };
 
   render() {
     return (
@@ -102,15 +69,13 @@ class App extends Component {
               <Route exact path="/choose" component={Choose} />
               <Route exact path="/playground">
                 <Playground
-                  activities={this.state.activities}
                   handleLogout={this.handleLogout}
                 />
               </Route>
               <Route exact path="/myplayground" component={Myplayground}>
                 <Myplayground
-                  drawings={this.state.drawings}
-                  favdrawings={this.state.favorite_drawings}
                   updateDraw={this.updateDraw}
+                  user={this.state.user}
                 />
               </Route>
               <Route
@@ -120,8 +85,6 @@ class App extends Component {
                   <Login handleLogin={this.handleLogin} {...routeProps} />
                 )}
               />
-
-              {/* <Route exact path="/register" component={Register} /> */}
 
               <Route
                 exact
@@ -137,7 +100,9 @@ class App extends Component {
               <Route exact path="/drawing" component={Drawing} />
               <Route exact path="/games" component={Games} />
               <Route exact path="/sidewalk" component={Sidewalk}>
-                <Sidewalk drawings={this.state.drawings} />
+                <Sidewalk
+                  user={this.state.user}
+                />
               </Route>
               <Route exact path="/napmusic" component={NapMusic} />
               <Route exact path="/puppetshow" component={PuppetShow} />

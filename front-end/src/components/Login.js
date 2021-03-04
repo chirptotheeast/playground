@@ -53,34 +53,12 @@ class Login extends Component {
     );
   };
 
-  //  submitHandler = (event) =>{
-  //   event.preventDefault()
-
-  //             let data = {
-  //               username: this.state.username,
-  //               password: this.state.password
-  //             };
-
-  //             const requestOptions = {
-  //               method: "POST",
-  //               headers: { "Content-Type": "application/json" },
-  //               body: JSON.stringify(data),
-  //             };
-  //             fetch("http://localhost:3000/login", requestOptions)
-  //               .then((response) => response.json())
-  //               .then((data) => {localStorage.setItem('user', data.username)
-  //               localStorage.setItem('userId', data.id )
-  //               this.setState({loggedin: !this.state.loggedin})
-  //             });
-
-  //           }
 
   render() {
     const { username, password } = this.state;
     return (
       <div>
         <div className="helpful-vert-align"></div>
-        {/* {!this.state.loggedin ? ( */}
         <div className="container flex flex-col items-center justify-center flex-1 max-w-sm px-2 mx-auto">
           <div className="w-full px-6 py-8 text-black bg-white rounded shadow-md">
             <h1 className="mb-8 text-3xl text-center">Login</h1>
@@ -109,14 +87,10 @@ class Login extends Component {
                 placeholder="submit"
               >
                 Login
-                {/* <Link to="/choose"> Login</Link> */}
               </button>
             </form>
           </div>
         </div>
-        {/* ) : (
-          <Redirect to="/choose" />
-        )} */}
       </div>
     );
   }

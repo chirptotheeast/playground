@@ -52,17 +52,17 @@ export default class DrumMachine extends Component {
           <div>
             <div>
               {/* <!-- animation --> */}
-              <section class="p-10 min-h-screen flex md:flex-row items-center justify-around bg-pink-400 flex-wrap sm:flex-col">
+              <section className="flex flex-wrap items-center justify-around min-h-screen p-10 bg-pink-400 md:flex-row sm:flex-col">
                 <center>
                   <img src={drumachinelogo} alt="drummachinelogo" />{" "}
                 <img src={noise} alt="noiselogo"/>
                 </center>
                 {/* <!-- scale --> */}
-                <div class="h-32 w-32 relative cursor-pointer mb-5">
-                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-                  <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                <div className="relative w-32 h-32 mb-5 cursor-pointer">
+                  <div className="absolute inset-0 bg-white rounded-lg shadow-2xl opacity-25"></div>
+                  <div className="absolute inset-0 transition duration-300 transform hover:scale-75">
                     <div
-                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      className="w-full h-full bg-white rounded-lg shadow-2xl lg-bttn"
                       onClick={start}
                     >
                       Tom
@@ -71,11 +71,11 @@ export default class DrumMachine extends Component {
                 </div>
 
                 {/* <!-- roatate and scale --> */}
-                <div class="h-32 w-32 relative cursor-pointer mb-5">
-                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-                  <div class="absolute inset-0 transform hover:rotate-90 hover:scale-75 transition duration-300">
+                <div className="relative w-32 h-32 mb-5 cursor-pointer">
+                  <div className="absolute inset-0 bg-white rounded-lg shadow-2xl opacity-25"></div>
+                  <div className="absolute inset-0 transition duration-300 transform hover:rotate-90 hover:scale-75">
                     <div
-                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      className="w-full h-full bg-white rounded-lg shadow-2xl lg-bttn"
                       onClick={hihatClosed}
                     >
                       Hi hat1
@@ -84,11 +84,11 @@ export default class DrumMachine extends Component {
                 </div>
 
                 {/* <!-- rotate --> */}
-                <div class="h-32 w-32 relative cursor-pointer mb-5">
-                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-                  <div class="absolute inset-0 transform  hover:rotate-45 transition duration-300">
+                <div className="relative w-32 h-32 mb-5 cursor-pointer">
+                  <div className="absolute inset-0 bg-white rounded-lg shadow-2xl opacity-25"></div>
+                  <div className="absolute inset-0 transition duration-300 transform hover:rotate-45">
                     <div
-                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      className="w-full h-full bg-white rounded-lg shadow-2xl lg-bttn"
                       onClick={hihatOpen}
                     >
                       Hi hat2
@@ -97,11 +97,11 @@ export default class DrumMachine extends Component {
                 </div>
 
                 {/* <!-- rotate minus --> */}
-                <div class="h-32 w-32 relative cursor-pointer mb-5">
-                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-                  <div class="absolute inset-0 transform  hover:-rotate-45 transition duration-300">
+                <div className="relative w-32 h-32 mb-5 cursor-pointer">
+                  <div className="absolute inset-0 bg-white rounded-lg shadow-2xl opacity-25"></div>
+                  <div className="absolute inset-0 transition duration-300 transform hover:-rotate-45">
                     <div
-                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      className="w-full h-full bg-white rounded-lg shadow-2xl lg-bttn"
                       onClick={snareLow}
                     >
                       snare 1
@@ -110,11 +110,11 @@ export default class DrumMachine extends Component {
                 </div>
 
                 {/* <!-- Origin --> */}
-                <div class="h-32 w-32 relative cursor-pointer mb-5">
-                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-                  <div class="absolute inset-0 transform origin-left hover:-rotate-45 transition duration-300">
+                <div className="relative w-32 h-32 mb-5 cursor-pointer">
+                  <div className="absolute inset-0 bg-white rounded-lg shadow-2xl opacity-25"></div>
+                  <div className="absolute inset-0 transition duration-300 origin-left transform hover:-rotate-45">
                     <div
-                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      className="w-full h-full bg-white rounded-lg shadow-2xl lg-bttn"
                       onClick={snareHigh}
                     >
                       snare 2
@@ -123,11 +123,11 @@ export default class DrumMachine extends Component {
                 </div>
 
                 {/* <!-- scale --> */}
-                <div class="h-32 w-32 relative cursor-pointer mb-5">
-                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-                  <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                <div className="relative w-32 h-32 mb-5 cursor-pointer">
+                  <div className="absolute inset-0 bg-white rounded-lg shadow-2xl opacity-25"></div>
+                  <div className="absolute inset-0 transition duration-300 transform hover:scale-75">
                     <div
-                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      className="w-full h-full bg-white rounded-lg shadow-2xl lg-bttn"
                       onClick={cowbellSound}
                     >
                       cow bell
@@ -137,11 +137,11 @@ export default class DrumMachine extends Component {
 
                
                 {/* <!-- scale --> */}
-                <div class="h-32 w-32 relative cursor-pointer mb-5">
-                  <div class="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl"></div>
-                  <div class="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                <div className="relative w-32 h-32 mb-5 cursor-pointer">
+                  <div className="absolute inset-0 bg-white rounded-lg shadow-2xl opacity-25"></div>
+                  <div className="absolute inset-0 transition duration-300 transform hover:scale-75">
                     <div
-                      class="h-full w-full bg-white rounded-lg shadow-2xl lg-bttn"
+                      className="w-full h-full bg-white rounded-lg shadow-2xl lg-bttn"
                       onClick={triangleSound}
                     >
                       tri- angle
