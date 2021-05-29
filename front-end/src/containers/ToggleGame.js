@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import { Animate } from "react-move";
-import { easeExpOut } from "d3-ease";
+// import { easeExpOut } from "d3-ease";
 
 const trackStyles = {
   borderRadius: 4,
