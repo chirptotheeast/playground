@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Toggle from './ToggleGame.js'
+// import Toggle from './ToggleGame.js'
 
 const Color = () => {
   const [hex, setHex] = useState("#ffffff");
@@ -26,7 +26,7 @@ const Color = () => {
         <div className="divider"></div>
         <div className="divider"></div>
         <div className="float-right max-w-xs m-4 my-2 overflow-hidden border-4 border-opacity-50 rounded shadow border-light-blue-500">
-          <Toggle />
+          {/* <Toggle /> */}
         </div>
       </div>
     </div>
